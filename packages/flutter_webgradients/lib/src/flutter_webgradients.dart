@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 import 'package:flutter_webgradients/src/hex.dart';
@@ -469,7 +470,7 @@ class FlutterWebGradient {
 
   /// 76. Premium Dark
   static Gradient premiumDark() => linear("Premium Dark", 0.0,
-      [stringToColor("#434343"), stringToColor("black")], [0.0, 1.0]);
+      [stringToColor("#434343"), Colors.black], [0.0, 1.0]);
 
   /// 77. Cold Evening
   static Gradient coldEvening() => linear("Cold Evening", -90.0, [
@@ -676,8 +677,8 @@ class FlutterWebGradient {
 
   /// 116. Above The Sky
   static Gradient aboveTheSky() => linear("Above The Sky", -90.0, [
-        stringToColor("lightgrey"),
-        stringToColor("lightgrey"),
+        Colors.grey[300],
+        Colors.grey[300],
         stringToColor("#e0e0e0"),
         stringToColor("#efefef"),
         stringToColor("#d9d9d9"),
@@ -792,7 +793,7 @@ class FlutterWebGradient {
 
   /// 134. Glass Water
   static Gradient glassWater() => linear("Glass Water", -90.0,
-      [stringToColor("#dfe9f3"), stringToColor("white")], [0.0, 1.0]);
+      [stringToColor("#dfe9f3"), Colors.white], [0.0, 1.0]);
 
   /// 136. North Miracle
   static Gradient northMiracle() => linear("North Miracle", 0.0,
