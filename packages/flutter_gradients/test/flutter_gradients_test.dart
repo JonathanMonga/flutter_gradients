@@ -1,11 +1,18 @@
-import 'package:flutter/services.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_gradients/flutter_webgradients.dart';
+import 'package:flutter_gradients/flutter_gradients.dart';
 
 void main() {
-  setUp(() {});
+  test('test method', () async {
+    assert(FlutterGradient.find("Above The Sky") is Gradient);
+  });
 
-  tearDown(() {});
+  test('find method', () async {
+    expect(FlutterGradient.names()[0],
+        FlutterGradient.find(FlutterGradient.names()[0]));
+  });
 
-  test('getPlatformVersion', () async {});
+  test('gradient method', () async {
+    expect("Above The Sky", FlutterGradient.aboveTheSky());
+  });
 }

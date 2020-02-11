@@ -6,7 +6,7 @@ Color _intToColor(int hexNumber) => Color.fromARGB(
     ((hexNumber >> 8) & 0xFF),
     (hexNumber >> 0) & 0xFF);
 
-//String To Hex Number
+/// String To Material color
 Color stringToColor(String hex) =>
     _intToColor(int.parse(_textSubString(hex), radix: 16));
 

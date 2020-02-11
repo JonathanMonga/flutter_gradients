@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_gradients/src/hex.dart';
 import 'package:flutter_gradients/src/create_linear_gradient.dart';
 
-class FlutterWebGradient {
+class FlutterGradient {
   static LinearGradient linear(
           String name, double angle, List<Color> colors, List<double> stops) =>
       create(angle, colors, stops);
