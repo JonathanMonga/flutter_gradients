@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-import 'package:flutter_webgradients/src/hex.dart';
-import 'package:flutter_webgradients/src/create_linear_gradient.dart';
+import 'package:flutter_gradients/src/hex.dart';
+import 'package:flutter_gradients/src/create_linear_gradient.dart';
 
 class FlutterWebGradient {
   static LinearGradient linear(

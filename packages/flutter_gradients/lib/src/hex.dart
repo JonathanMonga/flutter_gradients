@@ -18,5 +18,5 @@ String _textSubString(String text) {
 
   if (text.length == 6) return text;
 
-  return text.substring(text.length - 6, 6);
+  return text.substring(1, text.length);
 }
