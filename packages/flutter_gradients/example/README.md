@@ -1,16 +1,66 @@
-# flutter_webgradients_example
+# How To Use
 
-Demonstrates how to use the flutter_webgradients plugin.
+<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image.gif" align = "right" height = "180" alt="Exemple">
 
-## Getting Started
+```dart
+    import 'package:flutter/material.dart';
 
-This project is a starting point for a Flutter application.
+import 'package:flutter_gradients/flutter_gradients.dart';
 
-A few resources to get you started if this is your first Flutter project:
+void main() => runApp(MyApp());
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    var list = FlutterGradient.names();
+    list.sort();
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title: const Text('Flutter Gradients'),
+        ),
+        body: Center(
+          child: GridView.count(
+            crossAxisCount: 3,
+            children: List.generate(list.length, (index) {
+              return Container(
+                width: 200,
+                height: 200,
+                child: Card(
+                  elevation: 3,
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 8),
+                    child: Column(
+                      children: <Widget>[
+                        Center(
+                          child: Text(
+                            list[index],
+                            style: TextStyle(
+                              fontSize: 18,
+                            ),
+                          ),
+                        ),
+                        Container(
+                          width: 150,
+                          height: 150,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            gradient: FlutterGradient.find(list[index]),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              );
+            }),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+```
