@@ -1,6 +1,6 @@
 # Flutter Gradients
 
-<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_shine.dart/master/images/header.jpg" alt="Image 1" height="40%" width="90%"/>
+<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/header.jpg" alt="Header" height="40%" width="90%"/>
 
 A curated collection of splendid gradients made in Dart (port of [https://webgradients.com](https://webgradients.com) for Flutter). Only linear gradients included for now.
 
@@ -26,9 +26,9 @@ import 'package:flutter_gradients/flutter_gradients.dart';
 
 ## How To Use
 
-See how easy it is to get a LinearGradient 
+See how easy it is to get a LinearGradient
 
-<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_shine.dart/master/images/image_2.png" align = "right" height = "350" alt="Exemple">
+<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/war_flame.png" align = "right" height = "350" alt="Exemple">
 
 ```dart
     Container(
@@ -40,7 +40,10 @@ See how easy it is to get a LinearGradient
         ),
     );
 ```
-## 
+
+## Catalogue
+
+| <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_01.png" height = "350" alt="Image 01"> | <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_02.png" height = "350" alt="Image 02">
 
 ## Examples
 
