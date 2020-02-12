@@ -15,8 +15,8 @@ script:
   - set -e # abort CI if an error happens
   # Change permission
   - chmod 777 scripts/flutter_test.sh
-  - ./scripts/flutter_test.sh packages/flutter_shine
-  - ./scripts/flutter_test.sh packages/flutter_shine/example
+  - ./scripts/flutter_test.sh packages/flutter_gradients
+  - ./scripts/flutter_test.sh packages/flutter_gradients/example
 
   # export coverage
   - if [ $FLUTTER_CHANNEL = "stable" ]; then
