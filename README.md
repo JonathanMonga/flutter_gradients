@@ -43,25 +43,13 @@ See how easy it is to get a LinearGradient
 
 ## Catalogue
 
-|<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_01.png" height = "350" alt="Image 01"> |
-<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_02.png" height = "350" alt="Image 02"> |
-<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_03.png" height = "350" alt="Image 03"> |
-|-------------------------|---------------------|----------------------|
-|<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_04.png" height = "350" alt="Image 04">|
-<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_05.png" height = "350" alt="Image 05"> |
-<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_06.png" height = "350" alt="Image 06"> |
-|-------------------------|---------------------|----------------------|
-|<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_07.png" height = "350" alt="Image 07">|
-<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_08.png" height = "350" alt="Image 08"> |
-<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_09.png" height = "350" alt="Image 09"> |
-|-------------------------|---------------------|----------------------|
-|<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_10.png" height = "350" alt="Image 10">|
-<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_11.png" height = "350" alt="Image 11"> |
-<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_12.png" height = "350" alt="Image 12"> |
-|-------------------------|---------------------|----------------------|
-|<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_13.png" height = "350" alt="Image 13">|
-<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_14.png" height = "350" alt="Image 14"> |
-|-------------------------|---------------------|
+|     1    |     2      |      3      |
+|-------------------------|---------------------|------------------------|
+|<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_01.png" height = "350" alt="Image 01"> | <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_02.png" height = "350" alt="Image 02"> | <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_03.png" height = "350" alt="Image 03">| 
+|<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_04.png" height = "350" alt="Image 04">| <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_05.png" height = "350" alt="Image 05"> | <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_06.png" height = "350" alt="Image 06"> |
+|<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_07.png" height = "350" alt="Image 07">| <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_08.png" height = "350" alt="Image 08"> | <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_09.png" height = "350" alt="Image 09"> |
+| <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_10.png" height = "350" alt="Image 10">| <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_11.png" height = "350" alt="Image 11"> | <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_12.png" height = "350" alt="Image 12"> |
+| <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_13.png" height = "350" alt="Image 13">| <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/image_14.png" height = "350" alt="Image 14"> |
 
 ## Examples
 
