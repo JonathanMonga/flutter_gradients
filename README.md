@@ -16,7 +16,7 @@ dependencies:
   flutter_gradients: ^0.0.1
 ```
 
-# ❔ Usage
+# Usage
 
 ### Import the package
 
@@ -25,8 +25,6 @@ import 'package:flutter_gradients/flutter_gradients.dart';
 ```
 
 ## How To Use
-
-See how easy it is to get a LinearGradient
 
 <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/war_flame.png" align = "right" height = "180" alt="Exemple">
 
