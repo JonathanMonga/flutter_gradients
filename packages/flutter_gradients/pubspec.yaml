@@ -1,8 +1,8 @@
 name: flutter_gradients
-description: A new flutter plugin project.
+description: A curated collection of awesome gradients made in Dart for Flutter.
 version: 0.0.1
 author:
-homepage:
+homepage: https://github.com/JonathanMonga/flutter_gradients
 
 environment:
   sdk: ">=2.6.0 <3.0.0"
@@ -10,6 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  vector_math: ^2.0.8
 
 dev_dependencies:
   flutter_test:

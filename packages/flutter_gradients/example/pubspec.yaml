@@ -1,5 +1,5 @@
 name: flutter_gradients_example
-description: Demonstrates how to use the flutter_webgradients plugin.
+description: Demonstrates how to use the flutter_gradients plugin.
 publish_to: 'none'
 
 environment:
