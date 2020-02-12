@@ -7,6 +7,11 @@ A curated collection of splendid gradients made in Dart (port of [https://webgra
 [![Pub](https://img.shields.io/badge/pub-0.0.1-blue)](https://pub.dev/packages/flutter_gradients)
 [![Build Status](https://travis-ci.org/JonathanMonga/flutter_gradients.svg?branch=master)](https://travis-ci.org/JonathanMonga/flutter_gradients)
 
+### Show some :heart: and star the repo to support the project
+
+[![GitHub stars](https://img.shields.io/github/stars/JonathanMonga/flutter_gradients.svg?style=social&label=Star)](https://github.com/JonathanMonga/flutter_gradients) [![GitHub forks](https://img.shields.io/github/forks/JonathanMonga/flutter_gradients.svg?style=social&label=Fork)](https://github.com/JonathanMonga/flutter_gradients/fork) [![GitHub watchers](https://img.shields.io/github/watchers/JonathanMonga/flutter_gradients.svg?style=social&label=Watch)](https://github.com/JonathanMonga/flutter_gradients) [![GitHub followers](https://img.shields.io/github/followers/JonathanMonga.svg?style=social&label=Follow)](https://github.com/JonathanMonga)  
+[![Twitter Follow](https://img.shields.io/twitter/follow/jonathan_monga.svg?style=social)](https://twitter.com/jonathan_monga)
+
 ## Installation
 
 Add the Package
