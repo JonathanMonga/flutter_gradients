@@ -1,14 +1,11 @@
-<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_shine.dart/master/images/image_1.png" alt="Image 1" height="40%" width="90%"/>
+# Flutter Gradients
 
-# Flutter Shine
+<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_shine.dart/master/images/header.jpg" alt="Image 1" height="40%" width="90%"/>
 
-[![Pub](https://img.shields.io/badge/pub-0.0.5-blue)](https://pub.dev/packages/flutter_shine)
-[![Build Status](https://travis-ci.org/JonathanMonga/flutter_shine.dart.svg?branch=master)](https://travis-ci.org/JonathanMonga/flutter_shine)
-<a href="https://stackoverflow.com/questions/tagged/flutter?sort=votes">
- <img alt="Awesome Flutter" src="https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square" />
-</a>
+A curated collection of splendid gradients made in Dart (port of [https://webgradients.com](https://webgradients.com) for Flutter). Only linear gradients included for now.
 
-Flutter widget inspired by [Shine](https://github.com/bigspaceship/shine.js)
+[![Pub](https://img.shields.io/badge/pub-0.0.1-blue)](https://pub.dev/packages/flutter_gradients)
+[![Build Status](https://travis-ci.org/JonathanMonga/flutter_gradients.svg?branch=master)](https://travis-ci.org/JonathanMonga/flutter_gradients)
 
 ## Installation
 
@@ -16,95 +13,34 @@ Add the Package
 
 ```yaml
 dependencies:
-  flutter_shine: ^0.0.5
+  flutter_gradients: ^0.0.1
 ```
 
 # ❔ Usage
 
-### Import this class
+### Import the package
 
 ```dart
-import 'package:flutter_shine/flutter_shine.dart';
+import 'package:flutter_gradients/flutter_gradients.dart';
 ```
 
-### Flutter Shine
+## How To Use
 
-See how easy it is to create a shadow on text and on a container.
+See how easy it is to get a LinearGradient 
 
 <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_shine.dart/master/images/image_2.png" align = "right" height = "350" alt="Exemple">
 
 ```dart
-FlutterShine(
-    builder: (BuildContext context, ShineShadow shineShadow) {
-        return Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            mainAxisSize: MainAxisSize.max,
-            children: <Widget>[
-                Text(
-                    "Shine",
-                    style: TextStyle(
-                        fontSize: 100,
-                        color: Colors.white,
-                        shadows: shineShadow.shadows),
-                ),
-                Divider(),
-                Container(
-                    width: 300,
-                    height: 300,
-                    decoration: BoxDecoration(
-                        color: Colors.white, boxShadow: shineShadow.boxShadows),
-                )
-            ],
-        );
-    },
-),
+    Container(
+        width: 150,
+        height: 150,
+        decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            [gradient: FlutterGradient.warmFlame()],
+        ),
+    );
 ```
-
-Extremely customizable shadow with a dynamic light positions.
-
-You can customize follows values :
-
-- number of Steps : The density of the shadow
-- opacity : The opacity of the shadow
-- opacity Power : The opacity power
-- offset : The offset of the shadow
-- offset Power : The offset power
-- blur : The blur of the shadow
-- blur Power : The blur power
-- shadow Color : The color of the shadow
-
-<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_shine.dart/master/images/image_3.gif" align = "right" height = "350" alt="Exemple">
-
-```dart
-FlutterShine(
-    [config: Config(shadowColor: Colors.red[300]),]
-    [light: Light(intensity: 1, position: Point(x, y)),]
-    builder: (BuildContext context, ShineShadow shineShadow) {
-        return Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            mainAxisSize: MainAxisSize.max,
-            children: <Widget>[
-                Text(
-                    "Shine",
-                    style: TextStyle(
-                        fontSize: 100,
-                        color: Colors.white,
-                        shadows: shineShadow.shadows),
-                ),
-                Divider(),
-                Container(
-                    width: 300,
-                    height: 300,
-                    decoration: BoxDecoration(
-                        color: Colors.white, boxShadow: shineShadow.boxShadows),
-                )
-            ],
-        );
-    },
-),
-```
+## 
 
 ## Examples
 
@@ -166,10 +102,3 @@ In order to run the flutter example, you must have Flutter installed. For instal
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
-
-
-|                                                      Italic                                                      |                                                         Block letters                                                          |
-| :--------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
-|        ![](outputs/output_Biotouch/18-15_02-02-2018/Identification/ITALIC/ITALIC_movementPoints_cmc.png)         |        ![](outputs/output_Biotouch/18-15_02-02-2018/Identification/BLOCK_LETTERS/BLOCK_LETTERS_movementPoints_cmc.png)         |
-|   ![](outputs/output_Biotouch/18-15_02-02-2018/Verification/ITALIC/ITALIC_movementPoints_notbalanced_roc.png)    |   ![](outputs/output_Biotouch/18-15_02-02-2018/Verification/BLOCK_LETTERS/BLOCK_LETTERS_movementPoints_notbalanced_roc.png)    |
-| ![](outputs/output_Biotouch/18-15_02-02-2018/Verification/ITALIC/ITALIC_movementPoints_notbalanced_frrVSfpr.png) | ![](outputs/output_Biotouch/18-15_02-02-2018/Verification/BLOCK_LETTERS/BLOCK_LETTERS_movementPoints_notbalanced_frrVSfpr.png) |
