@@ -50,7 +50,7 @@ import 'dart:math' as math;
 ///            AlignmentGeometry center = Alignment.center,
 ///            startAngle = 0.0,
 ///            endAngle = math.pi * 2,
-///    ),
+///     ),
 ///   ),
 /// ),
 /// ```
