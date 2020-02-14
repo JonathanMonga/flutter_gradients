@@ -1866,4 +1866,1397 @@ class FlutterSweepGradients {
         [0.0, 1.0],
         tileMode,
       );
+
+  /// 101. Palo Alto
+  static Gradient paloAlto(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Palo Alto",
+        center,
+        startAngle,
+        endAngle,
+        -150.0,
+        [stringToColor("#16a085"), stringToColor("#f4d03f")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 102. Happy Memories
+  static Gradient happyMemories(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Happy Memories",
+        center,
+        startAngle,
+        endAngle,
+        -150.0,
+        [stringToColor("#ff5858"), stringToColor("#f09819")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 103. Midnight Bloom
+  static Gradient midnightBloom(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Midnight Bloom",
+        center,
+        startAngle,
+        endAngle,
+        -110.0,
+        [stringToColor("#2b5876"), stringToColor("#4e4376")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 104. Crystalline
+  static Gradient crystalline(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Crystalline",
+        center,
+        startAngle,
+        endAngle,
+        -110.0,
+        [stringToColor("#00cdac"), stringToColor("#8ddad5")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 106. Party Bliss
+  static Gradient partyBliss(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Party Bliss",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [stringToColor("#4481eb"), stringToColor("#04befe")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 107. Confident Cloud
+  static Gradient confidentCloud(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Confident Cloud",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [
+          stringToColor("#dad4ec"),
+          stringToColor("#dad4ec"),
+          stringToColor("#f3e7e9")
+        ],
+        [0.0, 0.01, 1.0],
+        tileMode,
+      );
+
+  /// 108. Le Cocktail
+  static Gradient leCocktail(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Le Cocktail",
+        center,
+        startAngle,
+        endAngle,
+        -45.0,
+        [stringToColor("#874da2"), stringToColor("#c43a30")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 109. River City
+  static Gradient riverCity(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "River City",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [stringToColor("#4481eb"), stringToColor("#04befe")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 110. Frozen Berry
+  static Gradient frozenBerry(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Frozen Berry",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [stringToColor("#e8198b"), stringToColor("#c7eafd")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 112. Child Care
+  static Gradient childCare(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Child Care",
+        center,
+        startAngle,
+        endAngle,
+        -110.0,
+        [stringToColor("#f794a4"), stringToColor("#fdd6bd")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 113. Flying Lemon
+  static Gradient flyingLemon(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Flying Lemon",
+        center,
+        startAngle,
+        endAngle,
+        -30.0,
+        [stringToColor("#64b3f4"), stringToColor("#c2e59c")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 114. New Retrowave
+  static Gradient newRetrowave(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "New Retrowave",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [
+          stringToColor("#3b41c5"),
+          stringToColor("#a981bb"),
+          stringToColor("#ffc8a9")
+        ],
+        [0.0, 0.49, 1.0],
+        tileMode,
+      );
+
+  /// 115. Hidden Jaguar
+  static Gradient hiddenJaguar(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Hidden Jaguar",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [stringToColor("#0fd850"), stringToColor("#f9f047")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 116. Above The Sky
+  static Gradient aboveTheSky(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Above The Sky",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [
+          Colors.grey[300],
+          Colors.grey[300],
+          stringToColor("#e0e0e0"),
+          stringToColor("#efefef"),
+          stringToColor("#d9d9d9"),
+          stringToColor("#bcbcbc")
+        ],
+        [0.0, 0.01, 0.26, 0.48, 0.75, 1.0],
+        tileMode,
+      );
+
+  /// 117. Nega
+  static Gradient nega(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Nega",
+        center,
+        startAngle,
+        endAngle,
+        -45.0,
+        [stringToColor("#ee9ca7"), stringToColor("#ffdde1")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 118. Dense Water
+  static Gradient denseWater(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Dense Water",
+        center,
+        startAngle,
+        endAngle,
+        0.0,
+        [
+          stringToColor("#3ab5b0"),
+          stringToColor("#3d99be"),
+          stringToColor("#56317a")
+        ],
+        [0.0, 0.31, 1.0],
+        tileMode,
+      );
+
+  /// 120. Seashore
+  static Gradient seashore(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Seashore",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [stringToColor("#209cff"), stringToColor("#68e0cf")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 121. Marble Wall
+  static Gradient marbleWall(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Marble Wall",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [
+          stringToColor("#bdc2e8"),
+          stringToColor("#bdc2e8"),
+          stringToColor("#e6dee9")
+        ],
+        [0.0, 0.01, 1.0],
+        tileMode,
+      );
+
+  /// 122. Cheerful Caramel
+  static Gradient cheerfulCaramel(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Cheerful Caramel",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [stringToColor("#e6b980"), stringToColor("#eacda3")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 123. Night Sky
+  static Gradient nightSky(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Night Sky",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [
+          stringToColor("#1e3c72"),
+          stringToColor("#1e3c72"),
+          stringToColor("#2a5298")
+        ],
+        [0.0, 0.01, 1.0],
+        tileMode,
+      );
+
+  /// 124. Magic Lake
+  static Gradient magicLake(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Magic Lake",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [
+          stringToColor("#d5dee7"),
+          stringToColor("#ffafbd"),
+          stringToColor("#c9ffbf")
+        ],
+        [0.0, 0.0, 1.0],
+        tileMode,
+      );
+
+  /// 125. Young Grass
+  static Gradient youngGrass(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Young Grass",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [stringToColor("#9be15d"), stringToColor("#00e3ae")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 126. Colorful Peach
+  static Gradient colorfulPeach(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Colorful Peach",
+        center,
+        startAngle,
+        endAngle,
+        0.0,
+        [stringToColor("#ed6ea0"), stringToColor("#ec8c69")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 127. Gentle Care
+  static Gradient gentleCare(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Gentle Care",
+        center,
+        startAngle,
+        endAngle,
+        0.0,
+        [stringToColor("#ffc3a0"), stringToColor("#ffafbd")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 128. Plum Bath
+  static Gradient plumBath(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Plum Bath",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [stringToColor("#cc208e"), stringToColor("#6713d2")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 129. Happy Unicorn
+  static Gradient happyUnicorn(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Happy Unicorn",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [stringToColor("#b3ffab"), stringToColor("#12fff7")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 131. African Field
+  static Gradient africanField(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "African Field",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [
+          stringToColor("#65bd60"),
+          stringToColor("#5ac1a8"),
+          stringToColor("#3ec6ed"),
+          stringToColor("#b7ddb7"),
+          stringToColor("#fef381")
+        ],
+        [0.0, 0.25, 0.5, 0.75, 1.0],
+        tileMode,
+      );
+
+  /// 132. Solid Stone
+  static Gradient solidStone(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Solid Stone",
+        center,
+        startAngle,
+        endAngle,
+        0.0,
+        [stringToColor("#243949"), stringToColor("#517fa4")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 133. Orange Juice
+  static Gradient orangeJuice(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Orange Juice",
+        center,
+        startAngle,
+        endAngle,
+        -110.0,
+        [stringToColor("#fc6076"), stringToColor("#ff9a44")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 134. Glass Water
+  static Gradient glassWater(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Glass Water",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [stringToColor("#dfe9f3"), Colors.white],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 136. North Miracle
+  static Gradient northMiracle(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "North Miracle",
+        center,
+        startAngle,
+        endAngle,
+        0.0,
+        [stringToColor("#00dbde"), stringToColor("#fc00ff")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 137. Fruit Blend
+  static Gradient fruitBlend(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Fruit Blend",
+        center,
+        startAngle,
+        endAngle,
+        0.0,
+        [stringToColor("#f9d423"), stringToColor("#ff4e50")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 138. Millennium Pine
+  static Gradient millenniumPine(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Millennium Pine",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [stringToColor("#50cc7f"), stringToColor("#f5d100")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 139. High Flight
+  static Gradient highFlight(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "High Flight",
+        center,
+        startAngle,
+        endAngle,
+        0.0,
+        [stringToColor("#0acffe"), stringToColor("#495aff")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 140. Mole Hall
+  static Gradient moleHall(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Mole Hall",
+        center,
+        startAngle,
+        endAngle,
+        -110.0,
+        [stringToColor("#616161"), stringToColor("#9bc5c3")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 142. Space Shift
+  static Gradient spaceShift(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Space Shift",
+        center,
+        startAngle,
+        endAngle,
+        -30.0,
+        [
+          stringToColor("#3d3393"),
+          stringToColor("#2b76b9"),
+          stringToColor("#2cacd1"),
+          stringToColor("#35eb93")
+        ],
+        [0.0, 0.37, 0.65, 1.0],
+        tileMode,
+      );
+
+  /// 143. Forest Inei
+  static Gradient forestInei(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Forest Inei",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [stringToColor("#df89b5"), stringToColor("#bfd9fe")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 144. Royal Garden
+  static Gradient royalGarden(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Royal Garden",
+        center,
+        startAngle,
+        endAngle,
+        0.0,
+        [stringToColor("#ed6ea0"), stringToColor("#ec8c69")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 145. Rich Metal
+  static Gradient richMetal(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Rich Metal",
+        center,
+        startAngle,
+        endAngle,
+        0.0,
+        [stringToColor("#d7d2cc"), stringToColor("#304352")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 146. Juicy Cake
+  static Gradient juicyCake(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Juicy Cake",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [stringToColor("#e14fad"), stringToColor("#f9d423")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 147. Smart Indigo
+  static Gradient smartIndigo(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Smart Indigo",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [stringToColor("#b224ef"), stringToColor("#7579ff")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 148. Sand Strike
+  static Gradient sandStrike(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Sand Strike",
+        center,
+        startAngle,
+        endAngle,
+        0.0,
+        [
+          stringToColor("#c1c161"),
+          stringToColor("#c1c161"),
+          stringToColor("#d4d4b1")
+        ],
+        [0.0, 0.0, 1.0],
+        tileMode,
+      );
+
+  /// 149. Norse Beauty
+  static Gradient norseBeauty(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Norse Beauty",
+        center,
+        startAngle,
+        endAngle,
+        0.0,
+        [stringToColor("#ec77ab"), stringToColor("#7873f5")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 150. Aqua Guidance
+  static Gradient aquaGuidance(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Aqua Guidance",
+        center,
+        startAngle,
+        endAngle,
+        -90.0,
+        [stringToColor("#007adf"), stringToColor("#00ecbc")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 151. Sun Veggie
+  static Gradient sunVeggie(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Sun Veggie",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [stringToColor("#20E2D7"), stringToColor("#F9FEA5")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 152. Sea Lord
+  static Gradient seaLord(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Sea Lord",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#2CD8D5"),
+          stringToColor("#C5C1FF"),
+          stringToColor("#FFBAC3")
+        ],
+        [0.0, 0.56, 1.0],
+        tileMode,
+      );
+
+  /// 153. Black Sea
+  static Gradient blackSea(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Black Sea",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#2CD8D5"),
+          stringToColor("#6B8DD6"),
+          stringToColor("#8E37D7")
+        ],
+        [0.0, 0.48, 1.0],
+        tileMode,
+      );
+
+  /// 154. Grass Shampoo
+  static Gradient grassShampoo(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Grass Shampoo",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#DFFFCD"),
+          stringToColor("#90F9C4"),
+          stringToColor("#39F3BB")
+        ],
+        [0.0, 0.48, 1.0],
+        tileMode,
+      );
+
+  /// 155. Landing Aircraft
+  static Gradient landingAircraft(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Landing Aircraft",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#5D9FFF"),
+          stringToColor("#B8DCFF"),
+          stringToColor("#6BBBFF")
+        ],
+        [0.0, 0.48, 1.0],
+        tileMode,
+      );
+
+  /// 156. Witch Dance
+  static Gradient witchDance(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Witch Dance",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [stringToColor("#A8BFFF"), stringToColor("#884D80")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 157. Sleepless Night
+  static Gradient sleeplessNight(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Sleepless Night",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#5271C4"),
+          stringToColor("#B19FFF"),
+          stringToColor("#ECA1FE")
+        ],
+        [0.0, 0.48, 1.0],
+        tileMode,
+      );
+
+  /// 158. Angel Care
+  static Gradient angelCare(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Angel Care",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#FFE29F"),
+          stringToColor("#FFA99F"),
+          stringToColor("#FF719A")
+        ],
+        [0.0, 0.48, 1.0],
+        tileMode,
+      );
+
+  /// 159. Crystal River
+  static Gradient crystalRiver(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Crystal River",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#22E1FF"),
+          stringToColor("#1D8FE1"),
+          stringToColor("#625EB1")
+        ],
+        [0.0, 0.48, 1.0],
+        tileMode,
+      );
+
+  /// 160. Soft Lipstick
+  static Gradient softLipstick(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Soft Lipstick",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [stringToColor("#B6CEE8"), stringToColor("#F578DC")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 161. Salt Mountain
+  static Gradient saltMountain(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Salt Mountain",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [stringToColor("#FFFEFF"), stringToColor("#D7FFFE")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 162. Perfect White
+  static Gradient perfectWhite(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Perfect White",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [stringToColor("#E3FDF5"), stringToColor("#FFE6FA")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 163. Fresh Oasis
+  static Gradient freshOasis(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Fresh Oasis",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [stringToColor("#7DE2FC"), stringToColor("#B9B6E5")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 164. Strict November
+  static Gradient strictNovember(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Strict November",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [stringToColor("#CBBACC"), stringToColor("#2580B3")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 165. Morning Salad
+  static Gradient morningSalad(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Morning Salad",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [stringToColor("#B7F8DB"), stringToColor("#50A7C2")],
+        [0.0, 1.0],
+        tileMode,
+      );
+
+  /// 166. Deep Relief
+  static Gradient deepRelief(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Deep Relief",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#7085B6"),
+          stringToColor("#87A7D9"),
+          stringToColor("#DEF3F8")
+        ],
+        [0.0, 0.5, 1.0],
+        tileMode,
+      );
+
+  /// 167. Sea Strike
+  static Gradient seaStrike(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Sea Strike",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#77FFD2"),
+          stringToColor("#6297DB"),
+          stringToColor("#1EECFF")
+        ],
+        [0.0, 0.48, 1.0],
+        tileMode,
+      );
+
+  /// 168. Night Call
+  static Gradient nightCall(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Night Call",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#AC32E4"),
+          stringToColor("#7918F2"),
+          stringToColor("#4801FF")
+        ],
+        [0.0, 0.48, 1.0],
+        tileMode,
+      );
+
+  /// 169. Supreme Sky
+  static Gradient supremeSky(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Supreme Sky",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#D4FFEC"),
+          stringToColor("#57F2CC"),
+          stringToColor("#4596FB")
+        ],
+        [0.0, 0.48, 1.0],
+        tileMode,
+      );
+
+  /// 170. Light Blue
+  static Gradient lightBlue(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Light Blue",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#9EFBD3"),
+          stringToColor("#57E9F2"),
+          stringToColor("#45D4FB")
+        ],
+        [0.0, 0.48, 1.0],
+        tileMode,
+      );
+
+  /// 171. Mind Crawl
+  static Gradient mindCrawl(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Mind Crawl",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#473B7B"),
+          stringToColor("#3584A7"),
+          stringToColor("#30D2BE")
+        ],
+        [0.0, 0.51, 1.0],
+        tileMode,
+      );
+
+  /// 172. Lily Meadow
+  static Gradient lilyMeadow(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Lily Meadow",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#65379B"),
+          stringToColor("#886AEA"),
+          stringToColor("#6457C6")
+        ],
+        [0.0, 0.53, 1.0],
+        tileMode,
+      );
+
+  /// 173. Sugar Lollipop
+  static Gradient sugarLollipop(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Sugar Lollipop",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#A445B2"),
+          stringToColor("#D41872"),
+          stringToColor("#FF0066")
+        ],
+        [0.0, 0.52, 1.0],
+        tileMode,
+      );
+
+  /// 174. Sweet Dessert
+  static Gradient sweetDessert(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Sweet Dessert",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#7742B2"),
+          stringToColor("#F180FF"),
+          stringToColor("#FD8BD9")
+        ],
+        [0.0, 0.52, 1.0],
+        tileMode,
+      );
+
+  /// 175. Magic Ray
+  static Gradient magicRay(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Magic Ray",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#FF3CAC"),
+          stringToColor("#562B7C"),
+          stringToColor("#2B86C5")
+        ],
+        [0.0, 0.52, 1.0],
+        tileMode,
+      );
+
+  /// 176. Teen Party
+  static Gradient teenParty(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Teen Party",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#FF057C"),
+          stringToColor("#8D0B93"),
+          stringToColor("#321575")
+        ],
+        [0.0, 0.5, 1.0],
+        tileMode,
+      );
+
+  /// 177. Frozen Heat
+  static Gradient frozenHeat(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Frozen Heat",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#FF057C"),
+          stringToColor("#7C64D5"),
+          stringToColor("#4CC3FF")
+        ],
+        [0.0, 0.48, 1.0],
+        tileMode,
+      );
+
+  /// 178. Gagarin View
+  static Gradient gagarinView(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Gagarin View",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#69EACB"),
+          stringToColor("#EACCF8"),
+          stringToColor("#6654F1")
+        ],
+        [0.0, 0.48, 1.0],
+        tileMode,
+      );
+
+  /// 179. Fabled Sunset
+  static Gradient fabledSunset(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Fabled Sunset",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#231557"),
+          stringToColor("#44107A"),
+          stringToColor("#FF1361"),
+          stringToColor("#FFF800")
+        ],
+        [0.0, 0.29, 0.67, 1.0],
+        tileMode,
+      );
+
+  /// 180. Perfect Blue
+  static Gradient perfectBlue(
+          {AlignmentGeometry center,
+          double startAngle,
+          double endAngle,
+          TileMode tileMode}) =>
+      sweep(
+        "Perfect Blue",
+        center,
+        startAngle,
+        endAngle,
+        -315.0,
+        [
+          stringToColor("#3D4E81"),
+          stringToColor("#5753C9"),
+          stringToColor("#6E7FF3")
+        ],
+        [0.0, 0.48, 1.0],
+        tileMode,
+      );
 }
