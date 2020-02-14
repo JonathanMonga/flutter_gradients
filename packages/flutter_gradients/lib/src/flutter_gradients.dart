@@ -1,9 +1,9 @@
 import 'package:flutter/widgets.dart';
 
-import 'package:flutter_gradients/src/flutter_linear_gradients.dart';
-import 'package:flutter_gradients/src/flutter_radial_gradients.dart';
-import 'package:flutter_gradients/src/flutter_sweep_gradients.dart';
-import 'package:flutter_gradients/src/gradient_type.dart';
+import 'package:flutter_gradients/src/core/flutter_linear_gradients.dart';
+import 'package:flutter_gradients/src/core/flutter_radial_gradients.dart';
+import 'package:flutter_gradients/src/core/flutter_sweep_gradients.dart';
+import 'package:flutter_gradients/src/core/gradient_type.dart';
 
 import 'dart:math' as math;
 

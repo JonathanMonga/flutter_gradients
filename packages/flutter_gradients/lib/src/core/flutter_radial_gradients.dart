@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-import 'package:flutter_gradients/src/hex.dart';
-import 'package:flutter_gradients/src/create_sweep_gradient.dart';
+import 'package:flutter_gradients/src/core/hex.dart';
+import 'package:flutter_gradients/src/core/create_radial_gradient.dart';
 
-/// A facade class that contains all the methodes that generate a SweepGradient.
+/// A facade class that contains all the methodes that generate a radialGradient.
 ///
 /// Sample code to use within an image:
 ///
@@ -18,30 +18,39 @@ import 'package:flutter_gradients/src/create_sweep_gradient.dart';
 ///   ),
 /// ),
 /// ```
-class FlutterSweepGradients {
-  static SweepGradient sweep(
+/// You can set also the `tileMode`, that by default is set on `TileMode.repeated`
+///
+/// ```
+/// FlutterGradient.warmFlame(tileMode = TileMode.clamp),
+/// ```
+class FlutterRadialGradients {
+  static RadialGradient radial(
           String name,
           AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
+          double radius,
           double angle,
           List<Color> colors,
           List<double> stops,
           TileMode tileMode) =>
-      create(center, startAngle, endAngle, angle, colors, stops, tileMode);
+      create(
+        center,
+        radius,
+        angle,
+        colors,
+        stops,
+        tileMode,
+      );
 
   /// 1. Warm Flame
   static Gradient warmFlame({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Warm Flame",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -45.0,
         [
           stringToColor("#ff9a9e"),
@@ -55,15 +64,13 @@ class FlutterSweepGradients {
   /// 2. Night Fade
   static Gradient nightFade({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Night Fade",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#a18cd1"), stringToColor("#fbc2eb")],
         [0.0, 1.0],
@@ -73,15 +80,13 @@ class FlutterSweepGradients {
   /// 3. Spring Warmth
   static Gradient springWarmth({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Spring Warmth",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [
           stringToColor("#fad0c4"),
@@ -95,15 +100,13 @@ class FlutterSweepGradients {
   /// 4. Juicy Peach
   static Gradient juicyPeach({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Juicy Peach",
         center,
-        startAngle,
-        endAngle,
+        radius,
         0.0,
         [stringToColor("#ffecd2"), stringToColor("#fcb69f")],
         [0.0, 1.0],
@@ -113,15 +116,13 @@ class FlutterSweepGradients {
   /// 5. Young Passion
   static Gradient youngPassion({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Young Passion",
         center,
-        startAngle,
-        endAngle,
+        radius,
         0.0,
         [
           stringToColor("#ff8177"),
@@ -138,15 +139,13 @@ class FlutterSweepGradients {
   /// 6. Lady Lips
   static Gradient ladyLips({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Lady Lips",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [
           stringToColor("#ff9a9e"),
@@ -160,15 +159,13 @@ class FlutterSweepGradients {
   /// 7. Sunny Morning
   static Gradient sunnyMorning({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Sunny Morning",
         center,
-        startAngle,
-        endAngle,
+        radius,
         30.0,
         [stringToColor("#f6d365"), stringToColor("#fda085")],
         [0.0, 1.0],
@@ -178,15 +175,13 @@ class FlutterSweepGradients {
   /// 8. Rainy Ashville
   static Gradient rainyAshville({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Rainy Ashville",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#fbc2eb"), stringToColor("#a6c1ee")],
         [0.0, 1.0],
@@ -196,15 +191,13 @@ class FlutterSweepGradients {
   /// 9. Frozen Dreams
   static Gradient frozenDreams({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Frozen Dreams",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [
           stringToColor("#fdcbf1"),
@@ -218,15 +211,13 @@ class FlutterSweepGradients {
   /// 10. Winter Neva
   static Gradient winterNeva({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Winter Neva",
         center,
-        startAngle,
-        endAngle,
+        radius,
         30.0,
         [stringToColor("#a1c4fd"), stringToColor("#c2e9fb")],
         [0.0, 1.0],
@@ -236,15 +227,13 @@ class FlutterSweepGradients {
   /// 11. Dusty Grass
   static Gradient dustyGrass({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Dusty Grass",
         center,
-        startAngle,
-        endAngle,
+        radius,
         30.0,
         [stringToColor("#d4fc79"), stringToColor("#96e6a1")],
         [0.0, 1.0],
@@ -254,15 +243,13 @@ class FlutterSweepGradients {
   /// 12. Tempting Azure
   static Gradient temptingAzure({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Tempting Azure",
         center,
-        startAngle,
-        endAngle,
+        radius,
         30.0,
         [stringToColor("#84fab0"), stringToColor("#8fd3f4")],
         [0.0, 1.0],
@@ -272,15 +259,13 @@ class FlutterSweepGradients {
   /// 13. Heavy Rain
   static Gradient heavyRain({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Heavy Rain",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#cfd9df"), stringToColor("#e2ebf0")],
         [0.0, 1.0],
@@ -290,15 +275,13 @@ class FlutterSweepGradients {
   /// 14. Amy Crisp
   static Gradient amyCrisp({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Amy Crisp",
         center,
-        startAngle,
-        endAngle,
+        radius,
         30.0,
         [stringToColor("#a6c0fe"), stringToColor("#f68084")],
         [0.0, 1.0],
@@ -308,15 +291,13 @@ class FlutterSweepGradients {
   /// 15. Mean Fruit
   static Gradient meanFruit({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Mean Fruit",
         center,
-        startAngle,
-        endAngle,
+        radius,
         30.0,
         [stringToColor("#fccb90"), stringToColor("#d57eeb")],
         [0.0, 1.0],
@@ -326,15 +307,13 @@ class FlutterSweepGradients {
   /// 16. Deep Blue
   static Gradient deepBlue({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Deep Blue",
         center,
-        startAngle,
-        endAngle,
+        radius,
         30.0,
         [stringToColor("#e0c3fc"), stringToColor("#8ec5fc")],
         [0.0, 1.0],
@@ -344,15 +323,13 @@ class FlutterSweepGradients {
   /// 17. Ripe Malinka
   static Gradient ripeMalinka({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Ripe Malinka",
         center,
-        startAngle,
-        endAngle,
+        radius,
         30.0,
         [stringToColor("#f093fb"), stringToColor("#f5576c")],
         [0.0, 1.0],
@@ -362,15 +339,13 @@ class FlutterSweepGradients {
   /// 18. Cloudy Knoxville
   static Gradient cloudyKnoxville({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Cloudy Knoxville",
         center,
-        startAngle,
-        endAngle,
+        radius,
         30.0,
         [stringToColor("#fdfbfb"), stringToColor("#ebedee")],
         [0.0, 1.0],
@@ -380,15 +355,13 @@ class FlutterSweepGradients {
   /// 19. Malibu Beach
   static Gradient malibuBeach({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Malibu Beach",
         center,
-        startAngle,
-        endAngle,
+        radius,
         0.0,
         [stringToColor("#4facfe"), stringToColor("#00f2fe")],
         [0.0, 1.0],
@@ -398,15 +371,13 @@ class FlutterSweepGradients {
   /// 20. New Life
   static Gradient newLife({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "New Life",
         center,
-        startAngle,
-        endAngle,
+        radius,
         0.0,
         [stringToColor("#43e97b"), stringToColor("#38f9d7")],
         [0.0, 1.0],
@@ -416,15 +387,13 @@ class FlutterSweepGradients {
   /// 21. True Sunset
   static Gradient trueSunset({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "True Sunset",
         center,
-        startAngle,
-        endAngle,
+        radius,
         0.0,
         [stringToColor("#fa709a"), stringToColor("#fee140")],
         [0.0, 1.0],
@@ -434,15 +403,13 @@ class FlutterSweepGradients {
   /// 22. Morpheus Den
   static Gradient morpheusDen({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Morpheus Den",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#30cfd0"), stringToColor("#330867")],
         [0.0, 1.0],
@@ -452,15 +419,13 @@ class FlutterSweepGradients {
   /// 23. Rare Wind
   static Gradient rareWind({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Rare Wind",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#a8edea"), stringToColor("#fed6e3")],
         [0.0, 1.0],
@@ -470,15 +435,13 @@ class FlutterSweepGradients {
   /// 24. Near Moon
   static Gradient nearMoon({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Near Moon",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#5ee7df"), stringToColor("#b490ca")],
         [0.0, 1.0],
@@ -488,15 +451,13 @@ class FlutterSweepGradients {
   /// 25. Wild Apple
   static Gradient wildApple({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Wild Apple",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#d299c2"), stringToColor("#fef9d7")],
         [0.0, 1.0],
@@ -506,15 +467,13 @@ class FlutterSweepGradients {
   /// 26. Saint Petersburg
   static Gradient saintPetersburg({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Saint Petersburg",
         center,
-        startAngle,
-        endAngle,
+        radius,
         45.0,
         [stringToColor("#f5f7fa"), stringToColor("#c3cfe2")],
         [0.0, 1.0],
@@ -524,15 +483,13 @@ class FlutterSweepGradients {
   /// 28. Plum Plate
   static Gradient plumPlate({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Plum Plate",
         center,
-        startAngle,
-        endAngle,
+        radius,
         45.0,
         [stringToColor("#667eea"), stringToColor("#764ba2")],
         [0.0, 1.0],
@@ -542,15 +499,13 @@ class FlutterSweepGradients {
   /// 29. Everlasting Sky
   static Gradient everlastingSky({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Everlasting Sky",
         center,
-        startAngle,
-        endAngle,
+        radius,
         45.0,
         [stringToColor("#fdfcfb"), stringToColor("#e2d1c3")],
         [0.0, 1.0],
@@ -560,15 +515,13 @@ class FlutterSweepGradients {
   /// 30. Happy Fisher
   static Gradient happyFisher({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Happy Fisher",
         center,
-        startAngle,
-        endAngle,
+        radius,
         30.0,
         [stringToColor("#89f7fe"), stringToColor("#66a6ff")],
         [0.0, 1.0],
@@ -578,15 +531,13 @@ class FlutterSweepGradients {
   /// 31. Blessing
   static Gradient blessing({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Blessing",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#fddb92"), stringToColor("#d1fdff")],
         [0.0, 1.0],
@@ -596,15 +547,13 @@ class FlutterSweepGradients {
   /// 32. Sharpeye Eagle
   static Gradient sharpeyeEagle({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Sharpeye Eagle",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#9890e3"), stringToColor("#b1f4cf")],
         [0.0, 1.0],
@@ -614,15 +563,13 @@ class FlutterSweepGradients {
   /// 33. Ladoga Bottom
   static Gradient ladogaBottom({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Ladoga Bottom",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#ebc0fd"), stringToColor("#d9ded8")],
         [0.0, 1.0],
@@ -632,15 +579,13 @@ class FlutterSweepGradients {
   /// 34. Lemon Gate
   static Gradient lemonGate({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Lemon Gate",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#96fbc4"), stringToColor("#f9f586")],
         [0.0, 1.0],
@@ -650,15 +595,13 @@ class FlutterSweepGradients {
   /// 35. Itmeo Branding
   static Gradient itmeoBranding({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Itmeo Branding",
         center,
-        startAngle,
-        endAngle,
+        radius,
         90.0,
         [stringToColor("#2af598"), stringToColor("#009efd")],
         [0.0, 1.0],
@@ -668,15 +611,13 @@ class FlutterSweepGradients {
   /// 36. Zeus Miracle
   static Gradient zeusMiracle({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Zeus Miracle",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#cd9cf2"), stringToColor("#f6f3ff")],
         [0.0, 1.0],
@@ -686,15 +627,13 @@ class FlutterSweepGradients {
   /// 37. Old Hat
   static Gradient oldHat({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Old Hat",
         center,
-        startAngle,
-        endAngle,
+        radius,
         0.0,
         [
           stringToColor("#e4afcb"),
@@ -711,15 +650,13 @@ class FlutterSweepGradients {
   /// 38. Star Wine
   static Gradient starWine({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Star Wine",
         center,
-        startAngle,
-        endAngle,
+        radius,
         0.0,
         [
           stringToColor("#b8cbb8"),
@@ -736,15 +673,13 @@ class FlutterSweepGradients {
   /// 39. Deep Blue
   static Gradient deepBlue2({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Deep Blue",
         center,
-        startAngle,
-        endAngle,
+        radius,
         0.0,
         [stringToColor("#6a11cb"), stringToColor("#2575fc")],
         [0.0, 1.0],
@@ -754,15 +689,13 @@ class FlutterSweepGradients {
   /// 41. Happy Acid
   static Gradient happyAcid({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Happy Acid",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#37ecba"), stringToColor("#72afd3")],
         [0.0, 1.0],
@@ -772,15 +705,13 @@ class FlutterSweepGradients {
   /// 42. Awesome Pine
   static Gradient awesomePine({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Awesome Pine",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#ebbba7"), stringToColor("#cfc7f8")],
         [0.0, 1.0],
@@ -790,15 +721,13 @@ class FlutterSweepGradients {
   /// 43. New York
   static Gradient newYork({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "New York",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#fff1eb"), stringToColor("#ace0f9")],
         [0.0, 1.0],
@@ -808,15 +737,13 @@ class FlutterSweepGradients {
   /// 44. Shy Rainbow
   static Gradient shyRainbow({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Shy Rainbow",
         center,
-        startAngle,
-        endAngle,
+        radius,
         0.0,
         [
           stringToColor("#eea2a2"),
@@ -832,15 +759,13 @@ class FlutterSweepGradients {
   /// 46. Mixed Hopes
   static Gradient mixedHopes({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Mixed Hopes",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#c471f5"), stringToColor("#fa71cd")],
         [0.0, 1.0],
@@ -850,15 +775,13 @@ class FlutterSweepGradients {
   /// 47. Fly High
   static Gradient flyHigh({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Fly High",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#48c6ef"), stringToColor("#6f86d6")],
         [0.0, 1.0],
@@ -868,15 +791,13 @@ class FlutterSweepGradients {
   /// 48. Strong Bliss
   static Gradient strongBliss({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Strong Bliss",
         center,
-        startAngle,
-        endAngle,
+        radius,
         0.0,
         [
           stringToColor("#f78ca0"),
@@ -891,15 +812,13 @@ class FlutterSweepGradients {
   /// 49. Fresh Milk
   static Gradient freshMilk({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Fresh Milk",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#feada6"), stringToColor("#f5efef")],
         [0.0, 1.0],
@@ -909,15 +828,13 @@ class FlutterSweepGradients {
   /// 50. Snow Again
   static Gradient snowAgain({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Snow Again",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#e6e9f0"), stringToColor("#eef1f5")],
         [0.0, 1.0],
@@ -927,15 +844,13 @@ class FlutterSweepGradients {
   /// 51. February Ink
   static Gradient februaryInk({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "February Ink",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#accbee"), stringToColor("#e7f0fd")],
         [0.0, 1.0],
@@ -945,15 +860,13 @@ class FlutterSweepGradients {
   /// 52. Kind Steel
   static Gradient kindSteel({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Kind Steel",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -110.0,
         [stringToColor("#e9defa"), stringToColor("#fbfcdb")],
         [0.0, 1.0],
@@ -963,15 +876,13 @@ class FlutterSweepGradients {
   /// 53. Soft Grass
   static Gradient softGrass({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Soft Grass",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#c1dfc4"), stringToColor("#deecdd")],
         [0.0, 1.0],
@@ -981,15 +892,13 @@ class FlutterSweepGradients {
   /// 54. Grown Early
   static Gradient grownEarly({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Grown Early",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#0ba360"), stringToColor("#3cba92")],
         [0.0, 1.0],
@@ -999,15 +908,13 @@ class FlutterSweepGradients {
   /// 55. Sharp Blues
   static Gradient sharpBlues({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Sharp Blues",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#00c6fb"), stringToColor("#005bea")],
         [0.0, 1.0],
@@ -1017,15 +924,13 @@ class FlutterSweepGradients {
   /// 56. Shady Water
   static Gradient shadyWater({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Shady Water",
         center,
-        startAngle,
-        endAngle,
+        radius,
         0.0,
         [stringToColor("#74ebd5"), stringToColor("#9face6")],
         [0.0, 1.0],
@@ -1035,15 +940,13 @@ class FlutterSweepGradients {
   /// 57. Dirty Beauty
   static Gradient dirtyBeauty({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Dirty Beauty",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#6a85b6"), stringToColor("#bac8e0")],
         [0.0, 1.0],
@@ -1053,15 +956,13 @@ class FlutterSweepGradients {
   /// 58. Great Whale
   static Gradient greatWhale({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Great Whale",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#a3bded"), stringToColor("#6991c7")],
         [0.0, 1.0],
@@ -1071,15 +972,13 @@ class FlutterSweepGradients {
   /// 59. Teen Notebook
   static Gradient teenNotebook({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Teen Notebook",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#9795f0"), stringToColor("#fbc8d4")],
         [0.0, 1.0],
@@ -1089,15 +988,13 @@ class FlutterSweepGradients {
   /// 60. Polite Rumors
   static Gradient politeRumors({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Polite Rumors",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [
           stringToColor("#a7a6cb"),
@@ -1111,15 +1008,13 @@ class FlutterSweepGradients {
   /// 61. Sweet Period
   static Gradient sweetPeriod({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Sweet Period",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [
           stringToColor("#3f51b1"),
@@ -1139,15 +1034,13 @@ class FlutterSweepGradients {
   /// 62. Wide Matrix
   static Gradient wideMatrix({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Wide Matrix",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [
           stringToColor("#fcc5e4"),
@@ -1165,15 +1058,13 @@ class FlutterSweepGradients {
   /// 63. Soft Cherish
   static Gradient softCherish({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Soft Cherish",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [
           stringToColor("#dbdcd7"),
@@ -1192,15 +1083,13 @@ class FlutterSweepGradients {
   /// 64. Red Salvation
   static Gradient redSalvation({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Red Salvation",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#f43b47"), stringToColor("#453a94")],
         [0.0, 1.0],
@@ -1210,15 +1099,13 @@ class FlutterSweepGradients {
   /// 65. Burning Spring
   static Gradient burningSpring({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Burning Spring",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [
           stringToColor("#4fb576"),
@@ -1236,15 +1123,13 @@ class FlutterSweepGradients {
   /// 66. Night Party
   static Gradient nightParty({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Night Party",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#0250c5"), stringToColor("#d43f8d")],
         [0.0, 1.0],
@@ -1254,15 +1139,13 @@ class FlutterSweepGradients {
   /// 67. Sky Glider
   static Gradient skyGlider({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Sky Glider",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#88d3ce"), stringToColor("#6e45e2")],
         [0.0, 1.0],
@@ -1272,15 +1155,13 @@ class FlutterSweepGradients {
   /// 68. Heaven Peach
   static Gradient heavenPeach({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Heaven Peach",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#d9afd9"), stringToColor("#97d9e1")],
         [0.0, 1.0],
@@ -1290,15 +1171,13 @@ class FlutterSweepGradients {
   /// 69. Purple Division
   static Gradient purpleDivision({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Purple Division",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#7028e4"), stringToColor("#e5b2ca")],
         [0.0, 1.0],
@@ -1308,15 +1187,13 @@ class FlutterSweepGradients {
   /// 70. Aqua Splash
   static Gradient aquaSplash({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Aqua Splash",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -75.0,
         [stringToColor("#13547a"), stringToColor("#80d0c7")],
         [0.0, 1.0],
@@ -1326,15 +1203,13 @@ class FlutterSweepGradients {
   /// 72. Spiky Naga
   static Gradient spikyNaga({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Spiky Naga",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [
           stringToColor("#505285"),
@@ -1354,15 +1229,13 @@ class FlutterSweepGradients {
   /// 73. Love Kiss
   static Gradient loveKiss({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Love Kiss",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#ff0844"), stringToColor("#ffb199")],
         [0.0, 1.0],
@@ -1372,15 +1245,13 @@ class FlutterSweepGradients {
   /// 75. Clean Mirror
   static Gradient cleanMirror({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Clean Mirror",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -45.0,
         [stringToColor("#93a5cf"), stringToColor("#e4efe9")],
         [0.0, 1.0],
@@ -1390,15 +1261,13 @@ class FlutterSweepGradients {
   /// 76. Premium Dark
   static Gradient premiumDark({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Premium Dark",
         center,
-        startAngle,
-        endAngle,
+        radius,
         0.0,
         [stringToColor("#434343"), Colors.black],
         [0.0, 1.0],
@@ -1408,15 +1277,13 @@ class FlutterSweepGradients {
   /// 77. Cold Evening
   static Gradient coldEvening({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Cold Evening",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [
           stringToColor("#0c3483"),
@@ -1431,15 +1298,13 @@ class FlutterSweepGradients {
   /// 78. Cochiti Lake
   static Gradient cochitiLake({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Cochiti Lake",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -45.0,
         [stringToColor("#93a5cf"), stringToColor("#e4efe9")],
         [0.0, 1.0],
@@ -1449,15 +1314,13 @@ class FlutterSweepGradients {
   /// 79. Summer Games
   static Gradient summerGames({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Summer Games",
         center,
-        startAngle,
-        endAngle,
+        radius,
         0.0,
         [stringToColor("#92fe9d"), stringToColor("#00c9ff")],
         [0.0, 1.0],
@@ -1467,15 +1330,13 @@ class FlutterSweepGradients {
   /// 80. Passionate Bed
   static Gradient passionateBed({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Passionate Bed",
         center,
-        startAngle,
-        endAngle,
+        radius,
         0.0,
         [stringToColor("#ff758c"), stringToColor("#ff7eb3")],
         [0.0, 1.0],
@@ -1485,15 +1346,13 @@ class FlutterSweepGradients {
   /// 81. Mountain Rock
   static Gradient mountainRock({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Mountain Rock",
         center,
-        startAngle,
-        endAngle,
+        radius,
         0.0,
         [stringToColor("#868f96"), stringToColor("#596164")],
         [0.0, 1.0],
@@ -1503,15 +1362,13 @@ class FlutterSweepGradients {
   /// 82. Desert Hump
   static Gradient desertHump({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Desert Hump",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#c79081"), stringToColor("#dfa579")],
         [0.0, 1.0],
@@ -1521,15 +1378,13 @@ class FlutterSweepGradients {
   /// 83. Jungle Day
   static Gradient jungleDay({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Jungle Day",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -45.0,
         [stringToColor("#8baaaa"), stringToColor("#ae8b9c")],
         [0.0, 1.0],
@@ -1539,15 +1394,13 @@ class FlutterSweepGradients {
   /// 84. Phoenix Start
   static Gradient phoenixStart({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Phoenix Start",
         center,
-        startAngle,
-        endAngle,
+        radius,
         0.0,
         [stringToColor("#f83600"), stringToColor("#f9d423")],
         [0.0, 1.0],
@@ -1557,15 +1410,13 @@ class FlutterSweepGradients {
   /// 85. October Silence
   static Gradient octoberSilence({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "October Silence",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -110.0,
         [stringToColor("#b721ff"), stringToColor("#21d4fd")],
         [0.0, 1.0],
@@ -1575,15 +1426,13 @@ class FlutterSweepGradients {
   /// 86. Faraway River
   static Gradient farawayRiver({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Faraway River",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -110.0,
         [stringToColor("#6e45e2"), stringToColor("#88d3ce")],
         [0.0, 1.0],
@@ -1593,15 +1442,13 @@ class FlutterSweepGradients {
   /// 87. Alchemist Lab
   static Gradient alchemistLab({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Alchemist Lab",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -110.0,
         [stringToColor("#d558c8"), stringToColor("#24d292")],
         [0.0, 1.0],
@@ -1611,15 +1458,13 @@ class FlutterSweepGradients {
   /// 88. Over Sun
   static Gradient overSun({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Over Sun",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -30.0,
         [stringToColor("#abecd6"), stringToColor("#fbed96")],
         [0.0, 1.0],
@@ -1629,15 +1474,13 @@ class FlutterSweepGradients {
   /// 89. Premium White
   static Gradient premiumWhite({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Premium White",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [
           stringToColor("#d5d4d0"),
@@ -1653,15 +1496,13 @@ class FlutterSweepGradients {
   /// 90. Mars Party
   static Gradient marsParty({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Mars Party",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#5f72bd"), stringToColor("#9b23ea")],
         [0.0, 1.0],
@@ -1671,15 +1512,13 @@ class FlutterSweepGradients {
   /// 91. Eternal Constance
   static Gradient eternalConstance({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Eternal Constance",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#09203f"), stringToColor("#537895")],
         [0.0, 1.0],
@@ -1689,15 +1528,13 @@ class FlutterSweepGradients {
   /// 92. Japan Blush
   static Gradient japanBlush({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Japan Blush",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -110.0,
         [
           stringToColor("#ddd6f3"),
@@ -1711,15 +1548,13 @@ class FlutterSweepGradients {
   /// 93. Smiling Rain
   static Gradient smilingRain({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Smiling Rain",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -110.0,
         [stringToColor("#dcb0ed"), stringToColor("#99c99c")],
         [0.0, 1.0],
@@ -1729,15 +1564,13 @@ class FlutterSweepGradients {
   /// 94. Cloudy Apple
   static Gradient cloudyApple({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Cloudy Apple",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [
           stringToColor("#f3e7e9"),
@@ -1751,15 +1584,13 @@ class FlutterSweepGradients {
   /// 95. Big Mango
   static Gradient bigMango({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Big Mango",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#c71d6f"), stringToColor("#d09693")],
         [0.0, 1.0],
@@ -1769,15 +1600,13 @@ class FlutterSweepGradients {
   /// 96. Healthy Water
   static Gradient healthyWater({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Healthy Water",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -30.0,
         [stringToColor("#96deda"), stringToColor("#50c9c3")],
         [0.0, 1.0],
@@ -1787,15 +1616,13 @@ class FlutterSweepGradients {
   /// 97. Amour Amour
   static Gradient amourAmour({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Amour Amour",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [stringToColor("#f77062"), stringToColor("#fe5196")],
         [0.0, 1.0],
@@ -1805,15 +1632,13 @@ class FlutterSweepGradients {
   /// 98. Risky Concrete
   static Gradient riskyConcrete({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Risky Concrete",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -90.0,
         [
           stringToColor("#c4c5c7"),
@@ -1827,15 +1652,13 @@ class FlutterSweepGradients {
   /// 99. Strong Stick
   static Gradient strongStick({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Strong Stick",
         center,
-        startAngle,
-        endAngle,
+        radius,
         0.0,
         [stringToColor("#a8caba"), stringToColor("#5d4157")],
         [0.0, 1.0],
@@ -1845,15 +1668,13 @@ class FlutterSweepGradients {
   /// 100. Vicious Stance
   static Gradient viciousStance({
     AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
+    double radius,
     TileMode tileMode,
   }) =>
-      sweep(
+      radial(
         "Vicious Stance",
         center,
-        startAngle,
-        endAngle,
+        radius,
         -30.0,
         [stringToColor("#29323c"), stringToColor("#485563")],
         [0.0, 1.0],

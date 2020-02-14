@@ -7,13 +7,6 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-    var list = FlutterLinearGradient.names();
-=======
-    var list = FlutterLinearGradients.names();
->>>>>>> master
-    list.sort();
-
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -21,44 +14,13 @@ class MyApp extends StatelessWidget {
           title: const Text('Flutter Gradients'),
         ),
         body: Center(
-          child: GridView.count(
-            crossAxisCount: 3,
-            children: List.generate(list.length, (index) {
-              return Container(
-                width: 200,
-                height: 200,
-                child: Card(
-                  elevation: 3,
-                  child: Padding(
-                    padding: EdgeInsets.only(top: 8),
-                    child: Column(
-                      children: <Widget>[
-                        Center(
-                          child: Text(
-                            list[index],
-                            style: TextStyle(
-                              fontSize: 18,
-                            ),
-                          ),
-                        ),
-                        Container(
-                          width: 150,
-                          height: 150,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-<<<<<<< HEAD
-                            gradient: FlutterLinearGradient.find(list[index]),
-=======
-                            gradient: FlutterLinearGradients.find(list[index]),
->>>>>>> master
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              );
-            }),
+          child: Container(
+            width: 300,
+            height: 300,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              gradient: FlutterGradients.warmFlame(type: GradientType.sweep),
+            ),
           ),
         ),
       ),
