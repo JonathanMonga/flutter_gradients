@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
                           height: 150,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            gradient: FlutterGradient.find(list[index]),
+                            gradient: FlutterGradients.find(list[index]),
                           ),
                         ),
                       ],
