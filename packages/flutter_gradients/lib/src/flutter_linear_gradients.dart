@@ -23,7 +23,7 @@ import 'package:flutter_gradients/src/create_linear_gradient.dart';
 /// ```
 /// FlutterGradient.warmFlame(tileMode = TileMode.clamp),
 /// ```
-class FlutterGradient {
+class FlutterLinearGradients {
   static LinearGradient linear(String name, double angle, List<Color> colors,
           List<double> stops, TileMode tileMode) =>
       create(

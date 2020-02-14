@@ -7,7 +7,7 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var list = FlutterGradient.names();
+    var list = FlutterLinearGradients.names();
     list.sort();
 
     return MaterialApp(
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
                           height: 150,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            gradient: FlutterGradient.find(list[index]),
+                            gradient: FlutterLinearGradients.find(list[index]),
                           ),
                         ),
                       ],
