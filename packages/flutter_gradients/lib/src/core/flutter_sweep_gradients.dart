@@ -4,9 +4,11 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_gradients/src/core/hex.dart';
 import 'package:flutter_gradients/src/core/create_sweep_gradient.dart';
 
-/// A facade class that contains all the methodes that generate a SweepGradient.
+/// A facade class that contains all the methodes that generate a `SweepGradient`,
+/// and it required to set the gradient type to `GradientType.sweep`, because by
+/// default it sets to `GradientType.linear`
 ///
-/// Sample code to use within an image:
+/// Sample code to use :
 ///
 /// ```
 /// Container(
@@ -14,9 +16,14 @@ import 'package:flutter_gradients/src/core/create_sweep_gradient.dart';
 ///   height: 150,
 ///   decoration: BoxDecoration(
 ///     shape: BoxShape.circle,
-///     gradient: FlutterGradient.warmFlame(),
+///     gradient: FlutterGradient.warmFlame(type: GradientType.sweep),
 ///   ),
 /// ),
+/// ```
+/// You can set also the `tileMode`, that by default is set on `TileMode.repeated`
+///
+/// ```
+/// FlutterGradient.warmFlame(type: GradientType.sweep, tileMode = TileMode.clamp),
 /// ```
 class FlutterSweepGradients {
   static SweepGradient sweep(

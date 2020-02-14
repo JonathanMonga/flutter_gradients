@@ -4,9 +4,9 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_gradients/src/core/hex.dart';
 import 'package:flutter_gradients/src/core/create_linear_gradient.dart';
 
-/// A facade class that contains all the methodes that generate a LinearGradient.
+/// A facade class that contains all the methodes that generate a `LinearGradient`.
 ///
-/// Sample code to use within an image:
+/// Sample code to use :
 ///
 /// ```
 /// Container(
@@ -24,8 +24,13 @@ import 'package:flutter_gradients/src/core/create_linear_gradient.dart';
 /// FlutterGradient.warmFlame(tileMode = TileMode.clamp),
 /// ```
 class FlutterLinearGradients {
-  static LinearGradient linear(String name, double angle, List<Color> colors,
-          List<double> stops, TileMode tileMode) =>
+  static LinearGradient linear(
+    String name,
+    double angle,
+    List<Color> colors,
+    List<double> stops,
+    TileMode tileMode,
+  ) =>
       create(
         angle,
         colors,
@@ -56,8 +61,7 @@ class FlutterLinearGradients {
       );
 
   /// 3. Spring Warmth
-  static Gradient springWarmth({TileMode tileMode}) =>
-      linear(
+  static Gradient springWarmth({TileMode tileMode}) => linear(
         "Spring Warmth",
         -90.0,
         [
@@ -79,8 +83,7 @@ class FlutterLinearGradients {
       );
 
   /// 5. Young Passion
-  static Gradient youngPassion({TileMode tileMode}) =>
-      linear(
+  static Gradient youngPassion({TileMode tileMode}) => linear(
         "Young Passion",
         0.0,
         [
@@ -109,8 +112,7 @@ class FlutterLinearGradients {
       );
 
   /// 7. Sunny Morning
-  static Gradient sunnyMorning({TileMode tileMode}) =>
-      linear(
+  static Gradient sunnyMorning({TileMode tileMode}) => linear(
         "Sunny Morning",
         30.0,
         [stringToColor("#f6d365"), stringToColor("#fda085")],
@@ -119,8 +121,7 @@ class FlutterLinearGradients {
       );
 
   /// 8. Rainy Ashville
-  static Gradient rainyAshville({TileMode tileMode}) =>
-      linear(
+  static Gradient rainyAshville({TileMode tileMode}) => linear(
         "Rainy Ashville",
         -90.0,
         [stringToColor("#fbc2eb"), stringToColor("#a6c1ee")],
@@ -129,8 +130,7 @@ class FlutterLinearGradients {
       );
 
   /// 9. Frozen Dreams
-  static Gradient frozenDreams({TileMode tileMode}) =>
-      linear(
+  static Gradient frozenDreams({TileMode tileMode}) => linear(
         "Frozen Dreams",
         -90.0,
         [
@@ -161,8 +161,7 @@ class FlutterLinearGradients {
       );
 
   /// 12. Tempting Azure
-  static Gradient temptingAzure({TileMode tileMode}) =>
-      linear(
+  static Gradient temptingAzure({TileMode tileMode}) => linear(
         "Tempting Azure",
         30.0,
         [stringToColor("#84fab0"), stringToColor("#8fd3f4")],
@@ -207,8 +206,7 @@ class FlutterLinearGradients {
       );
 
   /// 17. Ripe Malinka
-  static Gradient ripeMalinka({TileMode tileMode}) =>
-      linear(
+  static Gradient ripeMalinka({TileMode tileMode}) => linear(
         "Ripe Malinka",
         30.0,
         [stringToColor("#f093fb"), stringToColor("#f5576c")],
@@ -217,8 +215,7 @@ class FlutterLinearGradients {
       );
 
   /// 18. Cloudy Knoxville
-  static Gradient cloudyKnoxville({TileMode tileMode}) =>
-      linear(
+  static Gradient cloudyKnoxville({TileMode tileMode}) => linear(
         "Cloudy Knoxville",
         30.0,
         [stringToColor("#fdfbfb"), stringToColor("#ebedee")],
@@ -227,8 +224,7 @@ class FlutterLinearGradients {
       );
 
   /// 19. Malibu Beach
-  static Gradient malibuBeach({TileMode tileMode}) =>
-      linear(
+  static Gradient malibuBeach({TileMode tileMode}) => linear(
         "Malibu Beach",
         0.0,
         [stringToColor("#4facfe"), stringToColor("#00f2fe")],
@@ -255,8 +251,7 @@ class FlutterLinearGradients {
       );
 
   /// 22. Morpheus Den
-  static Gradient morpheusDen({TileMode tileMode}) =>
-      linear(
+  static Gradient morpheusDen({TileMode tileMode}) => linear(
         "Morpheus Den",
         -90.0,
         [stringToColor("#30cfd0"), stringToColor("#330867")],
@@ -292,8 +287,7 @@ class FlutterLinearGradients {
       );
 
   /// 26. Saint Petersburg
-  static Gradient saintPetersburg({TileMode tileMode}) =>
-      linear(
+  static Gradient saintPetersburg({TileMode tileMode}) => linear(
         "Saint Petersburg",
         45.0,
         [stringToColor("#f5f7fa"), stringToColor("#c3cfe2")],
@@ -311,8 +305,7 @@ class FlutterLinearGradients {
       );
 
   /// 29. Everlasting Sky
-  static Gradient everlastingSky({TileMode tileMode}) =>
-      linear(
+  static Gradient everlastingSky({TileMode tileMode}) => linear(
         "Everlasting Sky",
         45.0,
         [stringToColor("#fdfcfb"), stringToColor("#e2d1c3")],
@@ -321,8 +314,7 @@ class FlutterLinearGradients {
       );
 
   /// 30. Happy Fisher
-  static Gradient happyFisher({TileMode tileMode}) =>
-      linear(
+  static Gradient happyFisher({TileMode tileMode}) => linear(
         "Happy Fisher",
         30.0,
         [stringToColor("#89f7fe"), stringToColor("#66a6ff")],
@@ -340,8 +332,7 @@ class FlutterLinearGradients {
       );
 
   /// 32. Sharpeye Eagle
-  static Gradient sharpeyeEagle({TileMode tileMode}) =>
-      linear(
+  static Gradient sharpeyeEagle({TileMode tileMode}) => linear(
         "Sharpeye Eagle",
         -90.0,
         [stringToColor("#9890e3"), stringToColor("#b1f4cf")],
@@ -350,8 +341,7 @@ class FlutterLinearGradients {
       );
 
   /// 33. Ladoga Bottom
-  static Gradient ladogaBottom({TileMode tileMode}) =>
-      linear(
+  static Gradient ladogaBottom({TileMode tileMode}) => linear(
         "Ladoga Bottom",
         -90.0,
         [stringToColor("#ebc0fd"), stringToColor("#d9ded8")],
@@ -369,8 +359,7 @@ class FlutterLinearGradients {
       );
 
   /// 35. Itmeo Branding
-  static Gradient itmeoBranding({TileMode tileMode}) =>
-      linear(
+  static Gradient itmeoBranding({TileMode tileMode}) => linear(
         "Itmeo Branding",
         90.0,
         [stringToColor("#2af598"), stringToColor("#009efd")],
@@ -379,8 +368,7 @@ class FlutterLinearGradients {
       );
 
   /// 36. Zeus Miracle
-  static Gradient zeusMiracle({TileMode tileMode}) =>
-      linear(
+  static Gradient zeusMiracle({TileMode tileMode}) => linear(
         "Zeus Miracle",
         -90.0,
         [stringToColor("#cd9cf2"), stringToColor("#f6f3ff")],
@@ -439,8 +427,7 @@ class FlutterLinearGradients {
       );
 
   /// 42. Awesome Pine
-  static Gradient awesomePine({TileMode tileMode}) =>
-      linear(
+  static Gradient awesomePine({TileMode tileMode}) => linear(
         "Awesome Pine",
         -90.0,
         [stringToColor("#ebbba7"), stringToColor("#cfc7f8")],
@@ -491,8 +478,7 @@ class FlutterLinearGradients {
       );
 
   /// 48. Strong Bliss
-  static Gradient strongBliss({TileMode tileMode}) =>
-      linear(
+  static Gradient strongBliss({TileMode tileMode}) => linear(
         "Strong Bliss",
         0.0,
         [
@@ -524,8 +510,7 @@ class FlutterLinearGradients {
       );
 
   /// 51. February Ink
-  static Gradient februaryInk({TileMode tileMode}) =>
-      linear(
+  static Gradient februaryInk({TileMode tileMode}) => linear(
         "February Ink",
         -90.0,
         [stringToColor("#accbee"), stringToColor("#e7f0fd")],
@@ -579,8 +564,7 @@ class FlutterLinearGradients {
       );
 
   /// 57. Dirty Beauty
-  static Gradient dirtyBeauty({TileMode tileMode}) =>
-      linear(
+  static Gradient dirtyBeauty({TileMode tileMode}) => linear(
         "Dirty Beauty",
         -90.0,
         [stringToColor("#6a85b6"), stringToColor("#bac8e0")],
@@ -598,8 +582,7 @@ class FlutterLinearGradients {
       );
 
   /// 59. Teen Notebook
-  static Gradient teenNotebook({TileMode tileMode}) =>
-      linear(
+  static Gradient teenNotebook({TileMode tileMode}) => linear(
         "Teen Notebook",
         -90.0,
         [stringToColor("#9795f0"), stringToColor("#fbc8d4")],
@@ -608,8 +591,7 @@ class FlutterLinearGradients {
       );
 
   /// 60. Polite Rumors
-  static Gradient politeRumors({TileMode tileMode}) =>
-      linear(
+  static Gradient politeRumors({TileMode tileMode}) => linear(
         "Polite Rumors",
         -90.0,
         [
@@ -622,8 +604,7 @@ class FlutterLinearGradients {
       );
 
   /// 61. Sweet Period
-  static Gradient sweetPeriod({TileMode tileMode}) =>
-      linear(
+  static Gradient sweetPeriod({TileMode tileMode}) => linear(
         "Sweet Period",
         -90.0,
         [
@@ -659,8 +640,7 @@ class FlutterLinearGradients {
       );
 
   /// 63. Soft Cherish
-  static Gradient softCherish({TileMode tileMode}) =>
-      linear(
+  static Gradient softCherish({TileMode tileMode}) => linear(
         "Soft Cherish",
         -90.0,
         [
@@ -678,8 +658,7 @@ class FlutterLinearGradients {
       );
 
   /// 64. Red Salvation
-  static Gradient redSalvation({TileMode tileMode}) =>
-      linear(
+  static Gradient redSalvation({TileMode tileMode}) => linear(
         "Red Salvation",
         -90.0,
         [stringToColor("#f43b47"), stringToColor("#453a94")],
@@ -688,8 +667,7 @@ class FlutterLinearGradients {
       );
 
   /// 65. Burning Spring
-  static Gradient burningSpring({TileMode tileMode}) =>
-      linear(
+  static Gradient burningSpring({TileMode tileMode}) => linear(
         "Burning Spring",
         -90.0,
         [
@@ -724,8 +702,7 @@ class FlutterLinearGradients {
       );
 
   /// 68. Heaven Peach
-  static Gradient heavenPeach({TileMode tileMode}) =>
-      linear(
+  static Gradient heavenPeach({TileMode tileMode}) => linear(
         "Heaven Peach",
         -90.0,
         [stringToColor("#d9afd9"), stringToColor("#97d9e1")],
@@ -734,8 +711,7 @@ class FlutterLinearGradients {
       );
 
   /// 69. Purple Division
-  static Gradient purpleDivision({TileMode tileMode}) =>
-      linear(
+  static Gradient purpleDivision({TileMode tileMode}) => linear(
         "Purple Division",
         -90.0,
         [stringToColor("#7028e4"), stringToColor("#e5b2ca")],
@@ -781,8 +757,7 @@ class FlutterLinearGradients {
       );
 
   /// 75. Clean Mirror
-  static Gradient cleanMirror({TileMode tileMode}) =>
-      linear(
+  static Gradient cleanMirror({TileMode tileMode}) => linear(
         "Clean Mirror",
         -45.0,
         [stringToColor("#93a5cf"), stringToColor("#e4efe9")],
@@ -791,8 +766,7 @@ class FlutterLinearGradients {
       );
 
   /// 76. Premium Dark
-  static Gradient premiumDark({TileMode tileMode}) =>
-      linear(
+  static Gradient premiumDark({TileMode tileMode}) => linear(
         "Premium Dark",
         0.0,
         [stringToColor("#434343"), Colors.black],
@@ -801,8 +775,7 @@ class FlutterLinearGradients {
       );
 
   /// 77. Cold Evening
-  static Gradient coldEvening({TileMode tileMode}) =>
-      linear(
+  static Gradient coldEvening({TileMode tileMode}) => linear(
         "Cold Evening",
         -90.0,
         [
@@ -816,8 +789,7 @@ class FlutterLinearGradients {
       );
 
   /// 78. Cochiti Lake
-  static Gradient cochitiLake({TileMode tileMode}) =>
-      linear(
+  static Gradient cochitiLake({TileMode tileMode}) => linear(
         "Cochiti Lake",
         -45.0,
         [stringToColor("#93a5cf"), stringToColor("#e4efe9")],
@@ -826,8 +798,7 @@ class FlutterLinearGradients {
       );
 
   /// 79. Summer Games
-  static Gradient summerGames({TileMode tileMode}) =>
-      linear(
+  static Gradient summerGames({TileMode tileMode}) => linear(
         "Summer Games",
         0.0,
         [stringToColor("#92fe9d"), stringToColor("#00c9ff")],
@@ -836,8 +807,7 @@ class FlutterLinearGradients {
       );
 
   /// 80. Passionate Bed
-  static Gradient passionateBed({TileMode tileMode}) =>
-      linear(
+  static Gradient passionateBed({TileMode tileMode}) => linear(
         "Passionate Bed",
         0.0,
         [stringToColor("#ff758c"), stringToColor("#ff7eb3")],
@@ -846,8 +816,7 @@ class FlutterLinearGradients {
       );
 
   /// 81. Mountain Rock
-  static Gradient mountainRock({TileMode tileMode}) =>
-      linear(
+  static Gradient mountainRock({TileMode tileMode}) => linear(
         "Mountain Rock",
         0.0,
         [stringToColor("#868f96"), stringToColor("#596164")],
@@ -874,8 +843,7 @@ class FlutterLinearGradients {
       );
 
   /// 84. Phoenix Start
-  static Gradient phoenixStart({TileMode tileMode}) =>
-      linear(
+  static Gradient phoenixStart({TileMode tileMode}) => linear(
         "Phoenix Start",
         0.0,
         [stringToColor("#f83600"), stringToColor("#f9d423")],
@@ -884,8 +852,7 @@ class FlutterLinearGradients {
       );
 
   /// 85. October Silence
-  static Gradient octoberSilence({TileMode tileMode}) =>
-      linear(
+  static Gradient octoberSilence({TileMode tileMode}) => linear(
         "October Silence",
         -110.0,
         [stringToColor("#b721ff"), stringToColor("#21d4fd")],
@@ -894,8 +861,7 @@ class FlutterLinearGradients {
       );
 
   /// 86. Faraway River
-  static Gradient farawayRiver({TileMode tileMode}) =>
-      linear(
+  static Gradient farawayRiver({TileMode tileMode}) => linear(
         "Faraway River",
         -110.0,
         [stringToColor("#6e45e2"), stringToColor("#88d3ce")],
@@ -904,8 +870,7 @@ class FlutterLinearGradients {
       );
 
   /// 87. Alchemist Lab
-  static Gradient alchemistLab({TileMode tileMode}) =>
-      linear(
+  static Gradient alchemistLab({TileMode tileMode}) => linear(
         "Alchemist Lab",
         -110.0,
         [stringToColor("#d558c8"), stringToColor("#24d292")],
@@ -923,8 +888,7 @@ class FlutterLinearGradients {
       );
 
   /// 89. Premium White
-  static Gradient premiumWhite({TileMode tileMode}) =>
-      linear(
+  static Gradient premiumWhite({TileMode tileMode}) => linear(
         "Premium White",
         -90.0,
         [
@@ -948,8 +912,7 @@ class FlutterLinearGradients {
       );
 
   /// 91. Eternal Constance
-  static Gradient eternalConstance({TileMode tileMode}) =>
-      linear(
+  static Gradient eternalConstance({TileMode tileMode}) => linear(
         "Eternal Constance",
         -90.0,
         [stringToColor("#09203f"), stringToColor("#537895")],
@@ -971,8 +934,7 @@ class FlutterLinearGradients {
       );
 
   /// 93. Smiling Rain
-  static Gradient smilingRain({TileMode tileMode}) =>
-      linear(
+  static Gradient smilingRain({TileMode tileMode}) => linear(
         "Smiling Rain",
         -110.0,
         [stringToColor("#dcb0ed"), stringToColor("#99c99c")],
@@ -981,8 +943,7 @@ class FlutterLinearGradients {
       );
 
   /// 94. Cloudy Apple
-  static Gradient cloudyApple({TileMode tileMode}) =>
-      linear(
+  static Gradient cloudyApple({TileMode tileMode}) => linear(
         "Cloudy Apple",
         -90.0,
         [
@@ -1004,8 +965,7 @@ class FlutterLinearGradients {
       );
 
   /// 96. Healthy Water
-  static Gradient healthyWater({TileMode tileMode}) =>
-      linear(
+  static Gradient healthyWater({TileMode tileMode}) => linear(
         "Healthy Water",
         -30.0,
         [stringToColor("#96deda"), stringToColor("#50c9c3")],
@@ -1023,8 +983,7 @@ class FlutterLinearGradients {
       );
 
   /// 98. Risky Concrete
-  static Gradient riskyConcrete({TileMode tileMode}) =>
-      linear(
+  static Gradient riskyConcrete({TileMode tileMode}) => linear(
         "Risky Concrete",
         -90.0,
         [
@@ -1037,8 +996,7 @@ class FlutterLinearGradients {
       );
 
   /// 99. Strong Stick
-  static Gradient strongStick({TileMode tileMode}) =>
-      linear(
+  static Gradient strongStick({TileMode tileMode}) => linear(
         "Strong Stick",
         0.0,
         [stringToColor("#a8caba"), stringToColor("#5d4157")],
@@ -1047,8 +1005,7 @@ class FlutterLinearGradients {
       );
 
   /// 100. Vicious Stance
-  static Gradient viciousStance({TileMode tileMode}) =>
-      linear(
+  static Gradient viciousStance({TileMode tileMode}) => linear(
         "Vicious Stance",
         -30.0,
         [stringToColor("#29323c"), stringToColor("#485563")],
@@ -1066,8 +1023,7 @@ class FlutterLinearGradients {
       );
 
   /// 102. Happy Memories
-  static Gradient happyMemories({TileMode tileMode}) =>
-      linear(
+  static Gradient happyMemories({TileMode tileMode}) => linear(
         "Happy Memories",
         -150.0,
         [stringToColor("#ff5858"), stringToColor("#f09819")],
@@ -1076,8 +1032,7 @@ class FlutterLinearGradients {
       );
 
   /// 103. Midnight Bloom
-  static Gradient midnightBloom({TileMode tileMode}) =>
-      linear(
+  static Gradient midnightBloom({TileMode tileMode}) => linear(
         "Midnight Bloom",
         -110.0,
         [stringToColor("#2b5876"), stringToColor("#4e4376")],
@@ -1086,8 +1041,7 @@ class FlutterLinearGradients {
       );
 
   /// 104. Crystalline
-  static Gradient crystalline({TileMode tileMode}) =>
-      linear(
+  static Gradient crystalline({TileMode tileMode}) => linear(
         "Crystalline",
         -110.0,
         [stringToColor("#00cdac"), stringToColor("#8ddad5")],
@@ -1105,8 +1059,7 @@ class FlutterLinearGradients {
       );
 
   /// 107. Confident Cloud
-  static Gradient confidentCloud({TileMode tileMode}) =>
-      linear(
+  static Gradient confidentCloud({TileMode tileMode}) => linear(
         "Confident Cloud",
         -90.0,
         [
@@ -1137,8 +1090,7 @@ class FlutterLinearGradients {
       );
 
   /// 110. Frozen Berry
-  static Gradient frozenBerry({TileMode tileMode}) =>
-      linear(
+  static Gradient frozenBerry({TileMode tileMode}) => linear(
         "Frozen Berry",
         -90.0,
         [stringToColor("#e8198b"), stringToColor("#c7eafd")],
@@ -1156,8 +1108,7 @@ class FlutterLinearGradients {
       );
 
   /// 113. Flying Lemon
-  static Gradient flyingLemon({TileMode tileMode}) =>
-      linear(
+  static Gradient flyingLemon({TileMode tileMode}) => linear(
         "Flying Lemon",
         -30.0,
         [stringToColor("#64b3f4"), stringToColor("#c2e59c")],
@@ -1166,8 +1117,7 @@ class FlutterLinearGradients {
       );
 
   /// 114. New Retrowave
-  static Gradient newRetrowave({TileMode tileMode}) =>
-      linear(
+  static Gradient newRetrowave({TileMode tileMode}) => linear(
         "New Retrowave",
         -90.0,
         [
@@ -1180,8 +1130,7 @@ class FlutterLinearGradients {
       );
 
   /// 115. Hidden Jaguar
-  static Gradient hiddenJaguar({TileMode tileMode}) =>
-      linear(
+  static Gradient hiddenJaguar({TileMode tileMode}) => linear(
         "Hidden Jaguar",
         -90.0,
         [stringToColor("#0fd850"), stringToColor("#f9f047")],
@@ -1190,8 +1139,7 @@ class FlutterLinearGradients {
       );
 
   /// 116. Above The Sky
-  static Gradient aboveTheSky({TileMode tileMode}) =>
-      linear(
+  static Gradient aboveTheSky({TileMode tileMode}) => linear(
         "Above The Sky",
         -90.0,
         [
@@ -1251,8 +1199,7 @@ class FlutterLinearGradients {
       );
 
   /// 122. Cheerful Caramel
-  static Gradient cheerfulCaramel({TileMode tileMode}) =>
-      linear(
+  static Gradient cheerfulCaramel({TileMode tileMode}) => linear(
         "Cheerful Caramel",
         -90.0,
         [stringToColor("#e6b980"), stringToColor("#eacda3")],
@@ -1296,8 +1243,7 @@ class FlutterLinearGradients {
       );
 
   /// 126. Colorful Peach
-  static Gradient colorfulPeach({TileMode tileMode}) =>
-      linear(
+  static Gradient colorfulPeach({TileMode tileMode}) => linear(
         "Colorful Peach",
         0.0,
         [stringToColor("#ed6ea0"), stringToColor("#ec8c69")],
@@ -1324,8 +1270,7 @@ class FlutterLinearGradients {
       );
 
   /// 129. Happy Unicorn
-  static Gradient happyUnicorn({TileMode tileMode}) =>
-      linear(
+  static Gradient happyUnicorn({TileMode tileMode}) => linear(
         "Happy Unicorn",
         -90.0,
         [stringToColor("#b3ffab"), stringToColor("#12fff7")],
@@ -1334,8 +1279,7 @@ class FlutterLinearGradients {
       );
 
   /// 131. African Field
-  static Gradient africanField({TileMode tileMode}) =>
-      linear(
+  static Gradient africanField({TileMode tileMode}) => linear(
         "African Field",
         -90.0,
         [
@@ -1359,8 +1303,7 @@ class FlutterLinearGradients {
       );
 
   /// 133. Orange Juice
-  static Gradient orangeJuice({TileMode tileMode}) =>
-      linear(
+  static Gradient orangeJuice({TileMode tileMode}) => linear(
         "Orange Juice",
         -110.0,
         [stringToColor("#fc6076"), stringToColor("#ff9a44")],
@@ -1378,8 +1321,7 @@ class FlutterLinearGradients {
       );
 
   /// 136. North Miracle
-  static Gradient northMiracle({TileMode tileMode}) =>
-      linear(
+  static Gradient northMiracle({TileMode tileMode}) => linear(
         "North Miracle",
         0.0,
         [stringToColor("#00dbde"), stringToColor("#fc00ff")],
@@ -1397,8 +1339,7 @@ class FlutterLinearGradients {
       );
 
   /// 138. Millennium Pine
-  static Gradient millenniumPine({TileMode tileMode}) =>
-      linear(
+  static Gradient millenniumPine({TileMode tileMode}) => linear(
         "Millennium Pine",
         -90.0,
         [stringToColor("#50cc7f"), stringToColor("#f5d100")],
@@ -1448,8 +1389,7 @@ class FlutterLinearGradients {
       );
 
   /// 144. Royal Garden
-  static Gradient royalGarden({TileMode tileMode}) =>
-      linear(
+  static Gradient royalGarden({TileMode tileMode}) => linear(
         "Royal Garden",
         0.0,
         [stringToColor("#ed6ea0"), stringToColor("#ec8c69")],
@@ -1476,8 +1416,7 @@ class FlutterLinearGradients {
       );
 
   /// 147. Smart Indigo
-  static Gradient smartIndigo({TileMode tileMode}) =>
-      linear(
+  static Gradient smartIndigo({TileMode tileMode}) => linear(
         "Smart Indigo",
         -90.0,
         [stringToColor("#b224ef"), stringToColor("#7579ff")],
@@ -1499,8 +1438,7 @@ class FlutterLinearGradients {
       );
 
   /// 149. Norse Beauty
-  static Gradient norseBeauty({TileMode tileMode}) =>
-      linear(
+  static Gradient norseBeauty({TileMode tileMode}) => linear(
         "Norse Beauty",
         0.0,
         [stringToColor("#ec77ab"), stringToColor("#7873f5")],
@@ -1509,8 +1447,7 @@ class FlutterLinearGradients {
       );
 
   /// 150. Aqua Guidance
-  static Gradient aquaGuidance({TileMode tileMode}) =>
-      linear(
+  static Gradient aquaGuidance({TileMode tileMode}) => linear(
         "Aqua Guidance",
         -90.0,
         [stringToColor("#007adf"), stringToColor("#00ecbc")],
@@ -1554,8 +1491,7 @@ class FlutterLinearGradients {
       );
 
   /// 154. Grass Shampoo
-  static Gradient grassShampoo({TileMode tileMode}) =>
-      linear(
+  static Gradient grassShampoo({TileMode tileMode}) => linear(
         "Grass Shampoo",
         -315.0,
         [
@@ -1568,8 +1504,7 @@ class FlutterLinearGradients {
       );
 
   /// 155. Landing Aircraft
-  static Gradient landingAircraft({TileMode tileMode}) =>
-      linear(
+  static Gradient landingAircraft({TileMode tileMode}) => linear(
         "Landing Aircraft",
         -315.0,
         [
@@ -1591,8 +1526,7 @@ class FlutterLinearGradients {
       );
 
   /// 157. Sleepless Night
-  static Gradient sleeplessNight({TileMode tileMode}) =>
-      linear(
+  static Gradient sleeplessNight({TileMode tileMode}) => linear(
         "Sleepless Night",
         -315.0,
         [
@@ -1618,8 +1552,7 @@ class FlutterLinearGradients {
       );
 
   /// 159. Crystal River
-  static Gradient crystalRiver({TileMode tileMode}) =>
-      linear(
+  static Gradient crystalRiver({TileMode tileMode}) => linear(
         "Crystal River",
         -315.0,
         [
@@ -1632,8 +1565,7 @@ class FlutterLinearGradients {
       );
 
   /// 160. Soft Lipstick
-  static Gradient softLipstick({TileMode tileMode}) =>
-      linear(
+  static Gradient softLipstick({TileMode tileMode}) => linear(
         "Soft Lipstick",
         -315.0,
         [stringToColor("#B6CEE8"), stringToColor("#F578DC")],
@@ -1642,8 +1574,7 @@ class FlutterLinearGradients {
       );
 
   /// 161. Salt Mountain
-  static Gradient saltMountain({TileMode tileMode}) =>
-      linear(
+  static Gradient saltMountain({TileMode tileMode}) => linear(
         "Salt Mountain",
         -315.0,
         [stringToColor("#FFFEFF"), stringToColor("#D7FFFE")],
@@ -1652,8 +1583,7 @@ class FlutterLinearGradients {
       );
 
   /// 162. Perfect White
-  static Gradient perfectWhite({TileMode tileMode}) =>
-      linear(
+  static Gradient perfectWhite({TileMode tileMode}) => linear(
         "Perfect White",
         -315.0,
         [stringToColor("#E3FDF5"), stringToColor("#FFE6FA")],
@@ -1671,8 +1601,7 @@ class FlutterLinearGradients {
       );
 
   /// 164. Strict November
-  static Gradient strictNovember({TileMode tileMode}) =>
-      linear(
+  static Gradient strictNovember({TileMode tileMode}) => linear(
         "Strict November",
         -315.0,
         [stringToColor("#CBBACC"), stringToColor("#2580B3")],
@@ -1681,8 +1610,7 @@ class FlutterLinearGradients {
       );
 
   /// 165. Morning Salad
-  static Gradient morningSalad({TileMode tileMode}) =>
-      linear(
+  static Gradient morningSalad({TileMode tileMode}) => linear(
         "Morning Salad",
         -315.0,
         [stringToColor("#B7F8DB"), stringToColor("#50A7C2")],
@@ -1782,8 +1710,7 @@ class FlutterLinearGradients {
       );
 
   /// 173. Sugar Lollipop
-  static Gradient sugarLollipop({TileMode tileMode}) =>
-      linear(
+  static Gradient sugarLollipop({TileMode tileMode}) => linear(
         "Sugar Lollipop",
         -315.0,
         [
@@ -1796,8 +1723,7 @@ class FlutterLinearGradients {
       );
 
   /// 174. Sweet Dessert
-  static Gradient sweetDessert({TileMode tileMode}) =>
-      linear(
+  static Gradient sweetDessert({TileMode tileMode}) => linear(
         "Sweet Dessert",
         -315.0,
         [
@@ -1849,8 +1775,7 @@ class FlutterLinearGradients {
       );
 
   /// 178. Gagarin View
-  static Gradient gagarinView({TileMode tileMode}) =>
-      linear(
+  static Gradient gagarinView({TileMode tileMode}) => linear(
         "Gagarin View",
         -315.0,
         [
@@ -1863,8 +1788,7 @@ class FlutterLinearGradients {
       );
 
   /// 179. Fabled Sunset
-  static Gradient fabledSunset({TileMode tileMode}) =>
-      linear(
+  static Gradient fabledSunset({TileMode tileMode}) => linear(
         "Fabled Sunset",
         -315.0,
         [
@@ -1878,8 +1802,7 @@ class FlutterLinearGradients {
       );
 
   /// 180. Perfect Blue
-  static Gradient perfectBlue({TileMode tileMode}) =>
-      linear(
+  static Gradient perfectBlue({TileMode tileMode}) => linear(
         "Perfect Blue",
         -315.0,
         [
