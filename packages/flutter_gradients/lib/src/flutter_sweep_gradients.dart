@@ -4,6 +4,20 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_gradients/src/hex.dart';
 import 'package:flutter_gradients/src/create_linear_gradient.dart';
 
+/// A facade class that contains all the methodes that generate a SweepGradient.
+///
+/// Sample code to use within an image:
+///
+/// ```
+/// Container(
+///   width: 150,
+///   height: 150,
+///   decoration: BoxDecoration(
+///     shape: BoxShape.circle,
+///     gradient: FlutterGradient.warmFlame(),
+///   ),
+/// ),
+/// ```
 class FlutterGradient {
   static LinearGradient linear(
           String name, double angle, List<Color> colors, List<double> stops) =>
