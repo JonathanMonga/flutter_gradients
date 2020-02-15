@@ -1519,2150 +1519,2805 @@ class FlutterGradients {
       return FlutterLinearGradients.politeRumors(tileMode: tileMode);
   }
 
-  /// 61. Sweet Period
-  static Gradient sweetPeriod({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Sweet Period",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [
-          stringToColor("#3f51b1"),
-          stringToColor("#5a55ae"),
-          stringToColor("#7b5fac"),
-          stringToColor("#8f6aae"),
-          stringToColor("#a86aa4"),
-          stringToColor("#cc6b8e"),
-          stringToColor("#f18271"),
-          stringToColor("#f3a469"),
-          stringToColor("#f7c978")
-        ],
-        [0.0, 0.13, 0.25, 0.38, 0.5, 0.62, 0.75, 0.87, 1.0],
-        tileMode,
+  /// Sweet Period
+  static Gradient sweetPeriod(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.sweetPeriod(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
-
-  /// 62. Wide Matrix
-  static Gradient wideMatrix({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Wide Matrix",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [
-          stringToColor("#fcc5e4"),
-          stringToColor("#fda34b"),
-          stringToColor("#ff7882"),
-          stringToColor("#c8699e"),
-          stringToColor("#7046aa"),
-          stringToColor("#0c1db8"),
-          stringToColor("#020f75")
-        ],
-        [0.0, 0.15, 0.35, 0.52, 0.71, 0.87, 1.0],
-        tileMode,
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.sweetPeriod(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
       );
+    else
+      return FlutterLinearGradients.sweetPeriod(tileMode: tileMode);
+  }
 
-  /// 63. Soft Cherish
-  static Gradient softCherish({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Soft Cherish",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [
-          stringToColor("#dbdcd7"),
-          stringToColor("#dddcd7"),
-          stringToColor("#e2c9cc"),
-          stringToColor("#e7627d"),
-          stringToColor("#b8235a"),
-          stringToColor("#801357"),
-          stringToColor("#3d1635"),
-          stringToColor("#1c1a27")
-        ],
-        [0.0, 0.24, 0.3, 0.46, 0.59, 0.71, 0.84, 1.0],
-        tileMode,
+  /// Wide Matrix
+  static Gradient wideMatrix(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.wideMatrix(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
-
-  /// 64. Red Salvation
-  static Gradient redSalvation({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Red Salvation",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#f43b47"), stringToColor("#453a94")],
-        [0.0, 1.0],
-        tileMode,
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.wideMatrix(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
       );
+    else
+      return FlutterLinearGradients.wideMatrix(tileMode: tileMode);
+  }
 
-  /// 65. Burning Spring
-  static Gradient burningSpring({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Burning Spring",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [
-          stringToColor("#4fb576"),
-          stringToColor("#44c489"),
-          stringToColor("#28a9ae"),
-          stringToColor("#28a2b7"),
-          stringToColor("#4c7788"),
-          stringToColor("#6c4f63"),
-          stringToColor("#432c39")
-        ],
-        [0.0, 0.3, 0.46, 0.59, 0.71, 0.86, 1.0],
-        tileMode,
+  /// Soft Cherish
+  static Gradient softCherish(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.softCherish(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
-
-  /// 66. Night Party
-  static Gradient nightParty({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Night Party",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#0250c5"), stringToColor("#d43f8d")],
-        [0.0, 1.0],
-        tileMode,
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.softCherish(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
       );
+    else
+      return FlutterLinearGradients.softCherish(tileMode: tileMode);
+  }
 
-  /// 67. Sky Glider
-  static Gradient skyGlider({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Sky Glider",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#88d3ce"), stringToColor("#6e45e2")],
-        [0.0, 1.0],
-        tileMode,
+  /// Red Salvation
+  static Gradient redSalvation(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.redSalvation(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
-
-  /// 68. Heaven Peach
-  static Gradient heavenPeach({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Heaven Peach",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#d9afd9"), stringToColor("#97d9e1")],
-        [0.0, 1.0],
-        tileMode,
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.redSalvation(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
       );
+    else
+      return FlutterLinearGradients.redSalvation(tileMode: tileMode);
+  }
 
-  /// 69. Purple Division
-  static Gradient purpleDivision({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Purple Division",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#7028e4"), stringToColor("#e5b2ca")],
-        [0.0, 1.0],
-        tileMode,
+  /// Burning Spring
+  static Gradient burningSpring(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.burningSpring(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
-
-  /// 70. Aqua Splash
-  static Gradient aquaSplash({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Aqua Splash",
-        center,
-        startAngle,
-        endAngle,
-        -75.0,
-        [stringToColor("#13547a"), stringToColor("#80d0c7")],
-        [0.0, 1.0],
-        tileMode,
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.burningSpring(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
       );
+    else
+      return FlutterLinearGradients.burningSpring(tileMode: tileMode);
+  }
 
-  /// 72. Spiky Naga
-  static Gradient spikyNaga({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Spiky Naga",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [
-          stringToColor("#505285"),
-          stringToColor("#585e92"),
-          stringToColor("#65689f"),
-          stringToColor("#7474b0"),
-          stringToColor("#7e7ebb"),
-          stringToColor("#8389c7"),
-          stringToColor("#9795d4"),
-          stringToColor("#a2a1dc"),
-          stringToColor("#b5aee4")
-        ],
-        [0.0, 0.12, 0.25, 0.37, 0.5, 0.62, 0.75, 0.87, 1.0],
-        tileMode,
+  /// Night Party
+  static Gradient nightParty(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.nightParty(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
-
-  /// 73. Love Kiss
-  static Gradient loveKiss({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Love Kiss",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#ff0844"), stringToColor("#ffb199")],
-        [0.0, 1.0],
-        tileMode,
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.nightParty(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
       );
+    else
+      return FlutterLinearGradients.nightParty(tileMode: tileMode);
+  }
 
-  /// 75. Clean Mirror
-  static Gradient cleanMirror({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Clean Mirror",
-        center,
-        startAngle,
-        endAngle,
-        -45.0,
-        [stringToColor("#93a5cf"), stringToColor("#e4efe9")],
-        [0.0, 1.0],
-        tileMode,
+  /// Sky Glider
+  static Gradient skyGlider(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.skyGlider(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
-
-  /// 76. Premium Dark
-  static Gradient premiumDark({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Premium Dark",
-        center,
-        startAngle,
-        endAngle,
-        0.0,
-        [stringToColor("#434343"), Colors.black],
-        [0.0, 1.0],
-        tileMode,
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.skyGlider(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
       );
+    else
+      return FlutterLinearGradients.skyGlider(tileMode: tileMode);
+  }
 
-  /// 77. Cold Evening
-  static Gradient coldEvening({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Cold Evening",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [
-          stringToColor("#0c3483"),
-          stringToColor("#a2b6df"),
-          stringToColor("#6b8cce"),
-          stringToColor("#a2b6df")
-        ],
-        [0.0, 1.0, 1.0, 1.0],
-        tileMode,
+  /// Heaven Peach
+  static Gradient heavenPeach(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.heavenPeach(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
-
-  /// 78. Cochiti Lake
-  static Gradient cochitiLake({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Cochiti Lake",
-        center,
-        startAngle,
-        endAngle,
-        -45.0,
-        [stringToColor("#93a5cf"), stringToColor("#e4efe9")],
-        [0.0, 1.0],
-        tileMode,
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.heavenPeach(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
       );
+    else
+      return FlutterLinearGradients.heavenPeach(tileMode: tileMode);
+  }
 
-  /// 79. Summer Games
-  static Gradient summerGames({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Summer Games",
-        center,
-        startAngle,
-        endAngle,
-        0.0,
-        [stringToColor("#92fe9d"), stringToColor("#00c9ff")],
-        [0.0, 1.0],
-        tileMode,
+  /// Purple Division
+  static Gradient purpleDivision(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.purpleDivision(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
-
-  /// 80. Passionate Bed
-  static Gradient passionateBed({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Passionate Bed",
-        center,
-        startAngle,
-        endAngle,
-        0.0,
-        [stringToColor("#ff758c"), stringToColor("#ff7eb3")],
-        [0.0, 1.0],
-        tileMode,
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.purpleDivision(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
       );
+    else
+      return FlutterLinearGradients.purpleDivision(tileMode: tileMode);
+  }
 
-  /// 81. Mountain Rock
-  static Gradient mountainRock({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Mountain Rock",
-        center,
-        startAngle,
-        endAngle,
-        0.0,
-        [stringToColor("#868f96"), stringToColor("#596164")],
-        [0.0, 1.0],
-        tileMode,
+  /// Aqua Splash
+  static Gradient aquaSplash(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.aquaSplash(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
-
-  /// 82. Desert Hump
-  static Gradient desertHump({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Desert Hump",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#c79081"), stringToColor("#dfa579")],
-        [0.0, 1.0],
-        tileMode,
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.aquaSplash(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
       );
+    else
+      return FlutterLinearGradients.aquaSplash(tileMode: tileMode);
+  }
 
-  /// 83. Jungle Day
-  static Gradient jungleDay({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Jungle Day",
-        center,
-        startAngle,
-        endAngle,
-        -45.0,
-        [stringToColor("#8baaaa"), stringToColor("#ae8b9c")],
-        [0.0, 1.0],
-        tileMode,
+  /// Spiky Naga
+  static Gradient spikyNaga(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.spikyNaga(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
-
-  /// 84. Phoenix Start
-  static Gradient phoenixStart({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Phoenix Start",
-        center,
-        startAngle,
-        endAngle,
-        0.0,
-        [stringToColor("#f83600"), stringToColor("#f9d423")],
-        [0.0, 1.0],
-        tileMode,
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.spikyNaga(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
       );
+    else
+      return FlutterLinearGradients.spikyNaga(tileMode: tileMode);
+  }
 
-  /// 85. October Silence
-  static Gradient octoberSilence({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "October Silence",
-        center,
-        startAngle,
-        endAngle,
-        -110.0,
-        [stringToColor("#b721ff"), stringToColor("#21d4fd")],
-        [0.0, 1.0],
-        tileMode,
+  /// Love Kiss
+  static Gradient loveKiss(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.loveKiss(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
-
-  /// 86. Faraway River
-  static Gradient farawayRiver({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Faraway River",
-        center,
-        startAngle,
-        endAngle,
-        -110.0,
-        [stringToColor("#6e45e2"), stringToColor("#88d3ce")],
-        [0.0, 1.0],
-        tileMode,
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.loveKiss(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
       );
+    else
+      return FlutterLinearGradients.loveKiss(tileMode: tileMode);
+  }
 
-  /// 87. Alchemist Lab
-  static Gradient alchemistLab({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Alchemist Lab",
-        center,
-        startAngle,
-        endAngle,
-        -110.0,
-        [stringToColor("#d558c8"), stringToColor("#24d292")],
-        [0.0, 1.0],
-        tileMode,
+  /// Clean Mirror
+  static Gradient cleanMirror(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.cleanMirror(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
-
-  /// 88. Over Sun
-  static Gradient overSun({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Over Sun",
-        center,
-        startAngle,
-        endAngle,
-        -30.0,
-        [stringToColor("#abecd6"), stringToColor("#fbed96")],
-        [0.0, 1.0],
-        tileMode,
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.cleanMirror(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
       );
+    else
+      return FlutterLinearGradients.cleanMirror(tileMode: tileMode);
+  }
 
-  /// 89. Premium White
-  static Gradient premiumWhite({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Premium White",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [
-          stringToColor("#d5d4d0"),
-          stringToColor("#d5d4d0"),
-          stringToColor("#eeeeec"),
-          stringToColor("#efeeec"),
-          stringToColor("#e9e9e7")
-        ],
-        [0.0, 0.01, 0.31, 0.75, 1.0],
-        tileMode,
+  /// Premium Dark
+  static Gradient premiumDark(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.premiumDark(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
-
-  /// 90. Mars Party
-  static Gradient marsParty({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Mars Party",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#5f72bd"), stringToColor("#9b23ea")],
-        [0.0, 1.0],
-        tileMode,
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.premiumDark(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
       );
+    else
+      return FlutterLinearGradients.premiumDark(tileMode: tileMode);
+  }
 
-  /// 91. Eternal Constance
-  static Gradient eternalConstance({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Eternal Constance",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#09203f"), stringToColor("#537895")],
-        [0.0, 1.0],
-        tileMode,
+  /// Cold Evening
+  static Gradient coldEvening(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.coldEvening(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
-
-  /// 92. Japan Blush
-  static Gradient japanBlush({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Japan Blush",
-        center,
-        startAngle,
-        endAngle,
-        -110.0,
-        [
-          stringToColor("#ddd6f3"),
-          stringToColor("#faaca8"),
-          stringToColor("#faaca8")
-        ],
-        [0.0, 1.0, 1.0],
-        tileMode,
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.coldEvening(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
       );
+    else
+      return FlutterLinearGradients.coldEvening(tileMode: tileMode);
+  }
 
-  /// 93. Smiling Rain
-  static Gradient smilingRain({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Smiling Rain",
-        center,
-        startAngle,
-        endAngle,
-        -110.0,
-        [stringToColor("#dcb0ed"), stringToColor("#99c99c")],
-        [0.0, 1.0],
-        tileMode,
+  /// Cochiti Lake
+  static Gradient cochitiLake(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.cochitiLake(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
-
-  /// 94. Cloudy Apple
-  static Gradient cloudyApple({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Cloudy Apple",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [
-          stringToColor("#f3e7e9"),
-          stringToColor("#e3eeff"),
-          stringToColor("#e3eeff")
-        ],
-        [0.0, 0.99, 1.0],
-        tileMode,
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.cochitiLake(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
       );
+    else
+      return FlutterLinearGradients.cochitiLake(tileMode: tileMode);
+  }
 
-  /// 95. Big Mango
-  static Gradient bigMango({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Big Mango",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#c71d6f"), stringToColor("#d09693")],
-        [0.0, 1.0],
-        tileMode,
+  /// Summer Games
+  static Gradient summerGames(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.summerGames(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
-
-  /// 96. Healthy Water
-  static Gradient healthyWater({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Healthy Water",
-        center,
-        startAngle,
-        endAngle,
-        -30.0,
-        [stringToColor("#96deda"), stringToColor("#50c9c3")],
-        [0.0, 1.0],
-        tileMode,
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.summerGames(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
       );
+    else
+      return FlutterLinearGradients.summerGames(tileMode: tileMode);
+  }
 
-  /// 97. Amour Amour
-  static Gradient amourAmour({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Amour Amour",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#f77062"), stringToColor("#fe5196")],
-        [0.0, 1.0],
-        tileMode,
+  /// Passionate Bed
+  static Gradient passionateBed(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.passionateBed(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
-
-  /// 98. Risky Concrete
-  static Gradient riskyConcrete({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Risky Concrete",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [
-          stringToColor("#c4c5c7"),
-          stringToColor("#dcdddf"),
-          stringToColor("#ebebeb")
-        ],
-        [0.0, 0.52, 1.0],
-        tileMode,
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.passionateBed(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
       );
+    else
+      return FlutterLinearGradients.passionateBed(tileMode: tileMode);
+  }
 
-  /// 99. Strong Stick
-  static Gradient strongStick({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Strong Stick",
-        center,
-        startAngle,
-        endAngle,
-        0.0,
-        [stringToColor("#a8caba"), stringToColor("#5d4157")],
-        [0.0, 1.0],
-        tileMode,
+  /// Mountain Rock
+  static Gradient mountainRock(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.mountainRock(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
-
-  /// 100. Vicious Stance
-  static Gradient viciousStance({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
-  }) =>
-      sweep(
-        "Vicious Stance",
-        center,
-        startAngle,
-        endAngle,
-        -30.0,
-        [stringToColor("#29323c"), stringToColor("#485563")],
-        [0.0, 1.0],
-        tileMode,
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.mountainRock(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
       );
+    else
+      return FlutterLinearGradients.mountainRock(tileMode: tileMode);
+  }
 
-  /// 101. Palo Alto
+  /// Desert Hump
+  static Gradient desertHump(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.desertHump(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
+      );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.desertHump(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.desertHump(tileMode: tileMode);
+  }
+
+  /// Jungle Day
+  static Gradient jungleDay(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.jungleDay(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
+      );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.jungleDay(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.jungleDay(tileMode: tileMode);
+  }
+
+  /// Phoenix Start
+  static Gradient phoenixStart(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.phoenixStart(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
+      );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.phoenixStart(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.phoenixStart(tileMode: tileMode);
+  }
+
+  /// October Silence
+  static Gradient octoberSilence(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.octoberSilence(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
+      );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.octoberSilence(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.octoberSilence(tileMode: tileMode);
+  }
+
+  /// Faraway River
+  static Gradient farawayRiver(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.farawayRiver(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
+      );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.farawayRiver(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.farawayRiver(tileMode: tileMode);
+  }
+
+  /// Alchemist Lab
+  static Gradient alchemistLab(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.alchemistLab(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
+      );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.alchemistLab(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.alchemistLab(tileMode: tileMode);
+  }
+
+  /// Over Sun
+  static Gradient overSun(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.overSun(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
+      );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.overSun(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.overSun(tileMode: tileMode);
+  }
+
+  /// Premium White
+  static Gradient premiumWhite(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.premiumWhite(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
+      );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.premiumWhite(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.premiumWhite(tileMode: tileMode);
+  }
+
+  /// Mars Party
+  static Gradient marsParty(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.marsParty(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
+      );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.marsParty(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.marsParty(tileMode: tileMode);
+  }
+
+  /// Eternal Constance
+  static Gradient eternalConstance(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.eternalConstance(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
+      );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.eternalConstance(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.eternalConstance(tileMode: tileMode);
+  }
+
+  /// Japan Blush
+  static Gradient japanBlush(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.japanBlush(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
+      );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.japanBlush(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.japanBlush(tileMode: tileMode);
+  }
+
+  /// Smiling Rain
+  static Gradient smilingRain(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.smilingRain(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
+      );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.smilingRain(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.smilingRain(tileMode: tileMode);
+  }
+
+  /// Cloudy Apple
+  static Gradient cloudyApple(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.cloudyApple(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
+      );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.cloudyApple(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.cloudyApple(tileMode: tileMode);
+  }
+
+  /// Big Mango
+  static Gradient bigMango(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.bigMango(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
+      );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.bigMango(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.bigMango(tileMode: tileMode);
+  }
+
+  /// Healthy Water
+  static Gradient healthyWater(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.healthyWater(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
+      );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.healthyWater(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.healthyWater(tileMode: tileMode);
+  }
+
+  /// Amour Amour
+  static Gradient amourAmour(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.amourAmour(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
+      );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.amourAmour(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.amourAmour(tileMode: tileMode);
+  }
+
+  /// Risky Concrete
+  static Gradient riskyConcrete(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.riskyConcrete(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
+      );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.riskyConcrete(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.riskyConcrete(tileMode: tileMode);
+  }
+
+  /// Strong Stick
+  static Gradient strongStick(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.strongStick(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
+      );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.strongStick(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.strongStick(tileMode: tileMode);
+  }
+
+  /// Vicious Stance
+  static Gradient viciousStance(
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.viciousStance(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
+      );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.viciousStance(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.viciousStance(tileMode: tileMode);
+  }
+
+  /// Palo Alto
   static Gradient paloAlto(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Palo Alto",
-        center,
-        startAngle,
-        endAngle,
-        -150.0,
-        [stringToColor("#16a085"), stringToColor("#f4d03f")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.paloAlto(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.paloAlto(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.paloAlto(tileMode: tileMode);
+  }
 
-  /// 102. Happy Memories
+  /// Happy Memories
   static Gradient happyMemories(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Happy Memories",
-        center,
-        startAngle,
-        endAngle,
-        -150.0,
-        [stringToColor("#ff5858"), stringToColor("#f09819")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.happyMemories(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.happyMemories(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.happyMemories(tileMode: tileMode);
+  }
 
-  /// 103. Midnight Bloom
+  /// Midnight Bloom
   static Gradient midnightBloom(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Midnight Bloom",
-        center,
-        startAngle,
-        endAngle,
-        -110.0,
-        [stringToColor("#2b5876"), stringToColor("#4e4376")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.midnightBloom(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.midnightBloom(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.midnightBloom(tileMode: tileMode);
+  }
 
-  /// 104. Crystalline
+  /// Crystalline
   static Gradient crystalline(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Crystalline",
-        center,
-        startAngle,
-        endAngle,
-        -110.0,
-        [stringToColor("#00cdac"), stringToColor("#8ddad5")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.crystalline(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.crystalline(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.crystalline(tileMode: tileMode);
+  }
 
-  /// 106. Party Bliss
+  /// Party Bliss
   static Gradient partyBliss(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Party Bliss",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#4481eb"), stringToColor("#04befe")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.partyBliss(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.partyBliss(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.partyBliss(tileMode: tileMode);
+  }
 
-  /// 107. Confident Cloud
+  /// Confident Cloud
   static Gradient confidentCloud(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Confident Cloud",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [
-          stringToColor("#dad4ec"),
-          stringToColor("#dad4ec"),
-          stringToColor("#f3e7e9")
-        ],
-        [0.0, 0.01, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.confidentCloud(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.confidentCloud(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.confidentCloud(tileMode: tileMode);
+  }
 
-  /// 108. Le Cocktail
+  /// Le Cocktail
   static Gradient leCocktail(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Le Cocktail",
-        center,
-        startAngle,
-        endAngle,
-        -45.0,
-        [stringToColor("#874da2"), stringToColor("#c43a30")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.leCocktail(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.leCocktail(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.leCocktail(tileMode: tileMode);
+  }
 
-  /// 109. River City
+  /// River City
   static Gradient riverCity(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "River City",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#4481eb"), stringToColor("#04befe")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.riverCity(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.riverCity(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.riverCity(tileMode: tileMode);
+  }
 
-  /// 110. Frozen Berry
+  /// Frozen Berry
   static Gradient frozenBerry(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Frozen Berry",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#e8198b"), stringToColor("#c7eafd")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.frozenBerry(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.frozenBerry(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.frozenBerry(tileMode: tileMode);
+  }
 
-  /// 112. Child Care
+  /// Child Care
   static Gradient childCare(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Child Care",
-        center,
-        startAngle,
-        endAngle,
-        -110.0,
-        [stringToColor("#f794a4"), stringToColor("#fdd6bd")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.childCare(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.childCare(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.childCare(tileMode: tileMode);
+  }
 
-  /// 113. Flying Lemon
+  /// Flying Lemon
   static Gradient flyingLemon(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Flying Lemon",
-        center,
-        startAngle,
-        endAngle,
-        -30.0,
-        [stringToColor("#64b3f4"), stringToColor("#c2e59c")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.flyingLemon(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.flyingLemon(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.flyingLemon(tileMode: tileMode);
+  }
 
-  /// 114. New Retrowave
+  /// New Retrowave
   static Gradient newRetrowave(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "New Retrowave",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [
-          stringToColor("#3b41c5"),
-          stringToColor("#a981bb"),
-          stringToColor("#ffc8a9")
-        ],
-        [0.0, 0.49, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.newRetrowave(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.newRetrowave(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.newRetrowave(tileMode: tileMode);
+  }
 
-  /// 115. Hidden Jaguar
+  /// Hidden Jaguar
   static Gradient hiddenJaguar(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Hidden Jaguar",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#0fd850"), stringToColor("#f9f047")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.hiddenJaguar(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.hiddenJaguar(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.hiddenJaguar(tileMode: tileMode);
+  }
 
-  /// 116. Above The Sky
+  /// Above The Sky
   static Gradient aboveTheSky(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Above The Sky",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [
-          Colors.grey[300],
-          Colors.grey[300],
-          stringToColor("#e0e0e0"),
-          stringToColor("#efefef"),
-          stringToColor("#d9d9d9"),
-          stringToColor("#bcbcbc")
-        ],
-        [0.0, 0.01, 0.26, 0.48, 0.75, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.aboveTheSky(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.aboveTheSky(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.aboveTheSky(tileMode: tileMode);
+  }
 
-  /// 117. Nega
+  /// Nega
   static Gradient nega(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Nega",
-        center,
-        startAngle,
-        endAngle,
-        -45.0,
-        [stringToColor("#ee9ca7"), stringToColor("#ffdde1")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.nega(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.nega(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.nega(tileMode: tileMode);
+  }
 
-  /// 118. Dense Water
+  /// Dense Water
   static Gradient denseWater(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Dense Water",
-        center,
-        startAngle,
-        endAngle,
-        0.0,
-        [
-          stringToColor("#3ab5b0"),
-          stringToColor("#3d99be"),
-          stringToColor("#56317a")
-        ],
-        [0.0, 0.31, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.denseWater(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.denseWater(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.denseWater(tileMode: tileMode);
+  }
 
-  /// 120. Seashore
+  /// Seashore
   static Gradient seashore(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Seashore",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#209cff"), stringToColor("#68e0cf")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.seashore(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.seashore(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.seashore(tileMode: tileMode);
+  }
 
-  /// 121. Marble Wall
+  /// Marble Wall
   static Gradient marbleWall(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Marble Wall",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [
-          stringToColor("#bdc2e8"),
-          stringToColor("#bdc2e8"),
-          stringToColor("#e6dee9")
-        ],
-        [0.0, 0.01, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.marbleWall(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.marbleWall(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.marbleWall(tileMode: tileMode);
+  }
 
-  /// 122. Cheerful Caramel
+  /// Cheerful Caramel
   static Gradient cheerfulCaramel(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Cheerful Caramel",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#e6b980"), stringToColor("#eacda3")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.cheerfulCaramel(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.cheerfulCaramel(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.cheerfulCaramel(tileMode: tileMode);
+  }
 
-  /// 123. Night Sky
+  /// Night Sky
   static Gradient nightSky(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Night Sky",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [
-          stringToColor("#1e3c72"),
-          stringToColor("#1e3c72"),
-          stringToColor("#2a5298")
-        ],
-        [0.0, 0.01, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.nightSky(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.nightSky(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.nightSky(tileMode: tileMode);
+  }
 
-  /// 124. Magic Lake
+  /// Magic Lake
   static Gradient magicLake(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Magic Lake",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [
-          stringToColor("#d5dee7"),
-          stringToColor("#ffafbd"),
-          stringToColor("#c9ffbf")
-        ],
-        [0.0, 0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.magicLake(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.magicLake(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.magicLake(tileMode: tileMode);
+  }
 
-  /// 125. Young Grass
+  /// Young Grass
   static Gradient youngGrass(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Young Grass",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#9be15d"), stringToColor("#00e3ae")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.youngGrass(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.youngGrass(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.youngGrass(tileMode: tileMode);
+  }
 
-  /// 126. Colorful Peach
+  /// Colorful Peach
   static Gradient colorfulPeach(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Colorful Peach",
-        center,
-        startAngle,
-        endAngle,
-        0.0,
-        [stringToColor("#ed6ea0"), stringToColor("#ec8c69")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.colorfulPeach(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.colorfulPeach(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.colorfulPeach(tileMode: tileMode);
+  }
 
-  /// 127. Gentle Care
+  /// Gentle Care
   static Gradient gentleCare(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Gentle Care",
-        center,
-        startAngle,
-        endAngle,
-        0.0,
-        [stringToColor("#ffc3a0"), stringToColor("#ffafbd")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.gentleCare(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.gentleCare(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.gentleCare(tileMode: tileMode);
+  }
 
-  /// 128. Plum Bath
+  /// Plum Bath
   static Gradient plumBath(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Plum Bath",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#cc208e"), stringToColor("#6713d2")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.plumBath(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.plumBath(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.plumBath(tileMode: tileMode);
+  }
 
-  /// 129. Happy Unicorn
+  /// Happy Unicorn
   static Gradient happyUnicorn(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Happy Unicorn",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#b3ffab"), stringToColor("#12fff7")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.happyUnicorn(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.happyUnicorn(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.happyUnicorn(tileMode: tileMode);
+  }
 
-  /// 131. African Field
+  /// African Field
   static Gradient africanField(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "African Field",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [
-          stringToColor("#65bd60"),
-          stringToColor("#5ac1a8"),
-          stringToColor("#3ec6ed"),
-          stringToColor("#b7ddb7"),
-          stringToColor("#fef381")
-        ],
-        [0.0, 0.25, 0.5, 0.75, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.africanField(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.africanField(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.africanField(tileMode: tileMode);
+  }
 
-  /// 132. Solid Stone
+  /// Solid Stone
   static Gradient solidStone(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Solid Stone",
-        center,
-        startAngle,
-        endAngle,
-        0.0,
-        [stringToColor("#243949"), stringToColor("#517fa4")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.solidStone(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.solidStone(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.solidStone(tileMode: tileMode);
+  }
 
-  /// 133. Orange Juice
+  /// Orange Juice
   static Gradient orangeJuice(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Orange Juice",
-        center,
-        startAngle,
-        endAngle,
-        -110.0,
-        [stringToColor("#fc6076"), stringToColor("#ff9a44")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.orangeJuice(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.orangeJuice(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.orangeJuice(tileMode: tileMode);
+  }
 
-  /// 134. Glass Water
+  /// Glass Water
   static Gradient glassWater(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Glass Water",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#dfe9f3"), Colors.white],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.glassWater(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.glassWater(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.glassWater(tileMode: tileMode);
+  }
 
-  /// 136. North Miracle
+  /// North Miracle
   static Gradient northMiracle(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "North Miracle",
-        center,
-        startAngle,
-        endAngle,
-        0.0,
-        [stringToColor("#00dbde"), stringToColor("#fc00ff")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.northMiracle(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.northMiracle(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.northMiracle(tileMode: tileMode);
+  }
 
-  /// 137. Fruit Blend
+  /// Fruit Blend
   static Gradient fruitBlend(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Fruit Blend",
-        center,
-        startAngle,
-        endAngle,
-        0.0,
-        [stringToColor("#f9d423"), stringToColor("#ff4e50")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.fruitBlend(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.fruitBlend(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.fruitBlend(tileMode: tileMode);
+  }
 
-  /// 138. Millennium Pine
+  /// Millennium Pine
   static Gradient millenniumPine(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Millennium Pine",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#50cc7f"), stringToColor("#f5d100")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.millenniumPine(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.millenniumPine(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.millenniumPine(tileMode: tileMode);
+  }
 
-  /// 139. High Flight
+  /// High Flight
   static Gradient highFlight(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "High Flight",
-        center,
-        startAngle,
-        endAngle,
-        0.0,
-        [stringToColor("#0acffe"), stringToColor("#495aff")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.highFlight(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.highFlight(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.highFlight(tileMode: tileMode);
+  }
 
-  /// 140. Mole Hall
+  /// Mole Hall
   static Gradient moleHall(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Mole Hall",
-        center,
-        startAngle,
-        endAngle,
-        -110.0,
-        [stringToColor("#616161"), stringToColor("#9bc5c3")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.moleHall(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.moleHall(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.moleHall(tileMode: tileMode);
+  }
 
-  /// 142. Space Shift
+  /// Space Shift
   static Gradient spaceShift(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Space Shift",
-        center,
-        startAngle,
-        endAngle,
-        -30.0,
-        [
-          stringToColor("#3d3393"),
-          stringToColor("#2b76b9"),
-          stringToColor("#2cacd1"),
-          stringToColor("#35eb93")
-        ],
-        [0.0, 0.37, 0.65, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.spaceShift(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.spaceShift(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.spaceShift(tileMode: tileMode);
+  }
 
-  /// 143. Forest Inei
+  /// Forest Inei
   static Gradient forestInei(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Forest Inei",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#df89b5"), stringToColor("#bfd9fe")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.forestInei(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.forestInei(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.forestInei(tileMode: tileMode);
+  }
 
-  /// 144. Royal Garden
+  /// Royal Garden
   static Gradient royalGarden(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Royal Garden",
-        center,
-        startAngle,
-        endAngle,
-        0.0,
-        [stringToColor("#ed6ea0"), stringToColor("#ec8c69")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.royalGarden(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.royalGarden(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.royalGarden(tileMode: tileMode);
+  }
 
-  /// 145. Rich Metal
+  /// Rich Metal
   static Gradient richMetal(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Rich Metal",
-        center,
-        startAngle,
-        endAngle,
-        0.0,
-        [stringToColor("#d7d2cc"), stringToColor("#304352")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.richMetal(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.richMetal(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.richMetal(tileMode: tileMode);
+  }
 
-  /// 146. Juicy Cake
+  /// Juicy Cake
   static Gradient juicyCake(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Juicy Cake",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#e14fad"), stringToColor("#f9d423")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.juicyCake(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.juicyCake(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.juicyCake(tileMode: tileMode);
+  }
 
-  /// 147. Smart Indigo
+  /// Smart Indigo
   static Gradient smartIndigo(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Smart Indigo",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#b224ef"), stringToColor("#7579ff")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.smartIndigo(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.smartIndigo(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.smartIndigo(tileMode: tileMode);
+  }
 
-  /// 148. Sand Strike
+  /// Sand Strike
   static Gradient sandStrike(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Sand Strike",
-        center,
-        startAngle,
-        endAngle,
-        0.0,
-        [
-          stringToColor("#c1c161"),
-          stringToColor("#c1c161"),
-          stringToColor("#d4d4b1")
-        ],
-        [0.0, 0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.sandStrike(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.sandStrike(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.sandStrike(tileMode: tileMode);
+  }
 
-  /// 149. Norse Beauty
+  /// Norse Beauty
   static Gradient norseBeauty(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Norse Beauty",
-        center,
-        startAngle,
-        endAngle,
-        0.0,
-        [stringToColor("#ec77ab"), stringToColor("#7873f5")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.norseBeauty(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.norseBeauty(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.norseBeauty(tileMode: tileMode);
+  }
 
-  /// 150. Aqua Guidance
+  /// Aqua Guidance
   static Gradient aquaGuidance(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Aqua Guidance",
-        center,
-        startAngle,
-        endAngle,
-        -90.0,
-        [stringToColor("#007adf"), stringToColor("#00ecbc")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.aquaGuidance(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.aquaGuidance(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.aquaGuidance(tileMode: tileMode);
+  }
 
-  /// 151. Sun Veggie
+  /// Sun Veggie
   static Gradient sunVeggie(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Sun Veggie",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [stringToColor("#20E2D7"), stringToColor("#F9FEA5")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.sunVeggie(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.sunVeggie(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.sunVeggie(tileMode: tileMode);
+  }
 
-  /// 152. Sea Lord
+  /// Sea Lord
   static Gradient seaLord(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Sea Lord",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#2CD8D5"),
-          stringToColor("#C5C1FF"),
-          stringToColor("#FFBAC3")
-        ],
-        [0.0, 0.56, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.seaLord(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.seaLord(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.seaLord(tileMode: tileMode);
+  }
 
-  /// 153. Black Sea
+  /// Black Sea
   static Gradient blackSea(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Black Sea",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#2CD8D5"),
-          stringToColor("#6B8DD6"),
-          stringToColor("#8E37D7")
-        ],
-        [0.0, 0.48, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.blackSea(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.blackSea(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.blackSea(tileMode: tileMode);
+  }
 
-  /// 154. Grass Shampoo
+  /// Grass Shampoo
   static Gradient grassShampoo(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Grass Shampoo",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#DFFFCD"),
-          stringToColor("#90F9C4"),
-          stringToColor("#39F3BB")
-        ],
-        [0.0, 0.48, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.grassShampoo(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.grassShampoo(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.grassShampoo(tileMode: tileMode);
+  }
 
-  /// 155. Landing Aircraft
+  /// Landing Aircraft
   static Gradient landingAircraft(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Landing Aircraft",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#5D9FFF"),
-          stringToColor("#B8DCFF"),
-          stringToColor("#6BBBFF")
-        ],
-        [0.0, 0.48, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.landingAircraft(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.landingAircraft(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.landingAircraft(tileMode: tileMode);
+  }
 
-  /// 156. Witch Dance
+  /// Witch Dance
   static Gradient witchDance(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Witch Dance",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [stringToColor("#A8BFFF"), stringToColor("#884D80")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.witchDance(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.witchDance(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.witchDance(tileMode: tileMode);
+  }
 
-  /// 157. Sleepless Night
+  /// Sleepless Night
   static Gradient sleeplessNight(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Sleepless Night",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#5271C4"),
-          stringToColor("#B19FFF"),
-          stringToColor("#ECA1FE")
-        ],
-        [0.0, 0.48, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.sleeplessNight(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.sleeplessNight(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.sleeplessNight(tileMode: tileMode);
+  }
 
-  /// 158. Angel Care
+  /// Angel Care
   static Gradient angelCare(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Angel Care",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#FFE29F"),
-          stringToColor("#FFA99F"),
-          stringToColor("#FF719A")
-        ],
-        [0.0, 0.48, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.angelCare(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.angelCare(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.angelCare(tileMode: tileMode);
+  }
 
-  /// 159. Crystal River
+  /// Crystal River
   static Gradient crystalRiver(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Crystal River",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#22E1FF"),
-          stringToColor("#1D8FE1"),
-          stringToColor("#625EB1")
-        ],
-        [0.0, 0.48, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.crystalRiver(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.crystalRiver(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.crystalRiver(tileMode: tileMode);
+  }
 
-  /// 160. Soft Lipstick
+  /// Soft Lipstick
   static Gradient softLipstick(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Soft Lipstick",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [stringToColor("#B6CEE8"), stringToColor("#F578DC")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.softLipstick(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.softLipstick(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.softLipstick(tileMode: tileMode);
+  }
 
-  /// 161. Salt Mountain
+  /// Salt Mountain
   static Gradient saltMountain(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Salt Mountain",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [stringToColor("#FFFEFF"), stringToColor("#D7FFFE")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.saltMountain(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.saltMountain(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.saltMountain(tileMode: tileMode);
+  }
 
-  /// 162. Perfect White
+  /// Perfect White
   static Gradient perfectWhite(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Perfect White",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [stringToColor("#E3FDF5"), stringToColor("#FFE6FA")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.perfectWhite(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.perfectWhite(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.perfectWhite(tileMode: tileMode);
+  }
 
-  /// 163. Fresh Oasis
+  /// Fresh Oasis
   static Gradient freshOasis(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Fresh Oasis",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [stringToColor("#7DE2FC"), stringToColor("#B9B6E5")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.freshOasis(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.freshOasis(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.freshOasis(tileMode: tileMode);
+  }
 
-  /// 164. Strict November
+  /// Strict November
   static Gradient strictNovember(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Strict November",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [stringToColor("#CBBACC"), stringToColor("#2580B3")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.strictNovember(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.strictNovember(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.strictNovember(tileMode: tileMode);
+  }
 
-  /// 165. Morning Salad
+  /// Morning Salad
   static Gradient morningSalad(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Morning Salad",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [stringToColor("#B7F8DB"), stringToColor("#50A7C2")],
-        [0.0, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.morningSalad(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.morningSalad(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.morningSalad(tileMode: tileMode);
+  }
 
-  /// 166. Deep Relief
+  /// Deep Relief
   static Gradient deepRelief(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Deep Relief",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#7085B6"),
-          stringToColor("#87A7D9"),
-          stringToColor("#DEF3F8")
-        ],
-        [0.0, 0.5, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.deepRelief(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.deepRelief(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.deepRelief(tileMode: tileMode);
+  }
 
-  /// 167. Sea Strike
+  /// Sea Strike
   static Gradient seaStrike(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Sea Strike",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#77FFD2"),
-          stringToColor("#6297DB"),
-          stringToColor("#1EECFF")
-        ],
-        [0.0, 0.48, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.seaStrike(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.seaStrike(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.seaStrike(tileMode: tileMode);
+  }
 
-  /// 168. Night Call
+  /// Night Call
   static Gradient nightCall(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Night Call",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#AC32E4"),
-          stringToColor("#7918F2"),
-          stringToColor("#4801FF")
-        ],
-        [0.0, 0.48, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.nightCall(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.nightCall(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.nightCall(tileMode: tileMode);
+  }
 
-  /// 169. Supreme Sky
+  /// Supreme Sky
   static Gradient supremeSky(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Supreme Sky",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#D4FFEC"),
-          stringToColor("#57F2CC"),
-          stringToColor("#4596FB")
-        ],
-        [0.0, 0.48, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.supremeSky(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.supremeSky(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.supremeSky(tileMode: tileMode);
+  }
 
-  /// 170. Light Blue
+  /// Light Blue
   static Gradient lightBlue(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Light Blue",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#9EFBD3"),
-          stringToColor("#57E9F2"),
-          stringToColor("#45D4FB")
-        ],
-        [0.0, 0.48, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.lightBlue(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.lightBlue(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.lightBlue(tileMode: tileMode);
+  }
 
-  /// 171. Mind Crawl
+  /// Mind Crawl
   static Gradient mindCrawl(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Mind Crawl",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#473B7B"),
-          stringToColor("#3584A7"),
-          stringToColor("#30D2BE")
-        ],
-        [0.0, 0.51, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.mindCrawl(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.mindCrawl(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.mindCrawl(tileMode: tileMode);
+  }
 
-  /// 172. Lily Meadow
+  /// Lily Meadow
   static Gradient lilyMeadow(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Lily Meadow",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#65379B"),
-          stringToColor("#886AEA"),
-          stringToColor("#6457C6")
-        ],
-        [0.0, 0.53, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.lilyMeadow(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.lilyMeadow(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.lilyMeadow(tileMode: tileMode);
+  }
 
-  /// 173. Sugar Lollipop
+  /// Sugar Lollipop
   static Gradient sugarLollipop(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Sugar Lollipop",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#A445B2"),
-          stringToColor("#D41872"),
-          stringToColor("#FF0066")
-        ],
-        [0.0, 0.52, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.sugarLollipop(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.sugarLollipop(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.sugarLollipop(tileMode: tileMode);
+  }
 
-  /// 174. Sweet Dessert
+  /// Sweet Dessert
   static Gradient sweetDessert(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Sweet Dessert",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#7742B2"),
-          stringToColor("#F180FF"),
-          stringToColor("#FD8BD9")
-        ],
-        [0.0, 0.52, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.sweetDessert(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.sweetDessert(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.sweetDessert(tileMode: tileMode);
+  }
 
-  /// 175. Magic Ray
+  /// Magic Ray
   static Gradient magicRay(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Magic Ray",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#FF3CAC"),
-          stringToColor("#562B7C"),
-          stringToColor("#2B86C5")
-        ],
-        [0.0, 0.52, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.magicRay(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.magicRay(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.magicRay(tileMode: tileMode);
+  }
 
-  /// 176. Teen Party
+  /// Teen Party
   static Gradient teenParty(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Teen Party",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#FF057C"),
-          stringToColor("#8D0B93"),
-          stringToColor("#321575")
-        ],
-        [0.0, 0.5, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.teenParty(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.teenParty(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.teenParty(tileMode: tileMode);
+  }
 
-  /// 177. Frozen Heat
+  /// Frozen Heat
   static Gradient frozenHeat(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Frozen Heat",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#FF057C"),
-          stringToColor("#7C64D5"),
-          stringToColor("#4CC3FF")
-        ],
-        [0.0, 0.48, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.frozenHeat(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.frozenHeat(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.frozenHeat(tileMode: tileMode);
+  }
 
-  /// 178. Gagarin View
+  /// Gagarin View
   static Gradient gagarinView(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Gagarin View",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#69EACB"),
-          stringToColor("#EACCF8"),
-          stringToColor("#6654F1")
-        ],
-        [0.0, 0.48, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.gagarinView(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.gagarinView(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.gagarinView(tileMode: tileMode);
+  }
 
-  /// 179. Fabled Sunset
+  /// Fabled Sunset
   static Gradient fabledSunset(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Fabled Sunset",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#231557"),
-          stringToColor("#44107A"),
-          stringToColor("#FF1361"),
-          stringToColor("#FFF800")
-        ],
-        [0.0, 0.29, 0.67, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.fabledSunset(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.fabledSunset(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.fabledSunset(tileMode: tileMode);
+  }
 
-  /// 180. Perfect Blue
+  /// Perfect Blue
   static Gradient perfectBlue(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
-      sweep(
-        "Perfect Blue",
-        center,
-        startAngle,
-        endAngle,
-        -315.0,
-        [
-          stringToColor("#3D4E81"),
-          stringToColor("#5753C9"),
-          stringToColor("#6E7FF3")
-        ],
-        [0.0, 0.48, 1.0],
-        tileMode,
+      {GradientType type = GradientType.linear,
+      AlignmentGeometry center = Alignment.center,
+      double radius = 0.5,
+      double startAngle = 0.0,
+      double endAngle = math.pi * 2,
+      TileMode tileMode = TileMode.repeated}) {
+    if (type == GradientType.radial)
+      return FlutterRadialGradients.perfectBlue(
+        center: center,
+        radius: radius,
+        tileMode: tileMode,
       );
+    else if (type == GradientType.sweep)
+      return FlutterSweepGradients.perfectBlue(
+        center: center,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        tileMode: tileMode,
+      );
+    else
+      return FlutterLinearGradients.perfectBlue(tileMode: tileMode);
+  }
 
   static List<String> names() => [
         "Warm Flame",
@@ -3844,516 +4499,1515 @@ class FlutterGradients {
       TileMode tileMode = TileMode.repeated}) {
     switch (name) {
       case "Warm Flame":
-        {
-          if (type == GradientType.radial)
-            return FlutterRadialGradients.warmFlame(
-                center: center, radius: radius, tileMode: tileMode);
-          else if (type == GradientType.sweep)
-            return FlutterSweepGradients.warmFlame(tileMode: tileMode);
-          else
-            return FlutterLinearGradients.warmFlame(tileMode: tileMode);
-        }
-        break;
-      /* case "Night Fade":
-        return nightFade(tileMode: tileMode);
+        return warmFlame(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
+
+      case "Night Fade":
+        return nightFade(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Spring Warmth":
-        return springWarmth(tileMode: tileMode);
-
+        return springWarmth(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
       case "Juicy Peach":
-        return juicyPeach(tileMode: tileMode);
+        return juicyPeach(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Young Passion":
-        return youngPassion(tileMode: tileMode);
+        return youngPassion(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Lady Lips":
-        return ladyLips(tileMode: tileMode);
+        return ladyLips(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Sunny Morning":
-        return sunnyMorning(tileMode: tileMode);
+        return sunnyMorning(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Rainy Ashville":
-        return rainyAshville(tileMode: tileMode);
+        return rainyAshville(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Frozen Dreams":
-        return frozenDreams(tileMode: tileMode);
+        return frozenDreams(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Winter Neva":
-        return winterNeva(tileMode: tileMode);
+        return winterNeva(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Dusty Grass":
-        return dustyGrass(tileMode: tileMode);
+        return dustyGrass(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Tempting Azure":
-        return temptingAzure(tileMode: tileMode);
+        return temptingAzure(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Heavy Rain":
-        return heavyRain(tileMode: tileMode);
+        return heavyRain(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Amy Crisp":
-        return amyCrisp(tileMode: tileMode);
+        return amyCrisp(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Mean Fruit":
-        return meanFruit(tileMode: tileMode);
+        return meanFruit(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Deep Blue":
-        return deepBlue2(tileMode: tileMode);
+        return deepBlue2(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Ripe Malinka":
-        return ripeMalinka(tileMode: tileMode);
+        return ripeMalinka(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Cloudy Knoxville":
-        return cloudyKnoxville(tileMode: tileMode);
+        return cloudyKnoxville(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Malibu Beach":
-        return malibuBeach(tileMode: tileMode);
+        return malibuBeach(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "New Life":
-        return newLife(tileMode: tileMode);
+        return newLife(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "True Sunset":
-        return trueSunset(tileMode: tileMode);
+        return trueSunset(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Morpheus Den":
-        return morpheusDen(tileMode: tileMode);
+        return morpheusDen(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Rare Wind":
-        return rareWind(tileMode: tileMode);
+        return rareWind(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Near Moon":
-        return nearMoon(tileMode: tileMode);
+        return nearMoon(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Wild Apple":
-        return wildApple(tileMode: tileMode);
+        return wildApple(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Saint Petersburg":
-        return saintPetersburg(tileMode: tileMode);
+        return saintPetersburg(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Plum Plate":
-        return plumPlate(tileMode: tileMode);
+        return plumPlate(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Everlasting Sky":
-        return everlastingSky(tileMode: tileMode);
+        return everlastingSky(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Happy Fisher":
-        return happyFisher(tileMode: tileMode);
+        return happyFisher(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Blessing":
-        return blessing(tileMode: tileMode);
+        return blessing(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Sharpeye Eagle":
-        return sharpeyeEagle(tileMode: tileMode);
+        return sharpeyeEagle(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Ladoga Bottom":
-        return ladogaBottom(tileMode: tileMode);
+        return ladogaBottom(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Lemon Gate":
-        return lemonGate(tileMode: tileMode);
+        return lemonGate(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Itmeo Branding":
-        return itmeoBranding(tileMode: tileMode);
+        return itmeoBranding(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Zeus Miracle":
-        return zeusMiracle(tileMode: tileMode);
+        return zeusMiracle(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Old Hat":
-        return oldHat(tileMode: tileMode);
+        return oldHat(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Star Wine":
-        return starWine(tileMode: tileMode);
+        return starWine(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Happy Acid":
-        return happyAcid(tileMode: tileMode);
+        return happyAcid(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Awesome Pine":
-        return awesomePine(tileMode: tileMode);
+        return awesomePine(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "New York":
-        return newYork(tileMode: tileMode);
+        return newYork(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Shy Rainbow":
-        return shyRainbow(tileMode: tileMode);
+        return shyRainbow(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Mixed Hopes":
-        return mixedHopes(tileMode: tileMode);
+        return mixedHopes(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Fly High":
-        return flyHigh(tileMode: tileMode);
+        return flyHigh(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Strong Bliss":
-        return strongBliss(tileMode: tileMode);
+        return strongBliss(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Fresh Milk":
-        return freshMilk(tileMode: tileMode);
+        return freshMilk(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Snow Again":
-        return snowAgain(tileMode: tileMode);
+        return snowAgain(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "February Ink":
-        return februaryInk(tileMode: tileMode);
+        return februaryInk(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Kind Steel":
-        return kindSteel(tileMode: tileMode);
+        return kindSteel(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Soft Grass":
-        return softGrass(tileMode: tileMode);
+        return softGrass(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Grown Early":
-        return grownEarly(tileMode: tileMode);
+        return grownEarly(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Sharp Blues":
-        return sharpBlues(tileMode: tileMode);
+        return sharpBlues(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Shady Water":
-        return shadyWater(tileMode: tileMode);
+        return shadyWater(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Dirty Beauty":
-        return dirtyBeauty(tileMode: tileMode);
+        return dirtyBeauty(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Great Whale":
-        return greatWhale(tileMode: tileMode);
+        return greatWhale(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Teen Notebook":
-        return teenNotebook(tileMode: tileMode);
+        return teenNotebook(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Polite Rumors":
-        return politeRumors(tileMode: tileMode);
+        return politeRumors(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Sweet Period":
-        return sweetPeriod(tileMode: tileMode);
+        return sweetPeriod(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Wide Matrix":
-        return wideMatrix(tileMode: tileMode);
+        return wideMatrix(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Soft Cherish":
-        return softCherish(tileMode: tileMode);
+        return softCherish(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Red Salvation":
-        return redSalvation(tileMode: tileMode);
+        return redSalvation(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Burning Spring":
-        return burningSpring(tileMode: tileMode);
+        return burningSpring(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Night Party":
-        return nightParty(tileMode: tileMode);
+        return nightParty(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Sky Glider":
-        return skyGlider(tileMode: tileMode);
+        return skyGlider(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Heaven Peach":
-        return heavenPeach(tileMode: tileMode);
+        return heavenPeach(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Purple Division":
-        return purpleDivision(tileMode: tileMode);
+        return purpleDivision(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Aqua Splash":
-        return aquaSplash(tileMode: tileMode);
+        return aquaSplash(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Spiky Naga":
-        return spikyNaga(tileMode: tileMode);
+        return spikyNaga(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Love Kiss":
-        return loveKiss(tileMode: tileMode);
+        return loveKiss(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Clean Mirror":
-        return cleanMirror(tileMode: tileMode);
+        return cleanMirror(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Premium Dark":
-        return premiumDark(tileMode: tileMode);
+        return premiumDark(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Cold Evening":
-        return coldEvening(tileMode: tileMode);
+        return coldEvening(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Cochiti Lake":
-        return cochitiLake(tileMode: tileMode);
+        return cochitiLake(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Summer Games":
-        return summerGames(tileMode: tileMode);
+        return summerGames(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Passionate Bed":
-        return passionateBed(tileMode: tileMode);
+        return passionateBed(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Mountain Rock":
-        return mountainRock(tileMode: tileMode);
+        return mountainRock(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Desert Hump":
-        return desertHump(tileMode: tileMode);
+        return desertHump(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Jungle Day":
-        return jungleDay(tileMode: tileMode);
+        return jungleDay(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Phoenix Start":
-        return phoenixStart(tileMode: tileMode);
+        return phoenixStart(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "October Silence":
-        return octoberSilence(tileMode: tileMode);
+        return octoberSilence(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Faraway River":
-        return farawayRiver(tileMode: tileMode);
+        return farawayRiver(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Alchemist Lab":
-        return alchemistLab(tileMode: tileMode);
+        return alchemistLab(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Over Sun":
-        return overSun(tileMode: tileMode);
+        return overSun(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Premium White":
-        return premiumWhite(tileMode: tileMode);
+        return premiumWhite(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Mars Party":
-        return marsParty(tileMode: tileMode);
+        return marsParty(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Eternal Constance":
-        return eternalConstance(tileMode: tileMode);
+        return eternalConstance(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Japan Blush":
-        return japanBlush(tileMode: tileMode);
+        return japanBlush(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Smiling Rain":
-        return smilingRain(tileMode: tileMode);
+        return smilingRain(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Cloudy Apple":
-        return cloudyApple(tileMode: tileMode);
+        return cloudyApple(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Big Mango":
-        return bigMango(tileMode: tileMode);
+        return bigMango(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Healthy Water":
-        return healthyWater(tileMode: tileMode);
+        return healthyWater(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Amour Amour":
-        return amourAmour(tileMode: tileMode);
+        return amourAmour(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Risky Concrete":
-        return riskyConcrete(tileMode: tileMode);
+        return riskyConcrete(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Strong Stick":
-        return strongStick(tileMode: tileMode);
+        return strongStick(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Vicious Stance":
-        return viciousStance(tileMode: tileMode);
+        return viciousStance(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Palo Alto":
-        return paloAlto(tileMode: tileMode);
+        return paloAlto(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Happy Memories":
-        return happyMemories(tileMode: tileMode);
+        return happyMemories(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Midnight Bloom":
-        return midnightBloom(tileMode: tileMode);
+        return midnightBloom(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Crystalline":
-        return crystalline(tileMode: tileMode);
+        return crystalline(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Party Bliss":
-        return partyBliss(tileMode: tileMode);
+        return partyBliss(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Confident Cloud":
-        return confidentCloud(tileMode: tileMode);
+        return confidentCloud(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Le Cocktail":
-        return leCocktail(tileMode: tileMode);
+        return leCocktail(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "River City":
-        return riverCity(tileMode: tileMode);
+        return riverCity(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Frozen Berry":
-        return frozenBerry(tileMode: tileMode);
+        return frozenBerry(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Child Care":
-        return childCare(tileMode: tileMode);
+        return childCare(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Flying Lemon":
-        return flyingLemon(tileMode: tileMode);
+        return flyingLemon(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "New Retrowave":
-        return newRetrowave(tileMode: tileMode);
+        return newRetrowave(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Hidden Jaguar":
-        return hiddenJaguar(tileMode: tileMode);
+        return hiddenJaguar(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Above The Sky":
-        return aboveTheSky(tileMode: tileMode);
+        return aboveTheSky(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Nega":
-        return nega(tileMode: tileMode);
+        return nega(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Dense Water":
-        return denseWater(tileMode: tileMode);
+        return denseWater(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Seashore":
-        return seashore(tileMode: tileMode);
+        return seashore(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Marble Wall":
-        return marbleWall(tileMode: tileMode);
+        return marbleWall(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Cheerful Caramel":
-        return cheerfulCaramel(tileMode: tileMode);
+        return cheerfulCaramel(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Night Sky":
-        return nightSky(tileMode: tileMode);
+        return nightSky(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Magic Lake":
-        return magicLake(tileMode: tileMode);
+        return magicLake(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Young Grass":
-        return youngGrass(tileMode: tileMode);
+        return youngGrass(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Colorful Peach":
-        return colorfulPeach(tileMode: tileMode);
+        return colorfulPeach(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Gentle Care":
-        return gentleCare(tileMode: tileMode);
+        return gentleCare(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Plum Bath":
-        return plumBath(tileMode: tileMode);
+        return plumBath(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Happy Unicorn":
-        return happyUnicorn(tileMode: tileMode);
+        return happyUnicorn(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "African Field":
-        return africanField(tileMode: tileMode);
+        return africanField(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Solid Stone":
-        return solidStone(tileMode: tileMode);
+        return solidStone(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Orange Juice":
-        return orangeJuice(tileMode: tileMode);
+        return orangeJuice(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Glass Water":
-        return glassWater(tileMode: tileMode);
+        return glassWater(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "North Miracle":
-        return northMiracle(tileMode: tileMode);
+        return northMiracle(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Fruit Blend":
-        return fruitBlend(tileMode: tileMode);
+        return fruitBlend(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Millennium Pine":
-        return millenniumPine(tileMode: tileMode);
+        return millenniumPine(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "High Flight":
-        return highFlight(tileMode: tileMode);
+        return highFlight(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Mole Hall":
-        return moleHall(tileMode: tileMode);
+        return moleHall(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Space Shift":
-        return spaceShift(tileMode: tileMode);
+        return spaceShift(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Forest Inei":
-        return forestInei(tileMode: tileMode);
+        return forestInei(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Royal Garden":
-        return royalGarden(tileMode: tileMode);
+        return royalGarden(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Rich Metal":
-        return richMetal(tileMode: tileMode);
+        return richMetal(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Juicy Cake":
-        return juicyCake(tileMode: tileMode);
+        return juicyCake(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Smart Indigo":
-        return smartIndigo(tileMode: tileMode);
+        return smartIndigo(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Sand Strike":
-        return sandStrike(tileMode: tileMode);
+        return sandStrike(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Norse Beauty":
-        return norseBeauty(tileMode: tileMode);
+        return norseBeauty(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Aqua Guidance":
-        return aquaGuidance(tileMode: tileMode);
+        return aquaGuidance(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Sun Veggie":
-        return sunVeggie(tileMode: tileMode);
+        return sunVeggie(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Sea Lord":
-        return seaLord(tileMode: tileMode);
+        return seaLord(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Black Sea":
-        return blackSea(tileMode: tileMode);
+        return blackSea(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Grass Shampoo":
-        return grassShampoo(tileMode: tileMode);
+        return grassShampoo(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Landing Aircraft":
-        return landingAircraft(tileMode: tileMode);
+        return landingAircraft(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Witch Dance":
-        return witchDance(tileMode: tileMode);
+        return witchDance(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Sleepless Night":
-        return sleeplessNight(tileMode: tileMode);
+        return sleeplessNight(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Angel Care":
-        return angelCare(tileMode: tileMode);
+        return angelCare(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Crystal River":
-        return crystalRiver(tileMode: tileMode);
+        return crystalRiver(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Soft Lipstick":
-        return softLipstick(tileMode: tileMode);
+        return softLipstick(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Salt Mountain":
-        return saltMountain(tileMode: tileMode);
+        return saltMountain(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Perfect White":
-        return perfectWhite(tileMode: tileMode);
+        return perfectWhite(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Fresh Oasis":
-        return freshOasis(tileMode: tileMode);
+        return freshOasis(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Strict November":
-        return strictNovember(tileMode: tileMode);
+        return strictNovember(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Morning Salad":
-        return morningSalad(tileMode: tileMode);
+        return morningSalad(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Deep Relief":
-        return deepRelief(tileMode: tileMode);
+        return deepRelief(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Sea Strike":
-        return seaStrike(tileMode: tileMode);
+        return seaStrike(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Night Call":
-        return nightCall(tileMode: tileMode);
+        return nightCall(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Supreme Sky":
-        return supremeSky(tileMode: tileMode);
+        return supremeSky(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Light Blue":
-        return lightBlue(tileMode: tileMode);
+        return lightBlue(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Mind Crawl":
-        return mindCrawl(tileMode: tileMode);
+        return mindCrawl(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Lily Meadow":
-        return lilyMeadow(tileMode: tileMode);
+        return lilyMeadow(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Sugar Lollipop":
-        return sugarLollipop(tileMode: tileMode);
+        return sugarLollipop(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Sweet Dessert":
-        return sweetDessert(tileMode: tileMode);
+        return sweetDessert(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Magic Ray":
-        return magicRay(tileMode: tileMode);
+        return magicRay(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Teen Party":
-        return teenParty(tileMode: tileMode);
+        return teenParty(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Frozen Heat":
-        return frozenHeat(tileMode: tileMode);
+        return frozenHeat(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Gagarin View":
-        return gagarinView(tileMode: tileMode);
+        return gagarinView(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Fabled Sunset":
-        return fabledSunset(tileMode: tileMode);
+        return fabledSunset(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       case "Perfect Blue":
-        return perfectBlue(tileMode: tileMode); */
+        return perfectBlue(
+            type: type,
+            endAngle: endAngle,
+            startAngle: startAngle,
+            center: center,
+            radius: radius,
+            tileMode: tileMode);
 
       default:
         throw Exception("Gradient name not found.");
