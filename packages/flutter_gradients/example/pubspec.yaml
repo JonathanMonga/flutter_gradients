@@ -1,6 +1,5 @@
 name: flutter_gradients_example
 description: Demonstrates how to use the flutter_gradients plugin.
-publish_to: "none"
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -10,13 +9,11 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^0.1.2
+  flutter_gradients: ^1.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-  flutter_gradients:
-    path: ../
 
 flutter:
   uses-material-design: true
