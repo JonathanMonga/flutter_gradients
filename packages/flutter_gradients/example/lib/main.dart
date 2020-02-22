@@ -1,54 +1,113 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gradients_example/linear_gradients_page.dart';
+import 'package:flutter_gradients/flutter_gradients.dart';
 
-import 'package:flutter_gradients_example/radial_gradients_page.dart';
-import 'package:flutter_gradients_example/sweep_gradients_page.dart';
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title: const Text('Flutter Gradients'),
+        ),
+        body: MyApp(),
+      ),
+    ),
+  );
+}
 
-const String RADIAL_ROUTE = '/flutter_radial_gradients_page';
-const String LINEAR_ROUTE = '/flutter_linear_gradients_page';
-const String SWEEP_ROUTE = '/flutter_sweep_gradients_page';
+class MyApp extends StatefulWidget {
+  @override
+  MyAppState createState() => MyAppState();
+}
 
-void main() => runApp(
-      MaterialApp(
-        home: MyApp(),
-        routes: <String, WidgetBuilder>{
-          RADIAL_ROUTE: (BuildContext context) => FlutterRadialGradientsPage(),
-          LINEAR_ROUTE: (BuildContext context) => FlutterLinearGradientsPage(),
-          SWEEP_ROUTE: (BuildContext context) => FlutterSweepGradientsPage(),
+class MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    var listGradient = FlutterGradients.names();
+    listGradient.sort();
+
+    return Center(
+      child: ListView.separated(
+        itemCount: listGradient.length,
+        separatorBuilder: (BuildContext context, int index) => Divider(),
+        itemBuilder: (BuildContext context, int index) {
+          var name = listGradient[index];
+
+          return ListTile(
+            title: Text(name),
+            onTap: () {
+              _onTap(name);
+            },
+          );
         },
       ),
     );
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text('Flutter Gradients'),
-      ),
-      body: Center(
-        child: Column(
-          children: <Widget>[
-            RaisedButton(
-              child: Text('Flutter Radial Gradients'),
-              onPressed: _onPressed(context, RADIAL_ROUTE),
-            ),
-            RaisedButton(
-              child: Text('Flutter linear Gradients'),
-              onPressed: _onPressed(context, LINEAR_ROUTE),
-            ),
-            RaisedButton(
-              child: Text('Flutter sweep Gradients'),
-              onPressed: _onPressed(context, SWEEP_ROUTE),
-            )
-          ],
-        ),
-      ),
-    );
   }
 
-  _onPressed(BuildContext context, String index) {
-    Navigator.of(context).pushNamed(index);
+  _onTap(String name) {
+    showDialog(
+        context: context,
+        builder: (_) {
+          var linearGradient = _findGradients(name);
+          var radialGradient = _findGradients(name, GradientType.radial);
+          var sweepGradient = _findGradients(name, GradientType.sweep);
+
+          var linearGradientBoxDecoration =
+              BoxDecoration(shape: BoxShape.circle, gradient: linearGradient);
+          var radialGradientBoxDecoration =
+              BoxDecoration(shape: BoxShape.circle, gradient: radialGradient);
+          var sweepGradientBoxDecoration =
+              BoxDecoration(shape: BoxShape.circle, gradient: sweepGradient);
+
+          var size = 200.0;
+
+          var linearGradientCircleContainer = Container(
+              width: size,
+              height: size,
+              decoration: linearGradientBoxDecoration);
+          var radialGradientCircleContainer = Container(
+              width: size,
+              height: size,
+              decoration: radialGradientBoxDecoration);
+          var sweepGradientCircleContainer = Container(
+              width: size,
+              height: size,
+              decoration: sweepGradientBoxDecoration);
+
+          return AlertDialog(
+            title: Center(child: Text(name)),
+            content: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisSize: MainAxisSize.max,
+              children: <Widget>[
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.max,
+                  children: <Widget>[
+                    Text("LinearGradient"),
+                    Padding(
+                        padding: EdgeInsets.all(10),
+                        child: linearGradientCircleContainer),
+                    Text("RadialGradient"),
+                    Padding(
+                        padding: EdgeInsets.all(10),
+                        child: radialGradientCircleContainer),
+                    Text("SweepGradient"),
+                    Padding(
+                        padding: EdgeInsets.all(10),
+                        child: sweepGradientCircleContainer),
+                  ],
+                )
+              ],
+            ),
+          );
+        });
   }
+
+  /// Find the gradient from his name in the list
+  Gradient _findGradients(String gradientName,
+          [GradientType type = GradientType.linear]) =>
+      FlutterGradients.find(gradientName, type: type);
 }

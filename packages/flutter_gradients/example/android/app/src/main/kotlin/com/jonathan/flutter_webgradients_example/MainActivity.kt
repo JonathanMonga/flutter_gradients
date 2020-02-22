@@ -1,4 +1,4 @@
-package com.jonathan.flutter_webgradients_example
+package com.jonathan.flutter_example
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity

@@ -1,4 +1,4 @@
-group 'com.jonathan.flutter_webgradients'
+group 'com.jonathan.flutter'
 version '1.0-SNAPSHOT'
 
 buildscript {
