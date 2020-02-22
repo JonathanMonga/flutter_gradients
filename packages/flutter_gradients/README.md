@@ -33,7 +33,7 @@ import 'package:flutter_gradients/flutter_gradients.dart';
 
 ### For LinearGradient
 
-By default [FlutterGradient] will generates the [LinearGradient].
+By default `FlutterGradient` will generates the `LinearGradient`.
 
 <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/angel_care_linear_gradient.png" align = "right" height = "180" alt="Exemple">
 
@@ -71,7 +71,7 @@ You can customize the follows values :
 
 - center : The center of the gradient, as an offset into the (-1.0, -1.0) x (1.0, 1.0) square describing the gradient which will be mapped onto the paint box.
 - radius : The radius of the gradient, as a fraction of the shortest side of the paint box.
-- tileMode : How this gradient should tile the plane beyond the outer ring at [radius] pixels from the [center].
+- tileMode : How this gradient should tile the plane beyond the outer ring at `radius` pixels from the `center`.
 
 <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/angel_care_radial_gradient.png" align = "right" height = "180" alt="Exemple">
 
@@ -85,7 +85,12 @@ You can customize the follows values :
         height: 150,
         decoration: BoxDecoration(
             shape: BoxShape.circle,
-            gradient: FlutterGradient.warmFlame(type: GradientType.radial, center: Alignment.center, radius: 0.5,tileMode = TileMode.clamp),
+            gradient: FlutterGradient.warmFlame(
+                type: GradientType.radial,
+                center: Alignment.center,
+                radius: 0.5,
+                tileMode = TileMode.clamp,
+           ),
         ),
     );
 ```
@@ -97,7 +102,7 @@ You can customize the follows values :
 - center : The center of the gradient, as an offset into the (-1.0, -1.0) x (1.0, 1.0) square describing the gradient which will be mapped onto the paint box.
 - startAngle : The angle in radians at which stop 0.0 of the gradient is placed.
 - endAngle : The angle in radians at which stop 1.0 of the gradient is placed.
-- tileMode : How this gradient should tile the plane beyond the outer ring at [radius] pixels from the [center].
+- tileMode : How this gradient should tile the plane beyond the outer ring at `radius` pixels from the `center`.
 
 <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/angel_care_sweep_gradient.png" align = "right" height = "180" alt="Exemple">
 
@@ -111,7 +116,13 @@ You can customize the follows values :
         height: 150,
         decoration: BoxDecoration(
             shape: BoxShape.circle,
-            gradient: FlutterGradient.warmFlame(type: GradientType.sweep, center: Alignment.center, startAngle: 0.0, endAngle: math.pi * 2, tileMode = TileMode.clamp),
+            gradient: FlutterGradient.warmFlame(
+                type: GradientType.sweep,
+                center: Alignment.center,
+                startAngle: 0.0,
+                endAngle: math.pi * 2,
+                tileMode = TileMode.clamp,
+            ),
         ),
     );
 ```
