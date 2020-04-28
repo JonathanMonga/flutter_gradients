@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_gradients/src/core/flutter_garadients_names.dart';
+import 'package:flutter_gradients/src/core/flutter_gradients_names.dart';
 
 import 'package:flutter_gradients/src/core/flutter_linear_gradients.dart';
 import 'package:flutter_gradients/src/core/flutter_radial_gradients.dart';
