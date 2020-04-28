@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-import 'package:flutter_gradients/src/core/hex.dart';
+import 'package:flutter_gradients/src/core/flutter_gradients_hex.dart';
 import 'package:flutter_gradients/src/core/create_radial_gradient.dart';
 
 /// A facade class that contains all the methodes that generate a `RadialGradient`,
@@ -16,14 +16,14 @@ import 'package:flutter_gradients/src/core/create_radial_gradient.dart';
 ///   height: 150,
 ///   decoration: BoxDecoration(
 ///     shape: BoxShape.circle,
-///     gradient: FlutterGradient.warmFlame(type: GradientType.radial),
+///     gradient: FlutterGradients.warmFlame(type: GradientType.radial),
 ///   ),
 /// ),
 /// ```
 /// You can set also the `tileMode`, that by default is set on `TileMode.repeated`
 ///
 /// ```
-/// FlutterGradient.warmFlame(type: GradientType.radial, tileMode = TileMode.clamp),
+/// FlutterGradients.warmFlame(type: GradientType.radial, tileMode = TileMode.clamp),
 /// ```
 class FlutterRadialGradients {
   static RadialGradient radial(

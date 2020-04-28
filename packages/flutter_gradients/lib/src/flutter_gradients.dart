@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_gradients/src/core/flutter_linear_gradients.dart';
 import 'package:flutter_gradients/src/core/flutter_radial_gradients.dart';
 import 'package:flutter_gradients/src/core/flutter_sweep_gradients.dart';
-import 'package:flutter_gradients/src/core/gradient_type.dart';
+import 'package:flutter_gradients/src/core/flutter_gradients_type.dart';
 
 import 'dart:math' as math;
 
@@ -20,7 +20,7 @@ import 'dart:math' as math;
 ///   height: 150,
 ///   decoration: BoxDecoration(
 ///     shape: BoxShape.circle,
-///     gradient: FlutterGradient.warmFlame(),
+///     gradient: FlutterGradients.warmFlame(),
 ///   ),
 /// ),
 /// ```
@@ -45,7 +45,7 @@ import 'dart:math' as math;
 ///   height: 150,
 ///   decoration: BoxDecoration(
 ///     shape: BoxShape.circle,
-///     gradient: FlutterGradient.warmFlame(
+///     gradient: FlutterGradients.warmFlame(
 ///            type: GradientType.sweep,
 ///            AlignmentGeometry center = Alignment.center,
 ///            startAngle = 0.0,
@@ -65,7 +65,7 @@ import 'dart:math' as math;
 ///   height: 150,
 ///   decoration: BoxDecoration(
 ///     shape: BoxShape.circle,
-///     gradient: FlutterGradient.warmFlame(type: GradientType.radial),
+///     gradient: FlutterGradients.warmFlame(type: GradientType.radial),
 ///   ),
 /// ),
 /// ```
@@ -77,7 +77,7 @@ import 'dart:math' as math;
 ///   height: 150,
 ///   decoration: BoxDecoration(
 ///     shape: BoxShape.circle,
-///     gradient: FlutterGradient.warmFlame(
+///     gradient: FlutterGradients.warmFlame(
 ///            type: GradientType.radial,
 ///            AlignmentGeometry center = Alignment.center,
 ///            radius = 0.5,
