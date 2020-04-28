@@ -72,10 +72,10 @@ packages:
   flutter_gradients:
     dependency: "direct main"
     description:
-      name: flutter_gradients
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.0"
+      path: ".."
+      relative: true
+    source: path
+    version: "1.0.0+1"
   flutter_test:
     dependency: "direct dev"
     description: flutter

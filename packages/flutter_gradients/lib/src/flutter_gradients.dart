@@ -13,6 +13,13 @@ import 'dart:math' as math;
 /// By default this class it will contains methods that will produce a `LinearGradient`.
 /// If you want to get a `RadialGradient` set the `type` parameter to `GradientType.radial`, and
 /// to `GradientType.sweep` for `SweepGradient`.
+/// 
+/// Now you can find all gradients just by their names 
+/// 
+/// ```
+/// FlutterGradients.findByName(FlutterGradientNames.aboveTheSky);
+/// ```
+/// Very simple
 ///
 /// * For `LinearGradient` use this code :
 /// ```
@@ -93,7 +100,7 @@ import 'dart:math' as math;
 /// ```
 /// FlutterGradient.warmFlame(tileMode = TileMode.clamp),
 /// ```
-///
+/// 
 class FlutterGradients {
   /// Warm Flame
   static Gradient warmFlame(
@@ -4320,7 +4327,7 @@ class FlutterGradients {
       return FlutterLinearGradients.perfectBlue(tileMode: tileMode);
   }
 
-  static List<String> _names = [
+  static List<String> names = [
     "Warm Flame",
     "Night Fade",
     "Spring Warmth",
@@ -4498,7 +4505,7 @@ class FlutterGradients {
           double startAngle = 0.0,
           double endAngle = math.pi * 2,
           TileMode tileMode = TileMode.repeated}) =>
-      _find(_names[name.index],
+      _find(names[name.index],
           type: type,
           center: center,
           radius: radius,

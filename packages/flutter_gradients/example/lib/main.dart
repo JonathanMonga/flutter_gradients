@@ -23,20 +23,21 @@ class MyApp extends StatefulWidget {
 class MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    var listGradient = FlutterGradients.names();
-    listGradient.sort();
+    var listGradientName = FlutterGradientNames.values;
+    listGradientName.sort();
 
     return Center(
       child: ListView.separated(
-        itemCount: listGradient.length,
+        itemCount: listGradientName.length,
         separatorBuilder: (BuildContext context, int index) => Divider(),
         itemBuilder: (BuildContext context, int index) {
-          var name = listGradient[index];
+          var gradient = listGradientName[index];
+          var name = FlutterGradients.names[gradient.index];
 
           return ListTile(
             title: Text(name),
             onTap: () {
-              _onTap(name);
+              _onTap(name, gradient);
             },
           );
         },
@@ -44,13 +45,13 @@ class MyAppState extends State<MyApp> {
     );
   }
 
-  _onTap(String name) {
+  _onTap(String name, FlutterGradientNames gradient) {
     showDialog(
         context: context,
         builder: (_) {
-          var linearGradient = _findGradients(name);
-          var radialGradient = _findGradients(name, GradientType.radial);
-          var sweepGradient = _findGradients(name, GradientType.sweep);
+          var linearGradient = _findGradients(gradient);
+          var radialGradient = _findGradients(gradient, GradientType.radial);
+          var sweepGradient = _findGradients(gradient, GradientType.sweep);
 
           var linearGradientBoxDecoration =
               BoxDecoration(shape: BoxShape.circle, gradient: linearGradient);
@@ -76,38 +77,40 @@ class MyAppState extends State<MyApp> {
 
           return AlertDialog(
             title: Center(child: Text(name)),
-            content: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisSize: MainAxisSize.max,
-              children: <Widget>[
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisSize: MainAxisSize.max,
-                  children: <Widget>[
-                    Text("LinearGradient"),
-                    Padding(
-                        padding: EdgeInsets.all(10),
-                        child: linearGradientCircleContainer),
-                    Text("RadialGradient"),
-                    Padding(
-                        padding: EdgeInsets.all(10),
-                        child: radialGradientCircleContainer),
-                    Text("SweepGradient"),
-                    Padding(
-                        padding: EdgeInsets.all(10),
-                        child: sweepGradientCircleContainer),
-                  ],
-                )
-              ],
+            content: SingleChildScrollView(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisSize: MainAxisSize.max,
+                children: <Widget>[
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisSize: MainAxisSize.max,
+                    children: <Widget>[
+                      Text("LinearGradient"),
+                      Padding(
+                          padding: EdgeInsets.all(10),
+                          child: linearGradientCircleContainer),
+                      Text("RadialGradient"),
+                      Padding(
+                          padding: EdgeInsets.all(10),
+                          child: radialGradientCircleContainer),
+                      Text("SweepGradient"),
+                      Padding(
+                          padding: EdgeInsets.all(10),
+                          child: sweepGradientCircleContainer),
+                    ],
+                  )
+                ],
+              ),
             ),
           );
         });
   }
 
   /// Find the gradient from his name in the list
-  Gradient _findGradients(String gradientName,
+  Gradient _findGradients(FlutterGradientNames gradient,
           [GradientType type = GradientType.linear]) =>
-      FlutterGradients.find(gradientName, type: type);
+      FlutterGradients.findByName(gradient, type: type);
 }
