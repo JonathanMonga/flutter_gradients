@@ -1,9 +1,10 @@
+import 'package:flutter_gradients/src/core/flutter_garadients_names.dart';
 import 'package:flutter_gradients/src/flutter_gradients.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-
-  test('checkNullability', () async {
-    expect(FlutterGradients.find(name), matcher);
+  test('findByName', () async {
+    expect(FlutterGradients.findByName(FlutterGradientNames.aboveTheSky),
+        FlutterGradients.aboveTheSky());
   });
 }
