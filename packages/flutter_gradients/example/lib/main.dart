@@ -36,6 +36,13 @@ class MyAppState extends State<MyApp> {
 
           return ListTile(
             title: Text(name),
+            leading: AspectRatio(
+              aspectRatio: 1,
+              child: Container(
+                decoration: BoxDecoration(
+                    gradient: _findGradients(gradient), shape: BoxShape.circle),
+              ),
+            ),
             onTap: () {
               _onTap(name, gradient);
             },
@@ -45,6 +52,12 @@ class MyAppState extends State<MyApp> {
     );
   }
 
+  /// Find the gradient from his name in the list
+  Gradient _findGradients(FlutterGradientNames gradient,
+          [GradientType type = GradientType.linear]) =>
+      FlutterGradients.findByName(gradient, type: type);
+
+  /// onTap method
   _onTap(String name, FlutterGradientNames gradient) {
     showDialog(
         context: context,
@@ -108,9 +121,4 @@ class MyAppState extends State<MyApp> {
           );
         });
   }
-
-  /// Find the gradient from his name in the list
-  Gradient _findGradients(FlutterGradientNames gradient,
-          [GradientType type = GradientType.linear]) =>
-      FlutterGradients.findByName(gradient, type: type);
 }
