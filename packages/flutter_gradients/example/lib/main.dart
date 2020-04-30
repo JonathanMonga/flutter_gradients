@@ -24,7 +24,6 @@ class MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     var listGradientName = FlutterGradientNames.values;
-    listGradientName.sort();
 
     return Center(
       child: ListView.separated(
