@@ -33,7 +33,7 @@ import 'package:flutter_gradients/flutter_gradients.dart';
 
 ### For LinearGradient
 
-By default `FlutterGradient` will generates the `LinearGradient`.
+By default `FlutterGradients` will generates the `LinearGradient`.
 
 <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/angel_care_linear_gradient.png" align = "right" height = "180" alt="Exemple">
 
@@ -47,7 +47,7 @@ By default `FlutterGradient` will generates the `LinearGradient`.
         height: 150,
         decoration: BoxDecoration(
             shape: BoxShape.circle,
-            gradient: FlutterGradient.warmFlame(),
+            gradient: FlutterGradients.warmFlame(),
         ),
     );
 ```
@@ -60,7 +60,7 @@ or
         height: 150,
         decoration: BoxDecoration(
             shape: BoxShape.circle,
-            gradient: FlutterGradient.warmFlame(type: GradientType.linear),
+            gradient: FlutterGradients.warmFlame(type: GradientType.linear),
         ),
     );
 ```
@@ -85,7 +85,7 @@ You can customize the follows values :
         height: 150,
         decoration: BoxDecoration(
             shape: BoxShape.circle,
-            gradient: FlutterGradient.warmFlame(
+            gradient: FlutterGradients.warmFlame(
                 type: GradientType.radial,
                 center: Alignment.center,
                 radius: 0.5,
@@ -116,7 +116,7 @@ You can customize the follows values :
         height: 150,
         decoration: BoxDecoration(
             shape: BoxShape.circle,
-            gradient: FlutterGradient.warmFlame(
+            gradient: FlutterGradients.warmFlame(
                 type: GradientType.sweep,
                 center: Alignment.center,
                 startAngle: 0.0,
