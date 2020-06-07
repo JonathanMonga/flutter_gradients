@@ -89,7 +89,7 @@ You can customize the follows values :
                 type: GradientType.radial,
                 center: Alignment.center,
                 radius: 0.5,
-                tileMode = TileMode.clamp,
+                tileMode: TileMode.clamp,
            ),
         ),
     );
@@ -121,7 +121,7 @@ You can customize the follows values :
                 center: Alignment.center,
                 startAngle: 0.0,
                 endAngle: math.pi * 2,
-                tileMode = TileMode.clamp,
+                tileMode: TileMode.clamp,
             ),
         ),
     );
