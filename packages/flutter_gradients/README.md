@@ -1,3 +1,5 @@
+[![Flutter Community: after_layout](https://fluttercommunity.dev/_github/header/after_layout)](https://github.com/fluttercommunity/community)
+
 # Flutter Gradients
 
 <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/header.jpg" align="center" alt="Header" height="500" width="100%"/>
