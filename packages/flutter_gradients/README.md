@@ -1,4 +1,4 @@
-[![Flutter Community: after_layout](https://fluttercommunity.dev/_github/header/after_layout)](https://github.com/fluttercommunity/community)
+[![Flutter Community: after_layout](https://fluttercommunity.dev/_github/header/flutter_gradients)](https://github.com/fluttercommunity/community)
 
 # Flutter Gradients
 
