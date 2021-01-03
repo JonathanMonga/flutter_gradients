@@ -1,10 +1,12 @@
+[![Flutter Community: after_layout](https://fluttercommunity.dev/_github/header/flutter_gradients)](https://github.com/fluttercommunity/community)
+
 # Flutter Gradients
 
 <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/header.jpg" align="center" alt="Header" height="500" width="100%"/>
 
 A curated collection of awesome gradients made in Dart (port of [https://webgradients.com](https://webgradients.com) for Flutter). Only linear gradients included for now.
 
-[![Pub](https://img.shields.io/badge/pub-1.0.0+2-blue)](https://pub.dev/packages/flutter_gradients)
+[![Pub](https://img.shields.io/badge/pub-1.0.0+3-blue)](https://pub.dev/packages/flutter_gradients)
 [![Build Status](https://travis-ci.org/JonathanMonga/flutter_gradients.svg?branch=master)](https://travis-ci.org/JonathanMonga/flutter_gradients)
 
 ### Show some :heart: and star the repo to support the project
@@ -18,7 +20,7 @@ Add the Package
 
 ```yaml
 dependencies:
-  flutter_gradients: ^1.0.0+2
+  flutter_gradients: ^1.0.0+3
 ```
 
 # Usage
@@ -33,7 +35,7 @@ import 'package:flutter_gradients/flutter_gradients.dart';
 
 ### For LinearGradient
 
-By default `FlutterGradients` will generates the `LinearGradient`.
+By default `FlutterGradient` will generates the `LinearGradient`.
 
 <img src="https://raw.githubusercontent.com/JonathanMonga/flutter_gradients/master/images/angel_care_linear_gradient.png" align = "right" height = "180" alt="Exemple">
 
@@ -47,7 +49,7 @@ By default `FlutterGradients` will generates the `LinearGradient`.
         height: 150,
         decoration: BoxDecoration(
             shape: BoxShape.circle,
-            gradient: FlutterGradients.warmFlame(),
+            gradient: FlutterGradient.warmFlame(),
         ),
     );
 ```
@@ -60,7 +62,7 @@ or
         height: 150,
         decoration: BoxDecoration(
             shape: BoxShape.circle,
-            gradient: FlutterGradients.warmFlame(type: GradientType.linear),
+            gradient: FlutterGradient.warmFlame(type: GradientType.linear),
         ),
     );
 ```
@@ -85,7 +87,7 @@ You can customize the follows values :
         height: 150,
         decoration: BoxDecoration(
             shape: BoxShape.circle,
-            gradient: FlutterGradients.warmFlame(
+            gradient: FlutterGradient.warmFlame(
                 type: GradientType.radial,
                 center: Alignment.center,
                 radius: 0.5,
@@ -116,7 +118,7 @@ You can customize the follows values :
         height: 150,
         decoration: BoxDecoration(
             shape: BoxShape.circle,
-            gradient: FlutterGradients.warmFlame(
+            gradient: FlutterGradient.warmFlame(
                 type: GradientType.sweep,
                 center: Alignment.center,
                 startAngle: 0.0,

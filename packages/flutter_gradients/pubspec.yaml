@@ -5,10 +5,9 @@ version: 1.0.0+3
 authors:
  - Flutter Community <community@flutter.zone>
  - Jonathan Monga <jmonga98@gmail.com>
+
 homepage: https://github.com/fluttercommunity/flutter_gradients
 maintainer: Jonathan Monga (@JonathanMonga)
-
-homepage: https://github.com/JonathanMonga/flutter_gradients
 
 environment:
   sdk: ">=2.6.0 <3.0.0"
