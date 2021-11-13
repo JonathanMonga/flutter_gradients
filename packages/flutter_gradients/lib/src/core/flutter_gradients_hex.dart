@@ -8,10 +8,10 @@ Color _intToColor(int hexNumber) => Color.fromARGB(
 
 /// String To Material color
 Color stringToColor(String hex) =>
-    _intToColor(int.parse(_textSubString(hex), radix: 16));
+    _intToColor(int.parse(_textSubString(hex) ?? "0", radix: 16));
 
 //Substring
-String _textSubString(String text) {
+String? _textSubString(String? text) {
   if (text == null) return null;
 
   if (text.length < 6) return null;

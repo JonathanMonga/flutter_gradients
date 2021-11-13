@@ -10,7 +10,7 @@ homepage: https://github.com/fluttercommunity/flutter_gradients
 maintainer: Jonathan Monga (@JonathanMonga)
 
 environment:
-  sdk: ">=2.6.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
