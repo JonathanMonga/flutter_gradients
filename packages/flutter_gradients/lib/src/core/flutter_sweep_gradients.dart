@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'dart:math' as math;
 
 import 'package:flutter_gradients/src/core/flutter_gradients_hex.dart';
 import 'package:flutter_gradients/src/core/create_sweep_gradient.dart';
@@ -39,10 +40,10 @@ class FlutterSweepGradients {
 
   /// 1. Warm Flame
   static Gradient warmFlame({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Warm Flame",
@@ -61,10 +62,10 @@ class FlutterSweepGradients {
 
   /// 2. Night Fade
   static Gradient nightFade({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Night Fade",
@@ -79,10 +80,10 @@ class FlutterSweepGradients {
 
   /// 3. Spring Warmth
   static Gradient springWarmth({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Spring Warmth",
@@ -101,10 +102,10 @@ class FlutterSweepGradients {
 
   /// 4. Juicy Peach
   static Gradient juicyPeach({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Juicy Peach",
@@ -119,10 +120,10 @@ class FlutterSweepGradients {
 
   /// 5. Young Passion
   static Gradient youngPassion({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Young Passion",
@@ -144,10 +145,10 @@ class FlutterSweepGradients {
 
   /// 6. Lady Lips
   static Gradient ladyLips({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Lady Lips",
@@ -166,10 +167,10 @@ class FlutterSweepGradients {
 
   /// 7. Sunny Morning
   static Gradient sunnyMorning({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Sunny Morning",
@@ -184,10 +185,10 @@ class FlutterSweepGradients {
 
   /// 8. Rainy Ashville
   static Gradient rainyAshville({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Rainy Ashville",
@@ -202,10 +203,10 @@ class FlutterSweepGradients {
 
   /// 9. Frozen Dreams
   static Gradient frozenDreams({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Frozen Dreams",
@@ -224,10 +225,10 @@ class FlutterSweepGradients {
 
   /// 10. Winter Neva
   static Gradient winterNeva({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Winter Neva",
@@ -242,10 +243,10 @@ class FlutterSweepGradients {
 
   /// 11. Dusty Grass
   static Gradient dustyGrass({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Dusty Grass",
@@ -260,10 +261,10 @@ class FlutterSweepGradients {
 
   /// 12. Tempting Azure
   static Gradient temptingAzure({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Tempting Azure",
@@ -278,10 +279,10 @@ class FlutterSweepGradients {
 
   /// 13. Heavy Rain
   static Gradient heavyRain({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Heavy Rain",
@@ -296,10 +297,10 @@ class FlutterSweepGradients {
 
   /// 14. Amy Crisp
   static Gradient amyCrisp({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Amy Crisp",
@@ -314,10 +315,10 @@ class FlutterSweepGradients {
 
   /// 15. Mean Fruit
   static Gradient meanFruit({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Mean Fruit",
@@ -332,10 +333,10 @@ class FlutterSweepGradients {
 
   /// 16. Deep Blue
   static Gradient deepBlue({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Deep Blue",
@@ -350,10 +351,10 @@ class FlutterSweepGradients {
 
   /// 17. Ripe Malinka
   static Gradient ripeMalinka({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Ripe Malinka",
@@ -368,10 +369,10 @@ class FlutterSweepGradients {
 
   /// 18. Cloudy Knoxville
   static Gradient cloudyKnoxville({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Cloudy Knoxville",
@@ -386,10 +387,10 @@ class FlutterSweepGradients {
 
   /// 19. Malibu Beach
   static Gradient malibuBeach({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Malibu Beach",
@@ -404,10 +405,10 @@ class FlutterSweepGradients {
 
   /// 20. New Life
   static Gradient newLife({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "New Life",
@@ -422,10 +423,10 @@ class FlutterSweepGradients {
 
   /// 21. True Sunset
   static Gradient trueSunset({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "True Sunset",
@@ -440,10 +441,10 @@ class FlutterSweepGradients {
 
   /// 22. Morpheus Den
   static Gradient morpheusDen({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Morpheus Den",
@@ -458,10 +459,10 @@ class FlutterSweepGradients {
 
   /// 23. Rare Wind
   static Gradient rareWind({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Rare Wind",
@@ -476,10 +477,10 @@ class FlutterSweepGradients {
 
   /// 24. Near Moon
   static Gradient nearMoon({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Near Moon",
@@ -494,10 +495,10 @@ class FlutterSweepGradients {
 
   /// 25. Wild Apple
   static Gradient wildApple({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Wild Apple",
@@ -512,10 +513,10 @@ class FlutterSweepGradients {
 
   /// 26. Saint Petersburg
   static Gradient saintPetersburg({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Saint Petersburg",
@@ -530,10 +531,10 @@ class FlutterSweepGradients {
 
   /// 28. Plum Plate
   static Gradient plumPlate({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Plum Plate",
@@ -548,10 +549,10 @@ class FlutterSweepGradients {
 
   /// 29. Everlasting Sky
   static Gradient everlastingSky({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Everlasting Sky",
@@ -566,10 +567,10 @@ class FlutterSweepGradients {
 
   /// 30. Happy Fisher
   static Gradient happyFisher({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Happy Fisher",
@@ -584,10 +585,10 @@ class FlutterSweepGradients {
 
   /// 31. Blessing
   static Gradient blessing({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Blessing",
@@ -602,10 +603,10 @@ class FlutterSweepGradients {
 
   /// 32. Sharpeye Eagle
   static Gradient sharpeyeEagle({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Sharpeye Eagle",
@@ -620,10 +621,10 @@ class FlutterSweepGradients {
 
   /// 33. Ladoga Bottom
   static Gradient ladogaBottom({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Ladoga Bottom",
@@ -638,10 +639,10 @@ class FlutterSweepGradients {
 
   /// 34. Lemon Gate
   static Gradient lemonGate({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Lemon Gate",
@@ -656,10 +657,10 @@ class FlutterSweepGradients {
 
   /// 35. Itmeo Branding
   static Gradient itmeoBranding({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Itmeo Branding",
@@ -674,10 +675,10 @@ class FlutterSweepGradients {
 
   /// 36. Zeus Miracle
   static Gradient zeusMiracle({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Zeus Miracle",
@@ -692,10 +693,10 @@ class FlutterSweepGradients {
 
   /// 37. Old Hat
   static Gradient oldHat({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Old Hat",
@@ -717,10 +718,10 @@ class FlutterSweepGradients {
 
   /// 38. Star Wine
   static Gradient starWine({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Star Wine",
@@ -742,10 +743,10 @@ class FlutterSweepGradients {
 
   /// 39. Deep Blue
   static Gradient deepBlue2({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Deep Blue",
@@ -760,10 +761,10 @@ class FlutterSweepGradients {
 
   /// 41. Happy Acid
   static Gradient happyAcid({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Happy Acid",
@@ -778,10 +779,10 @@ class FlutterSweepGradients {
 
   /// 42. Awesome Pine
   static Gradient awesomePine({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Awesome Pine",
@@ -796,10 +797,10 @@ class FlutterSweepGradients {
 
   /// 43. New York
   static Gradient newYork({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "New York",
@@ -814,10 +815,10 @@ class FlutterSweepGradients {
 
   /// 44. Shy Rainbow
   static Gradient shyRainbow({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Shy Rainbow",
@@ -838,10 +839,10 @@ class FlutterSweepGradients {
 
   /// 46. Mixed Hopes
   static Gradient mixedHopes({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Mixed Hopes",
@@ -856,10 +857,10 @@ class FlutterSweepGradients {
 
   /// 47. Fly High
   static Gradient flyHigh({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Fly High",
@@ -874,10 +875,10 @@ class FlutterSweepGradients {
 
   /// 48. Strong Bliss
   static Gradient strongBliss({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Strong Bliss",
@@ -897,10 +898,10 @@ class FlutterSweepGradients {
 
   /// 49. Fresh Milk
   static Gradient freshMilk({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Fresh Milk",
@@ -915,10 +916,10 @@ class FlutterSweepGradients {
 
   /// 50. Snow Again
   static Gradient snowAgain({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Snow Again",
@@ -933,10 +934,10 @@ class FlutterSweepGradients {
 
   /// 51. February Ink
   static Gradient februaryInk({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "February Ink",
@@ -951,10 +952,10 @@ class FlutterSweepGradients {
 
   /// 52. Kind Steel
   static Gradient kindSteel({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Kind Steel",
@@ -969,10 +970,10 @@ class FlutterSweepGradients {
 
   /// 53. Soft Grass
   static Gradient softGrass({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Soft Grass",
@@ -987,10 +988,10 @@ class FlutterSweepGradients {
 
   /// 54. Grown Early
   static Gradient grownEarly({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Grown Early",
@@ -1005,10 +1006,10 @@ class FlutterSweepGradients {
 
   /// 55. Sharp Blues
   static Gradient sharpBlues({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Sharp Blues",
@@ -1023,10 +1024,10 @@ class FlutterSweepGradients {
 
   /// 56. Shady Water
   static Gradient shadyWater({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Shady Water",
@@ -1041,10 +1042,10 @@ class FlutterSweepGradients {
 
   /// 57. Dirty Beauty
   static Gradient dirtyBeauty({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Dirty Beauty",
@@ -1059,10 +1060,10 @@ class FlutterSweepGradients {
 
   /// 58. Great Whale
   static Gradient greatWhale({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Great Whale",
@@ -1077,10 +1078,10 @@ class FlutterSweepGradients {
 
   /// 59. Teen Notebook
   static Gradient teenNotebook({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Teen Notebook",
@@ -1095,10 +1096,10 @@ class FlutterSweepGradients {
 
   /// 60. Polite Rumors
   static Gradient politeRumors({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Polite Rumors",
@@ -1117,10 +1118,10 @@ class FlutterSweepGradients {
 
   /// 61. Sweet Period
   static Gradient sweetPeriod({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Sweet Period",
@@ -1145,10 +1146,10 @@ class FlutterSweepGradients {
 
   /// 62. Wide Matrix
   static Gradient wideMatrix({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Wide Matrix",
@@ -1171,10 +1172,10 @@ class FlutterSweepGradients {
 
   /// 63. Soft Cherish
   static Gradient softCherish({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Soft Cherish",
@@ -1198,10 +1199,10 @@ class FlutterSweepGradients {
 
   /// 64. Red Salvation
   static Gradient redSalvation({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Red Salvation",
@@ -1216,10 +1217,10 @@ class FlutterSweepGradients {
 
   /// 65. Burning Spring
   static Gradient burningSpring({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Burning Spring",
@@ -1242,10 +1243,10 @@ class FlutterSweepGradients {
 
   /// 66. Night Party
   static Gradient nightParty({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Night Party",
@@ -1260,10 +1261,10 @@ class FlutterSweepGradients {
 
   /// 67. Sky Glider
   static Gradient skyGlider({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Sky Glider",
@@ -1278,10 +1279,10 @@ class FlutterSweepGradients {
 
   /// 68. Heaven Peach
   static Gradient heavenPeach({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Heaven Peach",
@@ -1296,10 +1297,10 @@ class FlutterSweepGradients {
 
   /// 69. Purple Division
   static Gradient purpleDivision({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Purple Division",
@@ -1314,10 +1315,10 @@ class FlutterSweepGradients {
 
   /// 70. Aqua Splash
   static Gradient aquaSplash({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Aqua Splash",
@@ -1332,10 +1333,10 @@ class FlutterSweepGradients {
 
   /// 72. Spiky Naga
   static Gradient spikyNaga({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Spiky Naga",
@@ -1360,10 +1361,10 @@ class FlutterSweepGradients {
 
   /// 73. Love Kiss
   static Gradient loveKiss({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Love Kiss",
@@ -1378,10 +1379,10 @@ class FlutterSweepGradients {
 
   /// 75. Clean Mirror
   static Gradient cleanMirror({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Clean Mirror",
@@ -1396,10 +1397,10 @@ class FlutterSweepGradients {
 
   /// 76. Premium Dark
   static Gradient premiumDark({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Premium Dark",
@@ -1414,10 +1415,10 @@ class FlutterSweepGradients {
 
   /// 77. Cold Evening
   static Gradient coldEvening({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Cold Evening",
@@ -1437,10 +1438,10 @@ class FlutterSweepGradients {
 
   /// 78. Cochiti Lake
   static Gradient cochitiLake({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Cochiti Lake",
@@ -1455,10 +1456,10 @@ class FlutterSweepGradients {
 
   /// 79. Summer Games
   static Gradient summerGames({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Summer Games",
@@ -1473,10 +1474,10 @@ class FlutterSweepGradients {
 
   /// 80. Passionate Bed
   static Gradient passionateBed({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Passionate Bed",
@@ -1491,10 +1492,10 @@ class FlutterSweepGradients {
 
   /// 81. Mountain Rock
   static Gradient mountainRock({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Mountain Rock",
@@ -1509,10 +1510,10 @@ class FlutterSweepGradients {
 
   /// 82. Desert Hump
   static Gradient desertHump({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Desert Hump",
@@ -1527,10 +1528,10 @@ class FlutterSweepGradients {
 
   /// 83. Jungle Day
   static Gradient jungleDay({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Jungle Day",
@@ -1545,10 +1546,10 @@ class FlutterSweepGradients {
 
   /// 84. Phoenix Start
   static Gradient phoenixStart({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Phoenix Start",
@@ -1563,10 +1564,10 @@ class FlutterSweepGradients {
 
   /// 85. October Silence
   static Gradient octoberSilence({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "October Silence",
@@ -1581,10 +1582,10 @@ class FlutterSweepGradients {
 
   /// 86. Faraway River
   static Gradient farawayRiver({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Faraway River",
@@ -1599,10 +1600,10 @@ class FlutterSweepGradients {
 
   /// 87. Alchemist Lab
   static Gradient alchemistLab({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Alchemist Lab",
@@ -1617,10 +1618,10 @@ class FlutterSweepGradients {
 
   /// 88. Over Sun
   static Gradient overSun({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Over Sun",
@@ -1635,10 +1636,10 @@ class FlutterSweepGradients {
 
   /// 89. Premium White
   static Gradient premiumWhite({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Premium White",
@@ -1659,10 +1660,10 @@ class FlutterSweepGradients {
 
   /// 90. Mars Party
   static Gradient marsParty({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Mars Party",
@@ -1677,10 +1678,10 @@ class FlutterSweepGradients {
 
   /// 91. Eternal Constance
   static Gradient eternalConstance({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Eternal Constance",
@@ -1695,10 +1696,10 @@ class FlutterSweepGradients {
 
   /// 92. Japan Blush
   static Gradient japanBlush({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Japan Blush",
@@ -1717,10 +1718,10 @@ class FlutterSweepGradients {
 
   /// 93. Smiling Rain
   static Gradient smilingRain({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Smiling Rain",
@@ -1735,10 +1736,10 @@ class FlutterSweepGradients {
 
   /// 94. Cloudy Apple
   static Gradient cloudyApple({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Cloudy Apple",
@@ -1757,10 +1758,10 @@ class FlutterSweepGradients {
 
   /// 95. Big Mango
   static Gradient bigMango({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Big Mango",
@@ -1775,10 +1776,10 @@ class FlutterSweepGradients {
 
   /// 96. Healthy Water
   static Gradient healthyWater({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Healthy Water",
@@ -1793,10 +1794,10 @@ class FlutterSweepGradients {
 
   /// 97. Amour Amour
   static Gradient amourAmour({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Amour Amour",
@@ -1811,10 +1812,10 @@ class FlutterSweepGradients {
 
   /// 98. Risky Concrete
   static Gradient riskyConcrete({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Risky Concrete",
@@ -1833,10 +1834,10 @@ class FlutterSweepGradients {
 
   /// 99. Strong Stick
   static Gradient strongStick({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Strong Stick",
@@ -1851,10 +1852,10 @@ class FlutterSweepGradients {
 
   /// 100. Vicious Stance
   static Gradient viciousStance({
-    AlignmentGeometry center,
-    double startAngle,
-    double endAngle,
-    TileMode tileMode,
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
   }) =>
       sweep(
         "Vicious Stance",
@@ -1868,11 +1869,12 @@ class FlutterSweepGradients {
       );
 
   /// 101. Palo Alto
-  static Gradient paloAlto(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient paloAlto({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Palo Alto",
         center,
@@ -1885,11 +1887,12 @@ class FlutterSweepGradients {
       );
 
   /// 102. Happy Memories
-  static Gradient happyMemories(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient happyMemories({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Happy Memories",
         center,
@@ -1902,11 +1905,12 @@ class FlutterSweepGradients {
       );
 
   /// 103. Midnight Bloom
-  static Gradient midnightBloom(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient midnightBloom({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Midnight Bloom",
         center,
@@ -1919,11 +1923,12 @@ class FlutterSweepGradients {
       );
 
   /// 104. Crystalline
-  static Gradient crystalline(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient crystalline({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Crystalline",
         center,
@@ -1936,11 +1941,12 @@ class FlutterSweepGradients {
       );
 
   /// 106. Party Bliss
-  static Gradient partyBliss(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient partyBliss({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Party Bliss",
         center,
@@ -1953,11 +1959,12 @@ class FlutterSweepGradients {
       );
 
   /// 107. Confident Cloud
-  static Gradient confidentCloud(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient confidentCloud({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Confident Cloud",
         center,
@@ -1974,11 +1981,12 @@ class FlutterSweepGradients {
       );
 
   /// 108. Le Cocktail
-  static Gradient leCocktail(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient leCocktail({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Le Cocktail",
         center,
@@ -1991,11 +1999,12 @@ class FlutterSweepGradients {
       );
 
   /// 109. River City
-  static Gradient riverCity(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient riverCity({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "River City",
         center,
@@ -2008,11 +2017,12 @@ class FlutterSweepGradients {
       );
 
   /// 110. Frozen Berry
-  static Gradient frozenBerry(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient frozenBerry({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Frozen Berry",
         center,
@@ -2025,11 +2035,12 @@ class FlutterSweepGradients {
       );
 
   /// 112. Child Care
-  static Gradient childCare(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient childCare({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Child Care",
         center,
@@ -2042,11 +2053,12 @@ class FlutterSweepGradients {
       );
 
   /// 113. Flying Lemon
-  static Gradient flyingLemon(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient flyingLemon({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Flying Lemon",
         center,
@@ -2059,11 +2071,12 @@ class FlutterSweepGradients {
       );
 
   /// 114. New Retrowave
-  static Gradient newRetrowave(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient newRetrowave({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "New Retrowave",
         center,
@@ -2080,11 +2093,12 @@ class FlutterSweepGradients {
       );
 
   /// 115. Hidden Jaguar
-  static Gradient hiddenJaguar(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient hiddenJaguar({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Hidden Jaguar",
         center,
@@ -2097,11 +2111,12 @@ class FlutterSweepGradients {
       );
 
   /// 116. Above The Sky
-  static Gradient aboveTheSky(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient aboveTheSky({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Above The Sky",
         center,
@@ -2109,8 +2124,8 @@ class FlutterSweepGradients {
         endAngle,
         -90.0,
         [
-          Colors.grey[300],
-          Colors.grey[300],
+          Colors.grey[300]!,
+          Colors.grey[300]!,
           stringToColor("#e0e0e0"),
           stringToColor("#efefef"),
           stringToColor("#d9d9d9"),
@@ -2121,11 +2136,12 @@ class FlutterSweepGradients {
       );
 
   /// 117. Nega
-  static Gradient nega(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient nega({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Nega",
         center,
@@ -2138,11 +2154,12 @@ class FlutterSweepGradients {
       );
 
   /// 118. Dense Water
-  static Gradient denseWater(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient denseWater({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Dense Water",
         center,
@@ -2159,11 +2176,12 @@ class FlutterSweepGradients {
       );
 
   /// 120. Seashore
-  static Gradient seashore(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient seashore({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Seashore",
         center,
@@ -2176,11 +2194,12 @@ class FlutterSweepGradients {
       );
 
   /// 121. Marble Wall
-  static Gradient marbleWall(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient marbleWall({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Marble Wall",
         center,
@@ -2197,11 +2216,12 @@ class FlutterSweepGradients {
       );
 
   /// 122. Cheerful Caramel
-  static Gradient cheerfulCaramel(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient cheerfulCaramel({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Cheerful Caramel",
         center,
@@ -2214,11 +2234,12 @@ class FlutterSweepGradients {
       );
 
   /// 123. Night Sky
-  static Gradient nightSky(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient nightSky({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Night Sky",
         center,
@@ -2235,11 +2256,12 @@ class FlutterSweepGradients {
       );
 
   /// 124. Magic Lake
-  static Gradient magicLake(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient magicLake({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Magic Lake",
         center,
@@ -2256,11 +2278,12 @@ class FlutterSweepGradients {
       );
 
   /// 125. Young Grass
-  static Gradient youngGrass(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient youngGrass({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Young Grass",
         center,
@@ -2273,11 +2296,12 @@ class FlutterSweepGradients {
       );
 
   /// 126. Colorful Peach
-  static Gradient colorfulPeach(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient colorfulPeach({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Colorful Peach",
         center,
@@ -2290,11 +2314,12 @@ class FlutterSweepGradients {
       );
 
   /// 127. Gentle Care
-  static Gradient gentleCare(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient gentleCare({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Gentle Care",
         center,
@@ -2307,11 +2332,12 @@ class FlutterSweepGradients {
       );
 
   /// 128. Plum Bath
-  static Gradient plumBath(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient plumBath({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Plum Bath",
         center,
@@ -2324,11 +2350,12 @@ class FlutterSweepGradients {
       );
 
   /// 129. Happy Unicorn
-  static Gradient happyUnicorn(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient happyUnicorn({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Happy Unicorn",
         center,
@@ -2341,11 +2368,12 @@ class FlutterSweepGradients {
       );
 
   /// 131. African Field
-  static Gradient africanField(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient africanField({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "African Field",
         center,
@@ -2364,11 +2392,12 @@ class FlutterSweepGradients {
       );
 
   /// 132. Solid Stone
-  static Gradient solidStone(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient solidStone({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Solid Stone",
         center,
@@ -2381,11 +2410,12 @@ class FlutterSweepGradients {
       );
 
   /// 133. Orange Juice
-  static Gradient orangeJuice(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient orangeJuice({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Orange Juice",
         center,
@@ -2398,11 +2428,12 @@ class FlutterSweepGradients {
       );
 
   /// 134. Glass Water
-  static Gradient glassWater(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient glassWater({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Glass Water",
         center,
@@ -2415,11 +2446,12 @@ class FlutterSweepGradients {
       );
 
   /// 136. North Miracle
-  static Gradient northMiracle(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient northMiracle({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "North Miracle",
         center,
@@ -2432,11 +2464,12 @@ class FlutterSweepGradients {
       );
 
   /// 137. Fruit Blend
-  static Gradient fruitBlend(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient fruitBlend({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Fruit Blend",
         center,
@@ -2449,11 +2482,12 @@ class FlutterSweepGradients {
       );
 
   /// 138. Millennium Pine
-  static Gradient millenniumPine(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient millenniumPine({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Millennium Pine",
         center,
@@ -2466,11 +2500,12 @@ class FlutterSweepGradients {
       );
 
   /// 139. High Flight
-  static Gradient highFlight(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient highFlight({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "High Flight",
         center,
@@ -2483,11 +2518,12 @@ class FlutterSweepGradients {
       );
 
   /// 140. Mole Hall
-  static Gradient moleHall(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient moleHall({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Mole Hall",
         center,
@@ -2500,11 +2536,12 @@ class FlutterSweepGradients {
       );
 
   /// 142. Space Shift
-  static Gradient spaceShift(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient spaceShift({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Space Shift",
         center,
@@ -2522,11 +2559,12 @@ class FlutterSweepGradients {
       );
 
   /// 143. Forest Inei
-  static Gradient forestInei(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient forestInei({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Forest Inei",
         center,
@@ -2539,11 +2577,12 @@ class FlutterSweepGradients {
       );
 
   /// 144. Royal Garden
-  static Gradient royalGarden(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient royalGarden({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Royal Garden",
         center,
@@ -2556,11 +2595,12 @@ class FlutterSweepGradients {
       );
 
   /// 145. Rich Metal
-  static Gradient richMetal(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient richMetal({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Rich Metal",
         center,
@@ -2573,11 +2613,12 @@ class FlutterSweepGradients {
       );
 
   /// 146. Juicy Cake
-  static Gradient juicyCake(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient juicyCake({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Juicy Cake",
         center,
@@ -2590,11 +2631,12 @@ class FlutterSweepGradients {
       );
 
   /// 147. Smart Indigo
-  static Gradient smartIndigo(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient smartIndigo({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Smart Indigo",
         center,
@@ -2607,11 +2649,12 @@ class FlutterSweepGradients {
       );
 
   /// 148. Sand Strike
-  static Gradient sandStrike(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient sandStrike({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Sand Strike",
         center,
@@ -2628,11 +2671,12 @@ class FlutterSweepGradients {
       );
 
   /// 149. Norse Beauty
-  static Gradient norseBeauty(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient norseBeauty({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Norse Beauty",
         center,
@@ -2645,11 +2689,12 @@ class FlutterSweepGradients {
       );
 
   /// 150. Aqua Guidance
-  static Gradient aquaGuidance(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient aquaGuidance({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Aqua Guidance",
         center,
@@ -2662,11 +2707,12 @@ class FlutterSweepGradients {
       );
 
   /// 151. Sun Veggie
-  static Gradient sunVeggie(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient sunVeggie({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Sun Veggie",
         center,
@@ -2679,11 +2725,12 @@ class FlutterSweepGradients {
       );
 
   /// 152. Sea Lord
-  static Gradient seaLord(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient seaLord({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Sea Lord",
         center,
@@ -2700,11 +2747,12 @@ class FlutterSweepGradients {
       );
 
   /// 153. Black Sea
-  static Gradient blackSea(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient blackSea({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Black Sea",
         center,
@@ -2721,11 +2769,12 @@ class FlutterSweepGradients {
       );
 
   /// 154. Grass Shampoo
-  static Gradient grassShampoo(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient grassShampoo({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Grass Shampoo",
         center,
@@ -2742,11 +2791,12 @@ class FlutterSweepGradients {
       );
 
   /// 155. Landing Aircraft
-  static Gradient landingAircraft(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient landingAircraft({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Landing Aircraft",
         center,
@@ -2763,11 +2813,12 @@ class FlutterSweepGradients {
       );
 
   /// 156. Witch Dance
-  static Gradient witchDance(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient witchDance({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Witch Dance",
         center,
@@ -2780,11 +2831,12 @@ class FlutterSweepGradients {
       );
 
   /// 157. Sleepless Night
-  static Gradient sleeplessNight(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient sleeplessNight({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Sleepless Night",
         center,
@@ -2801,11 +2853,12 @@ class FlutterSweepGradients {
       );
 
   /// 158. Angel Care
-  static Gradient angelCare(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient angelCare({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Angel Care",
         center,
@@ -2822,11 +2875,12 @@ class FlutterSweepGradients {
       );
 
   /// 159. Crystal River
-  static Gradient crystalRiver(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient crystalRiver({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Crystal River",
         center,
@@ -2843,11 +2897,12 @@ class FlutterSweepGradients {
       );
 
   /// 160. Soft Lipstick
-  static Gradient softLipstick(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient softLipstick({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Soft Lipstick",
         center,
@@ -2860,11 +2915,12 @@ class FlutterSweepGradients {
       );
 
   /// 161. Salt Mountain
-  static Gradient saltMountain(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient saltMountain({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Salt Mountain",
         center,
@@ -2877,11 +2933,12 @@ class FlutterSweepGradients {
       );
 
   /// 162. Perfect White
-  static Gradient perfectWhite(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient perfectWhite({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Perfect White",
         center,
@@ -2894,11 +2951,12 @@ class FlutterSweepGradients {
       );
 
   /// 163. Fresh Oasis
-  static Gradient freshOasis(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient freshOasis({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Fresh Oasis",
         center,
@@ -2911,11 +2969,12 @@ class FlutterSweepGradients {
       );
 
   /// 164. Strict November
-  static Gradient strictNovember(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient strictNovember({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Strict November",
         center,
@@ -2928,11 +2987,12 @@ class FlutterSweepGradients {
       );
 
   /// 165. Morning Salad
-  static Gradient morningSalad(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient morningSalad({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Morning Salad",
         center,
@@ -2945,11 +3005,12 @@ class FlutterSweepGradients {
       );
 
   /// 166. Deep Relief
-  static Gradient deepRelief(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient deepRelief({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Deep Relief",
         center,
@@ -2966,11 +3027,12 @@ class FlutterSweepGradients {
       );
 
   /// 167. Sea Strike
-  static Gradient seaStrike(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient seaStrike({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Sea Strike",
         center,
@@ -2987,11 +3049,12 @@ class FlutterSweepGradients {
       );
 
   /// 168. Night Call
-  static Gradient nightCall(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient nightCall({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Night Call",
         center,
@@ -3008,11 +3071,12 @@ class FlutterSweepGradients {
       );
 
   /// 169. Supreme Sky
-  static Gradient supremeSky(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient supremeSky({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Supreme Sky",
         center,
@@ -3029,11 +3093,12 @@ class FlutterSweepGradients {
       );
 
   /// 170. Light Blue
-  static Gradient lightBlue(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient lightBlue({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Light Blue",
         center,
@@ -3050,11 +3115,12 @@ class FlutterSweepGradients {
       );
 
   /// 171. Mind Crawl
-  static Gradient mindCrawl(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient mindCrawl({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Mind Crawl",
         center,
@@ -3071,11 +3137,12 @@ class FlutterSweepGradients {
       );
 
   /// 172. Lily Meadow
-  static Gradient lilyMeadow(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient lilyMeadow({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Lily Meadow",
         center,
@@ -3092,11 +3159,12 @@ class FlutterSweepGradients {
       );
 
   /// 173. Sugar Lollipop
-  static Gradient sugarLollipop(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient sugarLollipop({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Sugar Lollipop",
         center,
@@ -3113,11 +3181,12 @@ class FlutterSweepGradients {
       );
 
   /// 174. Sweet Dessert
-  static Gradient sweetDessert(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient sweetDessert({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Sweet Dessert",
         center,
@@ -3134,11 +3203,12 @@ class FlutterSweepGradients {
       );
 
   /// 175. Magic Ray
-  static Gradient magicRay(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient magicRay({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Magic Ray",
         center,
@@ -3155,11 +3225,12 @@ class FlutterSweepGradients {
       );
 
   /// 176. Teen Party
-  static Gradient teenParty(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient teenParty({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Teen Party",
         center,
@@ -3176,11 +3247,12 @@ class FlutterSweepGradients {
       );
 
   /// 177. Frozen Heat
-  static Gradient frozenHeat(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient frozenHeat({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Frozen Heat",
         center,
@@ -3197,11 +3269,12 @@ class FlutterSweepGradients {
       );
 
   /// 178. Gagarin View
-  static Gradient gagarinView(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient gagarinView({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Gagarin View",
         center,
@@ -3218,11 +3291,12 @@ class FlutterSweepGradients {
       );
 
   /// 179. Fabled Sunset
-  static Gradient fabledSunset(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient fabledSunset({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Fabled Sunset",
         center,
@@ -3240,11 +3314,12 @@ class FlutterSweepGradients {
       );
 
   /// 180. Perfect Blue
-  static Gradient perfectBlue(
-          {AlignmentGeometry center,
-          double startAngle,
-          double endAngle,
-          TileMode tileMode}) =>
+  static Gradient perfectBlue({
+    AlignmentGeometry center = Alignment.center,
+    double startAngle = 0.0,
+    double endAngle = math.pi * 2,
+    TileMode tileMode = TileMode.clamp,
+  }) =>
       sweep(
         "Perfect Blue",
         center,
